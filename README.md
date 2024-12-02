@@ -4,4 +4,7 @@
  
 ## 🗂️Projetos
 
-* #### [Todos os projetos](https://github.com/claudiaanjos/projetos-analise-dados/tree/main/projetos#projetos)
+* ### [Todos os projetos](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Projetos)
+* ### [Projeto de Metanalise X](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Projetos)
+* ### [Dashboards](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Projetos)
+* ### [Análise de clientes blablabla](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Projetos)
