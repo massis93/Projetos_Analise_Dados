@@ -3,12 +3,12 @@
 # 🧑Campanha de Marketing Netflix
 
 ## Introdução
-Este dataset foi retirado do Kaggle no [link](https://www.kaggle.com/datasets/arnavsmayan/netflix-userbase-dataset/data). O arquivo pode ser baixado aqui.
-Com este dataset criei um fictício problema de negócio para que esse DATASET poderia ser usado: A NETFLIX deseja investir em campanhas de marketing para usuários assinarem seus planos, mas não sabe em qual público investir.
+O [dataset](https://github.com/massis93/Projetos_Analise_Dados/blob/main/SQL/An%C3%A1lise%20Clientes%20Netflix/Netflix%20Userbase.csv) desde projeto foi retirado do Kaggle no [link](https://www.kaggle.com/datasets/arnavsmayan/netflix-userbase-dataset/data).
+Criei um fictício problema de negócio baseado nesses dados: A NETFLIX deseja investir em campanhas de marketing para usuários assinarem seus planos, mas não sabe em qual público investir.
 
 
 ## Metodologia
-A análise será feita no SGBD SQL SERVER da Microsoft. Investigar-se-á os qual é a Persona que atualmente assina a NETFLIX. Ora, a campanha de marketing será direcionada à Persona não assinante.
+Irei, através do SQL SERVER, da Microsoft, coletar dados dos usuários que assinam a NETFLIX, e verificar por conquência o público não assinante. Como a empresa tem um orçamento limitado, ela quer focar suas campanhas de marketing apenas no público não assinante.
 
 ## Análise
 
