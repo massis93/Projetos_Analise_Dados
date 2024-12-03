@@ -14,7 +14,11 @@ Irei, através do SQL SERVER, da Microsoft, coletar dados dos usuários que assi
 
 Primeiramente foi criado um novo database, importar os dados de csv para o SQL server, e renomeada a tabela.
 
+
+
+
 ![image](https://github.com/user-attachments/assets/51d62003-8b16-4c69-b57f-a00c0ab1731b)
+
 
 Limitei uma amostra das 10 primeiras linhas para observar os dados
 
