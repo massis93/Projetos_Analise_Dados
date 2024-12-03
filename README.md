@@ -1,4 +1,5 @@
-<img src="https://github.com/massis93/Projetos_Analise_Dados/blob/main/img/titulo_projeto.jpg">
+![image](https://github.com/user-attachments/assets/b4f11912-efdc-493c-a6ea-8e663846eb13)
+
 
  Olá! Nesta seção estão organizados os projetos do meu portifólio.
  
