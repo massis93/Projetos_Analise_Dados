@@ -3,7 +3,7 @@
 # 🧑Campanha de Marketing Netflix
 
 ## Introdução
-Este dataset foi retirado do Kaggle no link https://www.kaggle.com/datasets/arnavsmayan/netflix-userbase-dataset/data. O arquivo pode ser baixado aqui.
+Este dataset foi retirado do Kaggle no [link](https://www.kaggle.com/datasets/arnavsmayan/netflix-userbase-dataset/data). O arquivo pode ser baixado aqui.
 Com este dataset criei um fictício problema de negócio para que esse DATASET poderia ser usado: A NETFLIX deseja investir em campanhas de marketing para usuários assinarem seus planos, mas não sabe em qual público investir.
 
 
