@@ -12,12 +12,12 @@ Você pode acessar o dashboard neste [link](https://app.powerbi.com/view?r=eyJrI
 
 
 ## Metodologia
-Irei, através do SQL SERVER, da Microsoft, coletar dados dos usuários que assinam a NETFLIX, e verificar por conquência o público não assinante. Como a empresa tem um orçamento limitado, ela quer focar suas campanhas de marketing apenas no público não assinante e expandir seus negócios.
+
 
 ## Análise
 
-- Separador de items
-- Separador de items
+- 
+- 
 
 
 
