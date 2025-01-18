@@ -28,7 +28,19 @@ Os objetivos de fazer um dashboard para este dados são:
 
 
 
-## Análise
+## Projeto
+
+1.KPI's 
+Baseando-se no método de leitura em Z, os KPI's foram criados e colocados no topo do dashboard pois são as métricas principais.
+
+![image](https://github.com/user-attachments/assets/932dd004-da54-4a2e-9537-5f6562563308)
+
+2.Sazonalidade de Incêndios
+Para verificar se há alguma relação entre o mês e a quantidade de incêndios criou-se segmentação de dados por ano, e por estado. Dessa forma é possível verificar qual o mês que mais tem maior quantidade de incêndios. Por exemplo, filtrando os incêndios para o estado de mato-grosso, sabe-se que os meses de Agosto e Setembro são os que mais tem quantidade de incêndio. Mas, através do filtro "ANO", podemos verificar que o mês de Agosto, até o ano de 2003, era o campeão de incêndios, e somente depois de 2003 começou a ser setembro. Portanto, é necessário verificar o que houve nesse período que fez com que os focos de incêndios diminuissem em Agosto e aumentassem em Setembro.
+![image](https://github.com/user-attachments/assets/d8115111-c341-4f7f-becd-aa2fe9b64895)
+![image](https://github.com/user-attachments/assets/8231892a-fff6-492a-baf7-7b4f20897cc4)
+
+
 
 - 
 - 
