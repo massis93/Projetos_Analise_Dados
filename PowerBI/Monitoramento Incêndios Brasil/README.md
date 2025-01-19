@@ -18,32 +18,47 @@
 
 
 
-## Objetivo
+## Objetivo do Dashboard
 Os objetivos de fazer um dashboard para este dados são:
 - Fornecer KPI's de monitoramento de Incêndio: Estado, Ano e Mês com maior número de Incêndios
 - Analisar se há alguma sazonalidade nos incêndios;
 - Verificar quais são os estados que mais tem incêndios, e sua proporção em relação aos demais
-- Se o total de Incêndios estão crescendo ou diminuindo anualmente
+- Verificar se há uma tendencia de crescimento total de Incêndios anualmente
 - Quais foram os períodos que mais tiveram incêndios no Brasil
 
 
 
-## Projeto
-
-1.KPI's 
-Baseando-se no método de leitura em Z, os KPI's foram criados e colocados no topo do dashboard pois são as métricas principais.
-
-![image](https://github.com/user-attachments/assets/932dd004-da54-4a2e-9537-5f6562563308)
-
-2.Sazonalidade de Incêndios
-Para verificar se há alguma relação entre o mês e a quantidade de incêndios criou-se segmentação de dados por ano, e por estado. Dessa forma é possível verificar qual o mês que mais tem maior quantidade de incêndios. Por exemplo, filtrando os incêndios para o estado de mato-grosso, sabe-se que os meses de Agosto e Setembro são os que mais tem quantidade de incêndio. Mas, através do filtro "ANO", podemos verificar que o mês de Agosto, até o ano de 2003, era o campeão de incêndios, e somente depois de 2003 começou a ser setembro. Portanto, é necessário verificar o que houve nesse período que fez com que os focos de incêndios diminuissem em Agosto e aumentassem em Setembro.
-![image](https://github.com/user-attachments/assets/d8115111-c341-4f7f-becd-aa2fe9b64895)
-![image](https://github.com/user-attachments/assets/8231892a-fff6-492a-baf7-7b4f20897cc4)
+## Insights
 
 
+### 1. Mês de Agosto superou Mês de Setembro para o estado com maior número de queimadas
 
-- 
-- 
+Filtrando os incêndios para o estado Mato-Grosso, na segmentação de dados, os meses de Agosto e Setembro são os que mais tem quantidade de incêndio.
+
+![image](https://github.com/user-attachments/assets/a42454b3-7a2b-4152-8ad6-6414a2355cf3)
+
+
+Porém, através do filtro "ANO", podemos verificar que o mês de Agosto, até o ano de 2003, era o campeão de incêndios, e somente depois de 2003 começou a ser setembro. Portanto, é necessário verificar o que houve nesse período que fez com que os focos de incêndios diminuissem em Agosto e aumentassem em Setembro.
+
+### 2. A partir de 2014 o Pará superou Mato-Grosso
+
+
+Por mais que o estado do Mato-Grosso seja o Estado que mais teve queimadas, ele apresenta uma tendência de queda.
+
+![image](https://github.com/user-attachments/assets/335be7bd-f595-4c82-8538-e7aacdbb56c3)
+
+A partir de 2014 o Estado que vem apresentando maior número de incêndios é o Pará, que apresenta uma tendência de crescimento alta.
+
+![image](https://github.com/user-attachments/assets/fc8a4581-91a8-4afd-bfca-1e6478a07587)
+
+
+### 3. Com o mapa de calor é possível verificar qual ano foi o responsável pelo maior número de queimadas e o estado responsável.
+
+O mapa de calor ajuda a identificar todos os números de queimadas por ano e por estado com facilidade. Caso entrem novos dados, é possível fazer uma comparação com os dados existentes simplemente observando a cor de fundo.
+
+![image](https://github.com/user-attachments/assets/00591664-90ca-40c3-a356-31a30635934c)
+
+
 
 
 
