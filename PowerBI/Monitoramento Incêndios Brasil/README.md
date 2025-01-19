@@ -52,7 +52,7 @@ A partir de 2014 o Estado que vem apresentando maior número de incêndios é o 
 ![image](https://github.com/user-attachments/assets/fc8a4581-91a8-4afd-bfca-1e6478a07587)
 
 
-### 3. Com o mapa de calor é possível verificar qual ano foi o responsável pelo maior número de queimadas e o estado responsável.
+### 3. 2004 foi o ano que teve o maior número de queimadas
 
 O mapa de calor ajuda a identificar todos os números de queimadas por ano e por estado com facilidade. Caso entrem novos dados, é possível fazer uma comparação com os dados existentes simplemente observando a cor de fundo.
 
