@@ -80,7 +80,21 @@ Figura 1 - Crescimento do Etanol de 2020 para 2021
 Figura 2 - Crescimento da Gasolina de 2020 para 2021
 
 
-### 4. 
+### 4. Região Norte, Nordeste e Sul são a que tem o maior valor médio de preço de Etanol
+
+O motivo do valor médio do Etanol no Norte, Nordeste e Sul ser maior do que o das outras regiões poderia ser devido ao tranporte, visto que a produção de Açucar nestas três regiões é menor do que a das outras regiões.
+
+![image](https://github.com/user-attachments/assets/999f136c-a312-4888-9e3c-e6731e532604)
+
+Figura - Gráfico de Colunas do Valor Médio do Etanol por Região
+
+
+
+
+![image](https://github.com/user-attachments/assets/cb5b5ecb-4361-422b-a2ff-320348712931)
+
+Figura - Produção de Açucar pelo Brasil
+
 
 
 
