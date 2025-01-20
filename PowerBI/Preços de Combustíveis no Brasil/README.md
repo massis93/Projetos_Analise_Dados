@@ -9,7 +9,7 @@
 - Este Dataset fornecido pela Agencia Nacional de Petróleo contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi coletado.
 - O dataset desde projeto é maior que o permitido para carregar aqui no GitHub, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
 
-- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiYmM0ZjU5NTctYzRkNi00ZjUzLTg0MWYtYWM0NDMwMWVjOGIxIiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
 
 
@@ -21,12 +21,13 @@
 
 
 ## Objetivo do Dashboard
-Os objetivos de fazer um dashboard para este dados são:
-- Fornecer KPI's de monitoramento de Incêndio: Estado, Ano e Mês com maior número de Incêndios
-- Analisar se há alguma sazonalidade nos incêndios;
-- Verificar quais são os estados que mais tem incêndios, e sua proporção em relação aos demais
-- Verificar se há uma tendencia de crescimento total de Incêndios anualmente
-- Quais foram os períodos que mais tiveram incêndios no Brasil
+Os objetivos de fazer um Dashboard como este são:
+- Fornecer as KPI's de monitoramento de preço de combustível no Brasil
+- Analisar como se comporta o crescimento do combustível em diferentes regiões do Brasil
+- Verificar qual época do ano o combustível tem queda e qual época sofre maior aumento
+- Verificar quais anos o preço teve maior taxa de crescimento
+- Verificar qual a região, estado e cidade tem o maior preço de combustível e entender o porquê
+
 
 
 
