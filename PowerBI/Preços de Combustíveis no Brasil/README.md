@@ -52,31 +52,38 @@ Cada região tem sua safra da cana de açucar. No nordeste, por exemplo, a colhe
 ![image](https://github.com/user-attachments/assets/4efe2449-8529-4ce7-831b-636d9993b8ad)
 
 
+### 2. Preço de Combustível no Sudeste é correlacionado também ao período de Safra
 
-Filtrando os incêndios para o estado Mato-Grosso, na segmentação de dados, os meses de Agosto e Setembro são os que mais tem quantidade de incêndio.
+Para o Sudeste, o período de safra é de Abril até novembro, e justamente neste período, nos últimos 5 anos, o preço do combustível sofreu redução de valor.
 
-![image](https://github.com/user-attachments/assets/a42454b3-7a2b-4152-8ad6-6414a2355cf3)
+![image](https://github.com/user-attachments/assets/e3938c73-f640-4463-9522-412144ed35c7)
 
+### 3. Etanol, durante em 2021 teve uma taxa de crescimento maior que a gasolina
 
-Porém, através do filtro "ANO", podemos verificar que o mês de Agosto, até o ano de 2003, era o campeão de incêndios, e somente depois de 2003 começou a ser setembro. Portanto, é necessário verificar o que houve nesse período que fez com que os focos de incêndios diminuissem em Agosto e aumentassem em Setembro.
+Este é o gráfico do valor médio da gasolina no Brasil
 
-### 2. 
+![image](https://github.com/user-attachments/assets/32aab4ab-3e75-4901-a735-fb6fa6604607)
 
+Já este é o grafico do valor médio do etanol no Brasil
 
-Por mais que o estado do Mato-Grosso seja o Estado que mais teve queimadas, ele apresenta uma tendência de queda.
+![image](https://github.com/user-attachments/assets/69877c70-91fc-41e2-915a-b5b227198db9)
 
-![image](https://github.com/user-attachments/assets/335be7bd-f595-4c82-8538-e7aacdbb56c3)
-
-A partir de 2014 o Estado que vem apresentando maior número de incêndios é o Pará, que apresenta uma tendência de crescimento alta.
-
-![image](https://github.com/user-attachments/assets/fc8a4581-91a8-4afd-bfca-1e6478a07587)
+Pode-se observar que a curva de crescimento do Etanol é mais acentuada de 2020 a 2021, por mais que ambas tenham tido um grande aumento. Porém, através do KPI de taxa de crescimento do valor do combustível do ano atual em relação ao anterior, a taxa de crescimento do Etanol é superior ao da gasolina. É pouca coisa, porém, é provável que as pessoas tenham preferido abastecer com Etanol ao invés de Gasolina, devido ao aumento de preço da Gasolina em valores brutos, ser maior do que o do Etanol.
 
 
-### 3. 
+![image](https://github.com/user-attachments/assets/26336a21-5f4d-4fe4-8f55-710daab98148)
 
-O mapa de calor ajuda a identificar todos os números de queimadas por ano e por estado com facilidade. Caso entrem novos dados, é possível fazer uma comparação com os dados existentes simplemente observando a cor de fundo.
+Figura 1 - Crescimento do Etanol de 2020 para 2021
 
-![image](https://github.com/user-attachments/assets/00591664-90ca-40c3-a356-31a30635934c)
+![image](https://github.com/user-attachments/assets/e9769e87-486e-4738-a170-b061a0f67e9a)
+
+Figura 2 - Crescimento da Gasolina de 2020 para 2021
+
+
+### 4. 
+
+
+
 
 
 
