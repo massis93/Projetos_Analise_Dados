@@ -6,9 +6,10 @@
 
 ## O Dataset
 - O Dataset deste projeto contém a quantidade de incêndios florestais reportados no Brasil, por estado e por ano, no período de 1998 até 2017. Ele foi retirado do Portal de Dados abertos do Governo Federal, na área do SNIF (Sistema Nacional de Informações Florestais), e contém os dados oficiais do governo sobre os incêndios reportados no Brasil.
-- O [dataset](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/amazon.csv) desde projeto, atualmente está indisponível no Portal de Daddos, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/gustavomodelli/forest-fires-in-brazil).
+- Este Dataset fornecido pela Agencia Nacional de Petróleo contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi coletado.
+- O dataset desde projeto é maior que o permitido para carregar aqui no GitHub, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
 
-- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiNzE5Njk0MzYtZWE5Yy00NzMzLTkwZjktYzYwNTZiZTAyNDQ0IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiYmM0ZjU5NTctYzRkNi00ZjUzLTg0MWYtYWM0NDMwMWVjOGIxIiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
 
 
