@@ -42,37 +42,46 @@ Os objetivos de fazer um dashboard para este dados são:
 
 
 
-## Insights
+## Análise e Insights
 
 
-###  a. Mês de Agosto superou Mês de Setembro para o estado com maior número de queimadas
+###  A- Há sazonalidade nas queimadas?
+- Para verificar a sazonalidade de queimada no Brasil, iremos filtrar apenas os anos de 2013 a 2017, pois os fatores que desencadeiam as queimadas, que podem ser sociais, políticos, de agricultura, são semelhantes, e queremos o perfil mais recente de sazonalidade de queimadas 
+- Através do gráfico de linhas temporal, é possível obseravar a sazonalidade das queimadas
 
-Filtrando os incêndios para o estado Mato-Grosso, na segmentação de dados, os meses de Agosto e Setembro são os que mais tem quantidade de incêndio.
+![image](https://github.com/user-attachments/assets/cb8e0163-c33d-44f2-8169-2c82e33108f4)
 
-![image](https://github.com/user-attachments/assets/a42454b3-7a2b-4152-8ad6-6414a2355cf3)
+- Há um crescimento no número de queimadas que começa em agosto e se encerra em dezembro
+- Agora vamos observar os estados que são os maiores responsáveis pelo aumento dessas queimadas
+
+### B- Quais são os estados em que mais ocorrem queimadas
+- Filtrando apenas os meses em que mais ocorrem queimadas, os três estados que mais ocorrem queimadas são: Pará, Mato-Grosso e Maranhão
+
+![image](https://github.com/user-attachments/assets/be5f117d-5749-437f-b40f-f55f64aaa9b0)
+
+- O período de seca começa em Julho e acaba em Setembro, e como essas regiões possuem uma extensa área vegetativa, pode ser que seja esse período que influencie o aumento de queimadas
+- Também, a expensão da agropecuária pode estar envolvida no aumento do número de queimadas para essas regiões
+- Portanto seria interessante uma intensa fiscalização nesses períodos de seca, pois será quando ocorrerão a maior parte da quantidade de queimadas
+
+### C- Qual o crescimento ano a ano,do número de queimadas por Estado
+- O número de queimadas somando todos os estados, de 2010 a 2013 teve uma queda, e a partir de 2013 começou a ter intensificação no número:
+
+![image](https://github.com/user-attachments/assets/7d68a9b3-40e0-41e9-8cce-0663620677c8)
+
+- O Mato-Grosso, que era o campeão de queimadas até 2013, foi superado pelo estado do Pará, que segue líder até 2017
+- Seria interessante fazer uma fiscalização para entender os motivos do Pará começar a ter um crescimento tão alto a partir de 2013, sendo que o Mato-Grosso manteve-se com os mesmos números de queimada
+
+Veja, no gráfico abaixo pode-se observar uma tendência de queda para o estado do Mato-Grosso:
+
+![image](https://github.com/user-attachments/assets/04a67946-f865-4797-93eb-0505b1b0f675)
+
+Já o Pará tem uma tendência de alta a partir de 2013, quando passa o Estado do Mato-Grosso e começa a liderar o ranking dos estados:
+
+![image](https://github.com/user-attachments/assets/633d563c-d649-431e-a74a-29e7b5bc8593)
+
+- Portanto, é possível dizer que o aumento de queimadas do ano de 2014-2017 foram, em boa parte, causados pelo número de queimadas que ocorreram no Pará, principalmente no mês de Setembro.
 
 
-Porém, através do filtro "ANO", podemos verificar que o mês de Agosto, até o ano de 2003, era o campeão de incêndios, e somente depois de 2003 começou a ser setembro. Portanto, é necessário verificar o que houve nesse período que fez com que os focos de incêndios diminuissem em Agosto e aumentassem em Setembro.
-
-### b. A partir de 2014 o Pará superou Mato-Grosso
-
-
-Por mais que o estado do Mato-Grosso seja o Estado que mais teve queimadas, ele apresenta uma tendência de queda.
-
-![image](https://github.com/user-attachments/assets/335be7bd-f595-4c82-8538-e7aacdbb56c3)
-
-A partir de 2014 o Estado que vem apresentando maior número de incêndios é o Pará, que apresenta uma tendência de crescimento alta.
-
-![image](https://github.com/user-attachments/assets/fc8a4581-91a8-4afd-bfca-1e6478a07587)
-
-
-### c. 2004 foi o ano que teve o maior número de queimadas
-
-O mapa de calor ajuda a identificar todos os números de queimadas por ano e por estado com facilidade. Caso entrem novos dados, é possível fazer uma comparação com os dados existentes simplemente observando a cor de fundo.
-
-![image](https://github.com/user-attachments/assets/00591664-90ca-40c3-a356-31a30635934c)
-
-## Plano de Ação
 
 
 
