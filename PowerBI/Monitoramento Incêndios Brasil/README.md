@@ -7,7 +7,7 @@
 - O Dataset deste projeto contém a quantidade de incêndios florestais reportados no Brasil, por estado e por ano, no período de 1998 até 2017. Ele foi retirado do Portal de Dados abertos do Governo Federal, na área do SNIF (Sistema Nacional de Informações Florestais), e contém os dados oficiais do governo sobre os incêndios reportados no Brasil.
 - O [dataset](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/amazon.csv) desde projeto, atualmente está indisponível no Portal de Daddos, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/gustavomodelli/forest-fires-in-brazil).
 
-- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiNzE5Njk0MzYtZWE5Yy00NzMzLTkwZjktYzYwNTZiZTAyNDQ0IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/groups/me/reports/fbebd2a7-2e4e-45f0-83f3-dc9928c5c67d/17555d02dad76584fa5e?experience=power-bi).
 
 ## Dataset
 
@@ -79,7 +79,12 @@ Já o Pará tem uma tendência de alta a partir de 2013, quando passa o Estado d
 
 ![image](https://github.com/user-attachments/assets/633d563c-d649-431e-a74a-29e7b5bc8593)
 
-- Portanto, é possível dizer que o aumento de queimadas do ano de 2014-2017 foram, em boa parte, causados pelo número de queimadas que ocorreram no Pará, principalmente no mês de Setembro.
+- Portanto, é possível dizer que o aumento de queimadas do ano de 2014-2017 foram, em boa parte, causados pelo número de queimadas que ocorreram no Pará, principalmente no mês de Setembro
+
+![image](https://github.com/user-attachments/assets/1a0eb215-6402-4611-8fde-66f46bac0165)
+
+Gráfico de Linha do número de queimadas nos anos de 2014 a 2017 do Pará
+
 
 
 
