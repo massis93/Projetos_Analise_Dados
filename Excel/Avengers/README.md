@@ -41,6 +41,8 @@ Para verificar a distribuição dos personagens por gênero, pode-se usar duas f
 
 ##### A3- Gráfico de Pizza da Distribuição por Genero
 
+
+
 ![image](https://github.com/user-attachments/assets/bade755b-c6b8-4285-aec2-d86bc07bba99)
 
 ### B-Analisando o número de Aparições por Personagem
@@ -114,7 +116,7 @@ Observando a distribuição de gênero por classe:
 
 - A maioria das mortes representa os quartis 3 e 4 de aparições, isso quer dizer que pode haver uma relação entre aparecer mais e morrer ou quanto menos aparecer, menor a chance de ter alguma morte.
 
-### Análise Multivariada do Número de Aparições Médio, em Relação a Gênero e Ocorrência de mortes
+### I- Análise Multivariada do Número de Aparições Médio, em Relação a Gênero e Ocorrência de mortes
 - Agora iremos verificar a relação entre o gênero e ocorrência de mortes com os números médios de aparições
 - Para isso iremos usar um mapa de calor
 
