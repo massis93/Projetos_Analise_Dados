@@ -5,7 +5,7 @@
 
 ## Introdução
 - O Dataset deste projeto contém a quantidade de incêndios florestais reportados no Brasil, por estado e por ano, no período de 1998 até 2017. Ele foi retirado do Portal de Dados abertos do Governo Federal, na área do SNIF (Sistema Nacional de Informações Florestais), e contém os dados oficiais do governo sobre os incêndios reportados no Brasil.
-- O [dataset](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/amazon.csv) desde projeto, atualmente está indisponível no Portal de Daddos, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/gustavomodelli/forest-fires-in-brazil).
+- O [dataset](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/amazon.csv) desde projeto atualmente está indisponível no Portal de Daddos, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/gustavomodelli/forest-fires-in-brazil).
 
 - Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/groups/me/reports/fbebd2a7-2e4e-45f0-83f3-dc9928c5c67d/17555d02dad76584fa5e?experience=power-bi).
 
@@ -47,7 +47,7 @@ Os objetivos de fazer um dashboard para este dados são:
 
 ###  A- Há sazonalidade nas queimadas?
 - Para verificar a sazonalidade de queimada no Brasil, iremos filtrar apenas os anos de 2013 a 2017, pois os fatores que desencadeiam as queimadas, que podem ser sociais, políticos, de agricultura, são semelhantes, e queremos o perfil mais recente de sazonalidade de queimadas 
-- Através do gráfico de linhas temporal, é possível obseravar a sazonalidade das queimadas
+- Através do gráfico de linhas temporal, é possível observar a sazonalidade das queimadas
 
 ![image](https://github.com/user-attachments/assets/cb8e0163-c33d-44f2-8169-2c82e33108f4)
 
