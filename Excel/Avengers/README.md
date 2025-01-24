@@ -3,7 +3,7 @@
 # 🦸‍♂️Avengers
 
 ## Introdução
-- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Avengers/Avengers.xlsx) contém informações de todos os personagens dos Avengers da Marvel. Cada linha contém informações detalhadas como data de entrada, gênero, quantidade de mortes, classificação do personagem, número de aparições, entre outros.
+- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Avengers/Avengers.xlsx) contém informações de todos os personagens dos Avengers da Marvel. Cada coluna contém features do personagem, como data de entrada, gênero, quantidade de mortes, classificação do personagem, número de aparições, entre outros.
 
 
 
@@ -11,8 +11,11 @@
 
 | Coluna          | Descrição                                                  
 |-|-|                            
-| `Name/Alias`        | Nome ou Apelido do Personagem                                            | `Appearances` | Quantidade de Aparições do Personagem                                          | `Current?`       | Se o personagem ainda é Ativo? 
-| `Gender`    	  | Gênero
+| `Name/Alias`        | Nome ou Apelido do Personagem                                           
+| `Appearances` | Quantidade de Aparições do Personagem              
+| `Current?`       | Personagem ainda é Ativo? 
+| `Gender`    	  | Gênero do Personagem
+| `Year`    	  | Ano de Entrada no Avengers
 | `Class`    	  | Classe do Personagem
 | `Death1`    	  | Se o personagem já morreu
 | `Return`    	  | Se o personagem retornou após morrer
