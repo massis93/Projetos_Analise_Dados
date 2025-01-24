@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/e3ad2626-b34c-43df-9a27-45e7388ce448)
+![image](https://github.com/user-attachments/assets/487e94df-1546-4cd8-8237-fefdf9634c8d)
+
 
 Estes são os projetos de Excel do meu portifólio :)
 
