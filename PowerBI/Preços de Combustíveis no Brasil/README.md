@@ -4,24 +4,36 @@
 
 # ⛽Preço dos Combustíveis no Brasil (2004 a 2025)
 
-## O Dataset
-- O Dataset deste projeto contém a quantidade de incêndios florestais reportados no Brasil, por estado e por ano, no período de 1998 até 2017. Ele foi retirado do Portal de Dados abertos do Governo Federal, na área do SNIF (Sistema Nacional de Informações Florestais), e contém os dados oficiais do governo sobre os incêndios reportados no Brasil.
-- Este Dataset fornecido pela Agencia Nacional de Petróleo contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi coletado.
+## I- Introdução
+- O conjunto de dados deste projeto, fornecido pela Agencia Nacional de Petróleo, contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi registrado, a bandeira do posto e a data de registro.
 - O dataset desde projeto é maior que o permitido para carregar aqui no GitHub, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
-
 - Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
+## II- O Dataset
+- Após removermos algumas colunas, o Dataset que iremos trabalhar contém apenas as seguintes features:
+
+| Coluna          | Descrição                                                  
+|-|-|
+| `Região`    	  | Região Brasileira onde foi registrado o valor                           
+| `Cidade`        | Cidade onde foi registrado o valor                                                    
+| `Estado` | Estado onde foi registrado o valor                                                  
+| `Bairro`       | Bairro em que foi registrado o valor  
+| `CEP`       | CEP em que foi registrado o valor  
+| `Revenda`       | Nome do posto que foi registrado o valor  
+| `Produto`       | Produto ao qual o valor é atribuido  
+| `Data da Coleta`       | Data de quando foi registrado o valor  
+| `Valor do Litro`       | Valor registrado do Litro do combustível  
+| `Bandeira`       | Bandeira do posto que foi registrado o Valor 
 
 
+
+## III- O Dashboard
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
 ![image](https://github.com/user-attachments/assets/580199fb-2a56-4769-913d-6c22891b799c)
 
 
-
-
-
-
-## Objetivo do Dashboard
+## IV- Objetivo do Dashboard
 Os objetivos de fazer um Dashboard como este são:
 - Fornecer as KPI's de monitoramento de preço de combustível no Brasil
 - Analisar como se comporta o crescimento do combustível em diferentes regiões do Brasil
@@ -30,7 +42,7 @@ Os objetivos de fazer um Dashboard como este são:
 - Verificar qual a região, estado e cidade tem o maior preço de combustível e entender o porquê
 
 
-## ETL
+## V- ETL
 
 - Criei uma tabela de calendário, pois as datas tinham lacunas e algumas medidas não funcionavam
 - Fiz uma Coluna Condicional para tratar as abreviações dos estados, e coloca-las por extenso
@@ -42,7 +54,7 @@ Os objetivos de fazer um Dashboard como este são:
 
 obs: Para criar a tabela de calendário use a linguagem M, no Power Query (List.dates).
 
-## Insights
+## VI- Análises e Plano de Ação
 
 
 ### 1. Preço do Combustível no Nordeste varia conforme a safra de Açucar
