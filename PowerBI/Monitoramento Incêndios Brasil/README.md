@@ -3,13 +3,13 @@
 
 # 🌳Monitoramento dos Incêndios Florestais do Brasil (1998 - 2017)
 
-## Introdução
+## I- Introdução
 - O Dataset deste projeto contém a quantidade de incêndios florestais reportados no Brasil, por estado e por ano, no período de 1998 até 2017. Ele foi retirado do Portal de Dados abertos do Governo Federal, na área do SNIF (Sistema Nacional de Informações Florestais), e contém os dados oficiais do governo sobre os incêndios reportados no Brasil.
 - O [dataset](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/amazon.csv) desde projeto atualmente está indisponível no Portal de Daddos, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/gustavomodelli/forest-fires-in-brazil).
 
 - Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/groups/me/reports/fbebd2a7-2e4e-45f0-83f3-dc9928c5c67d/17555d02dad76584fa5e?experience=power-bi).
 
-## Dataset
+## II- Dataset
 
 | Coluna          | Descrição                                                  
 |-|-|
@@ -20,7 +20,7 @@
 
 
 
-## Dashboard 
+## III- Dashboard 
 
 - Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiNzE5Njk0MzYtZWE5Yy00NzMzLTkwZjktYzYwNTZiZTAyNDQ0IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
@@ -32,7 +32,7 @@
 
 
 
-## Objetivo do Dashboard
+## IV- Objetivo do Dashboard
 Os objetivos de fazer um dashboard para este dados são:
 - Fornecer KPI's de monitoramento de Incêndio
 - Analisar se há alguma sazonalidade nos incêndios;
@@ -42,7 +42,7 @@ Os objetivos de fazer um dashboard para este dados são:
 
 
 
-## Análise e Insights
+## V- Análise e Plano de Ação
 
 
 ###  A- Há sazonalidade nas queimadas?
