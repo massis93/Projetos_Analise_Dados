@@ -106,7 +106,7 @@ Produção de Cana de Açucar no Brasil
 ![image](https://github.com/user-attachments/assets/eba495c1-6e73-448b-be82-ba18878f1240)
 
 - Porém, é interessante observar que o pico do preço de combustível se dá no mesmo período da região Nordeste. Talvez a região nordeste deva ser a responsável por fornecer combustível para o Norte, mas não podemos afirmar.
-- De qualquer forma o preço médio da região Norte é o maior de todos. Isso se deve à região ser uma das menores em termos de produção de cana, e provavelmente quando apresenta algum período de alta demanda, tenha que trazer combustível de outras regiões, encarecendo o preço do produto.
+- O preço médio da região Norte, Nordeste e Sul são os maiores. Isso se deve às regiões não possuirem expressividade na produção de cana, e provavelmente quando apresenta algum período de alta demanda, tenha que trazer combustível de outras regiões, encarecendo o preço do produto.
 
 ![image](https://github.com/user-attachments/assets/869d8681-f29e-4b66-bc27-aa7bdd2a3330)
 
@@ -139,22 +139,6 @@ Figura 1 - Crescimento do Etanol de 2020 para 2021
 ![image](https://github.com/user-attachments/assets/e9769e87-486e-4738-a170-b061a0f67e9a)
 
 Figura 2 - Crescimento da Gasolina de 2020 para 2021
-
-
-### 4. Região Norte, Nordeste e Sul são a que tem o maior valor médio de preço de Etanol
-
-O motivo do valor médio do Etanol no Norte, Nordeste e Sul ser maior do que o das outras regiões poderia ser devido ao tranporte, visto que a produção de Açucar nestas três regiões é menor do que a das outras regiões.
-
-![image](https://github.com/user-attachments/assets/999f136c-a312-4888-9e3c-e6731e532604)
-
-Figura - Gráfico de Colunas do Valor Médio do Etanol por Região
-
-
-
-
-
-
-Figura - Produção de Açucar pelo Brasil
 
 
 
