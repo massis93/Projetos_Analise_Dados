@@ -119,7 +119,8 @@ Produção de Cana de Açucar no Brasil
 
 
 
-### 3. Etanol, durante em 2021 teve uma taxa de crescimento maior que a gasolina
+### 3. Analisar o preço de Gasolina por Regiao, fornecendo o mapa de refinaria
+### Analisar o preço do Etanol e da Gasolina ao longo dos anos
 
 Este é o gráfico do valor médio da gasolina no Brasil
 
