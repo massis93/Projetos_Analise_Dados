@@ -31,6 +31,8 @@
 
 ## III - Perguntas e Análises
 
+- o código usado em SQL pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/SQL/An%C3%A1lise%20de%20Vendas%20Biblioteca/Datapedia.sql)
+
 ### A-Como estão as vendas nos últimos 3 anos?
 
 Para analisar "Como" estão as vendas, precisamos de uma análise por ano do ticket médio, quantidade de pedidos vendidos e quantidade de livros vendidos. 
