@@ -49,11 +49,66 @@ Para analisar "Como" estão as vendas, precisamos de uma análise por ano do tic
 - O número de mulheres é praticamente o dobro do que os homens
 - Para aumentar o faturamento, podemos sugerir à biblioteca que ela compre mais livros voltados para as mulheres, pois o público é em sua maior parte feminino. Dessa forma o ticket médio da empresa poderá aumentar.
 
+### C- Qual o perfil de compra dos nossos clientes?
+
+Mais um dado interessante em saber, pois nosso site precisa estar adequando para um perfil adulto, ou mais jovem, ou até de idosos para poderem se identificar com nossa marca. Ou até trazermos livros diferentes para esse público, independente do Sexo. Por exemplo, se for um perfil de jovens de 20 anos, poderiamos trazer livros de uma cultura geek.
+
+-Para isso, vamos segmentar essas idades em 3 classes. Crianças, Adultos e Idosos. Crianças terão até 18 anos, Adultos até 55 e o resto será idoso. Dessa forma podermos analisar separadamente o perfil de idade do nosso público, trazendo particularidades que só conseguiriamos através de uma segmentação com essa.
+
+![image](https://github.com/user-attachments/assets/5ab8a117-d07a-45e9-8a20-13040f7bf840)
+
+- Aqui, descobrimos que os Adultos são maioria, com uma idáde média de 37 anos e dispersão de 10,7 anos. Isso nos mostra que os dados estao dispersos entre 27 e 47 anos em sua maioria. É um público que atinge desde jovens mais adultos, até adultos mais velhos. Dessa forma, o site , a comunicação, os livros da empresa precisam estar voltados para este público, independente do sexo. Uma proposta seria trazer livros de eduação financeira, livros de pais e mães, e até trazer livros infantis, pois esses pais e mães comprarão para seus filhos.
 
 
+### D- Divida nossos clientes entre esses 6 perfis possíveis e os analise individualmente
+
+- Sabemos que a maior parte dos clientes são adultos, e a maior parte dos clientes são mulheres. Porém não podemos afirmar que a maior parte dos clientes são adulto e mulheres pois a divisão da quantidade de mulheres pode estar concentrada em crianças, enquanto a de homens estar concentrada em adultos por exemplo.
+- Para isso precisamos segmentar os clientes entre esses 6 perfis: Masculino Criança, Masculino Adulto, Masculino Idoso e Feminino Criança, Feminino Adulto e Feminino Idoso.
+- O Ceo quer que nós os analisemos individualmente. Para isso vamos trazer KPIs importantes
+
+![image](https://github.com/user-attachments/assets/989e625f-c154-43fb-838b-7def6c9bfdc2)
+
+- Veja que a quantidade de clientes Adulto e Feminino são a maioria, seguida por Adulto Masculino e Feminino Idoso. Esses três perfis campeões serão o objeto desta análise
+- Os três perfis possuem KPIs semelhantes, só se diferem pela quantidade de pedidos feitos mas possuem o mesmo ticket médio e quantidade de produtos por pedido. Isso nos revela que o faturamento Feminino Adulto só foi maior pois eles fizeram mais pedidos, e não porque o ticket médio foi maior. Podemos então solicitar ao CEO da empresa a taxa de conversão dos segmentos e a quantidade de visitantes por segmento. Se Taxa de Conversão estiver maior, significa que nosso público Masculino Adulto, e Feminino Idoso, talvez não estejam gostando do perfil de livros que tem na loja. Mas caso a taxa de visitantes esteja maior, significa que precisamos investir mais em marketing para trazer clientes dos outros públicos, e ter um faturamento semelhante!
 
 
+### E- Qual é o tipo de livro que esses 3 perfis estão comprando?
 
+- Antes de fazer nossa consulta, precisamos colocar um tier nesses 3 perfis de compra
+- Logo após, iremos consultar, desses 3 perfis, quais os 5 gêneros literários que eles preferem, o ticket médio que eles gastam em cada gênero, a média de páginas dos livros que eles compram.
+
+![image](https://github.com/user-attachments/assets/29bbfba3-eedd-43f7-9e28-7bf0cc0db7bc)
+
+
+- Nessa nossa análise eles tiveram informações semelhantes, mas por exemplo, caso tivessem um ranking de categoria favorita diferente, iriamos trazer mais livros de acordo com cada perfil.
+
+
+### E- Como estão indo as vendas ao longo dos ano?
+
+- Agora iremos voltar nossa análise observando os dados por data
+- Precisamos saber a quantidade de Vendas, Ticket Médio, Quantidade de Clientes e Quantidade de Pedidos e de livros vendidos por data, dessa forma, podemos observar se há sazonalidade nas vendas, se o ticket médio aumenta nos finais de semana, ou se a quantidade de clientes aumenta no 5° e 20° dia útil, ou, em datas festivas, será que terá algum aumento nas vendas?
+
+![image](https://github.com/user-attachments/assets/8ab03d0e-4c46-426b-b1d1-ee0aa4df804d)
+
+- Para interpretar a tabela, vamos exportar o arquivo e analisar no excel, e você pode acessar esta análise neste ---- link ------ (estará disponível no meu portifólio em breve).
+
+### F- Qual a média de Avaliação por Livro e Quantidade de pedidos por livro?
+
+- Agora o CEO da empresa quer fazer uma análise dos livros vendidos para ver os livros campeões, sua avaliação.
+- Vamos ir além, iremos também fazer uma comparação do score de avaliação do livro em relação ao seu gênero literário para saber se este livro esta performando bem
+
+![image](https://github.com/user-attachments/assets/311c5301-a41f-4714-9358-b7257fe399b4)
+
+- Vamos olhar para os 5 livros mais vendidos. Perceba que o score de avaliação deles está muito baixo, mas toda a sua categoria também está. Isso significa que não é o livro em si que é ruim, mas pode ser que os clientes não estejam sabendo avaliar. Caso o score estivesse muito abaixo da média da categoria, poderiamos presumir que são livros ruins, por mais que sejam campeões de vendas, e que os clientes não estão conseguindo olhar as avaliações na hora da compra. São muitas análises que poderemos fazer.
+
+
+### F- Um livro ter prêmio, afeta na quantidade de vendas?
+
+- Aqui provavalmente o CEO da empresa quer renovar o estoque e tem se deparado com os livros mais premiados, e quer saber se eles influenciam as vendas. Para isso iremos criar uma coluna no sql para saber se um livro é premiado ou não, e depois iremos novamente fazer uma tabela com os livros mais vendidos, só que dessa vez, vai ter uma coluna indicando se o livro tem ou não algum prêmio.
+
+![image](https://github.com/user-attachments/assets/e8c54734-aa41-45bc-a2dc-897dfb44af7c)
+
+E sim! Os 5 livros mais vendidos possuem premiação. Podemos concluir sim que isso afeta na quantidade de vendas.
 
   
 
