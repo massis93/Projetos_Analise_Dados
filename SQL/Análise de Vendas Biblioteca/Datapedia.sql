@@ -75,7 +75,7 @@ SELECT  Sexo,
 		Avg(Páginas) AS média_pg_livro
 FROM Sales
 GROUP BY Sexo, Classificacao
-GROUP BY qtd_clientes DESC
+ORDER BY qtd_clientes DESC
 
 /* PERGUNTA 5 - Entre os 3 segmentos que mais compram, qual é o perfil de livro que eles gostam? */
 
