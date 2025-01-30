@@ -27,6 +27,30 @@
 | `Idade`    	  | Idade do cliente
 
 
+## III- Dashboard 
+
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZmE5ZGE0YmMtNGRlMC00NjFmLWI4NzItOThkZmMzODc4ZmVmIiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+
+![image](https://github.com/user-attachments/assets/a6bee9a2-c1bd-40f9-b5ea-1a720b70c8b5)
+
+
+## IV- Objetivo do Dashboard
+Os objetivos de fazer um dashboard para este dados são:
+
+
+
+
+## V- Análise e Plano de Ação
+
+
+
+
+
+
+
+
+
+
 
 
 
