@@ -1,86 +1,86 @@
+/* C√≥digo SQL respons√°vel por responder as perguntas de neg√≥cio*/
+--Primeiramente criaremos um banco de dados
 
 CREATE DATABASE Datapedia
 
-EXEC sp_rename 'Datapedia', 'Sales';
+--Conferir se esta tudo certo com a tabela
+	
+SELECT * FROM sales
 
-select * from sales
-
+--Caso a coluna sales seja importada como int, precisaremos dividir a coluna inteira
+	
 UPDATE Sales
-SET PreÁo = PreÁo / 100;
+SET Pre√ßo = Pre√ßo / 100;
 
+--PERGUNTAS DE NEG√ìCIO--------------------------------------------------------------------------------
 
-/* PERGUNTA 1 - Me dÍ informaÁıes de commpras por ano */
+/* PERGUNTA 1 - Me d√™ informa√ß√µes de compras por ano */
 
-SELECT YEAR(DATA) as ano,
-	   COUNT(ORDER_ID) AS [Livros Vendidos],
-	   COUNT(DISTINCT(ORDER_ID)) as [Pedidos Vendidos],
-	   ROUND(SUM(preÁo), 2) as [Faturamento],
-	   ROUND(SUM(preÁo)/COUNT(distinct(Order_id)),2) as [Ticket MÈdio]
+SELECT YEAR(DATA) AS ano,
+	   COUNT(ORDER_ID) AS [Livros Vendidos], --√© interessante usar colchetes caso queira usar espa√ßos
+	   COUNT(DISTINCT(ORDER_ID)) AS [Pedidos Vendidos], 
+	   ROUND(SUM(pre√ßo), 2) AS [Faturamento], --o round nos gera um n√∫mero arredondado, e escolhemos 2 casas decimais
+	   ROUND(SUM(pre√ßo)/COUNT(distinct(Order_id)),2) AS [Ticket M√©dio] -- Ticket M√©dio √© o Faturamento Total dividido pelo n√∫mero de pedidos
 FROM SALES
-group by year(data)
+GROUP BY YEAR(Data) -- Aqui queremos agrupar apenas pelo ano das datas
 
-
-
-/* PERGUNTA 2 - Qual a quantidade e a porcentagem de clientes s„o homens e mulheres */
-
+/* PERGUNTA 2 - Qual a quantidade e a porcentagem de clientes s√£o homens e mulheres */
+	
+--Usando o cast para converter em float a contagem, sen√£o automaticamente fica arredondado o n√∫mero
 SELECT  Sexo,
-		COUNT(DISTINCT(CLIENTE_ID)) as Quantidade,
-		round(cast(COUNT(DISTINCT(CLIENTE_ID)) as float)/(select COUNT(distinct(cliente_id)) from Sales),2) as Percentual
-from Sales
-group by sexo
+		COUNT(DISTINCT(CLIENTE_ID)) AS Quantidade,
+		round(cast(COUNT(DISTINCT(CLIENTE_ID)) AS float)/(SELECT COUNT(DISTINCT(cliente_id)) FROM Sales),2) AS Percentual
+FROM Sales
+GROUP BY sexo
 
+/*PERGUNTA 3 - Qual a quantidade de clientes s√£o Crian√ßas (Menores de 18 anos), Adultos (entre 18 e 55) , e Idosos?
+E como est√£o distribuidas essas idades?*/
 
-/*PERGUNTA 3 - Qual a quantidade de clientes s„o CrianÁas (Menores de 18 anos), Adultos (entre 18 e 55) , e Idosos?
-E como est„o distribuidas essas idades?*/
-
-
--- Adicionando Coluna Classificacao Idade  
+-- Adicionando Coluna Classificacao Idade e classificando a idade conforme o case when abaixo
 
 ALTER TABLE Sales
 ADD Classificacao VARCHAR(20);
 
 UPDATE Sales
 SET Classificacao = CASE 
-					WHEN Idade < 18 THEN 'CrianÁa'
+					WHEN Idade < 18 THEN 'Crian√ßa'
 					WHEN Idade <= 55 THEN 'Adulto'
 					ELSE 'Idoso'
-             END;
+             	    END;
 
-
-
+-- Gerando a tabela pelos 6 segmentos
 
 SELECT  Classificacao,
-		COUNT(DISTINCT(CLIENTE_ID)) as Quantidade,
+		COUNT(DISTINCT(CLIENTE_ID)) AS Quantidade,
 		ROUND(CAST(COUNT(DISTINCT(CLIENTE_ID))AS float)/(SELECT COUNT(DISTINCT CLIENTE_ID) FROM SALES),2) AS PERCENTUAL,
 		MIN(IDADE) AS [IDADE MIN],
 		MAX(IDADE) AS [IDADE MAX],
 		AVG(IDADE) AS [IDADE MED],
 		round(STDEVP(IDADE),2) AS [DEVPAD]
-from Sales
-group by Classificacao
+FROM Sales
+GROUP BY Classificacao
 
-/* PERGUNTA 4 - Desejo saber como È o perfil de compra de cada segmentaÁ„o de usu·rio, 
+/* PERGUNTA 4 - Desejo saber como √© o perfil de compra de cada segmenta√ß√£o de usu√°rio, 
 bem como o faturamento gerado por cada segmento */
 
-
-select  Sexo,
+SELECT  Sexo,
 		Classificacao,
-		COUNT(distinct(cliente_id)) as qtd_clientes,
-		COUNT(distinct(order_id)) as qtd_pedidos,
-		count(TÌtulo) as qtd_livros_comprados,
-		round(CAST(COUNT(distinct(order_id))as float) / CAST(COUNT(distinct(cliente_id))as float),2) as mÈdia_pedidos_cliente,
-		round(cast( count(order_id) as float) / cast(COUNT(distinct(order_id)) as float),2) as mÈdia_items_pedido,
-		round(sum(preÁo)/COUNT(distinct(order_id)),2) as ticket_mÈdio,
-		round(sum(preÁo),2) as faturamento_tt,
-		Avg(P·ginas) as mÈdia_pg_livro
-from Sales
-group by Sexo, Classificacao
-order by qtd_clientes desc
+		COUNT(DISTINCT(cliente_id)) AS qtd_clientes,
+		COUNT(DISTINCT(order_id)) AS qtd_pedidos,
+		COUNT(T√≠tulo) AS qtd_livros_comprados,
+		round(CAST(COUNT(DISTINCT(order_id))AS float) / CAST(COUNT(DISTINCT(cliente_id))AS float),2) AS m√©dia_pedidos_cliente,
+		round(cast(COUNT(order_id) AS float) / CAST(COUNT(DISTINCT(order_id)) AS float),2) AS m√©dia_items_pedido,
+		round(sum(pre√ßo)/COUNT(DISTINCT(order_id)),2) AS ticket_m√©dio,
+		round(sum(pre√ßo),2) AS faturamento_tt,
+		Avg(P√°ginas) AS m√©dia_pg_livro
+FROM Sales
+GROUP BY Sexo, Classificacao
+GROUP BY qtd_clientes DESC
 
+/* PERGUNTA 5 - Entre os 3 segmentos que mais compram, qual √© o perfil de livro que eles gostam? */
 
-/* PERGUNTA 5 - Entre os 3 segmentos que mais compram, qual È o perfil de livro que eles gostam? */
+-- Criando um tier para os 3 melhores segmentos de clientes de acordo com o case when
 
--- Criando um tier para os 3 melhores segmentos de clientes --
 ALTER TABLE Sales
 ADD Tier VARCHAR(10);
 
@@ -89,61 +89,56 @@ SET Tier = CASE
 					WHEN Sexo = 'Feminino' AND CLASSIFICACAO ='Adulto' THEN'Sim'
 					WHEN Sexo = 'Feminino' AND CLASSIFICACAO = 'Idoso' THEN 'Sim'
 					WHEN Sexo = 'Masculino' AND CLASSIFICACAO = 'Adulto' then 'Sim'
-					ELSE 'N„o'
+					ELSE 'N√£o'
              END;
 
+-- aqui estamos usando o sql server, √© um pouco diferente para trabalhar com With
 
-WITH TB1 AS (SELECT CLASSIFICACAO,
-	   SEXO,
-	   GENERO,
-	   COUNT(TÕTULO) AS QTD,
-	   ROUND(SUM(PRE«O)/COUNT(ORDER_ID),2) AS TICKET_M…DIO,
-	   AVG(P¡GINAS) AS M…DIA_PGS
-FROM SALES
-where tier = 'Sim'
-GROUP BY GENERO, SEXO, CLASSIFICACAO
-),
-tb2 as (SELECT SEXO, 
-	   CLASSIFICACAO,
-	   GENERO,
-	   QTD,
-	   TICKET_M…DIO,
-	   M…DIA_PGS,
-	   RANK() OVER (partition by sexo, classificacao ORDER BY QTD DESC) AS RANKING_QTD
-FROM TB1)
-
-select SEXO, CLASSIFICACAO, GENERO,QTD, TICKET_M…DIO, M…DIA_PGS, RANKING_QTD
-FROM tb2
+	   WITH TB1 AS (SELECT  CLASSIFICACAO,
+	   		        SEXO,
+	   			GENERO,
+	   			COUNT(T√çTULO) AS QTD,
+	   			ROUND(SUM(PRE√áO)/COUNT(ORDER_ID),2) AS TICKET_M√âDIO,
+	   			AVG(P√ÅGINAS) AS M√âDIA_PGS
+			FROM SALES
+			WHERE TIER = 'Sim'
+			GROUP BY GENERO, SEXO, CLASSIFICACAO),
+	   TB2 AS (SELECT SEXO, 
+	   		  CLASSIFICACAO,
+	   		  GENERO,
+	   		  QTD,
+	   		  TICKET_M√âDIO,
+	   		  M√âDIA_PGS,
+	   		  RANK() OVER (partition by sexo, classificacao ORDER BY QTD DESC) AS RANKING_QTD
+		   FROM TB1)
+SELECT SEXO, CLASSIFICACAO, GENERO,QTD, TICKET_M√âDIO, M√âDIA_PGS, RANKING_QTD
+FROM TB2
 WHERE RANKING_QTD <6
 
-/* PERGUTA 6 - QUAL A QUANTIDADE DE PEDIDOS, CLIENTES, ITEMS POR PEDIDO, TICKET-M…DIO POR DIA?*/
+/* PERGUTA 6 - QUAL A QUANTIDADE DE PEDIDOS, CLIENTES, ITEMS POR PEDIDO, TICKET-M√âDIO POR DIA?*/
 
 SELECT DATA AS DIA,
 	   COUNT(DISTINCT(ORDER_ID)) AS QTD_PEDIDOS,
 	   COUNT(DISTINCT(CLIENTE_ID)) AS QTD_CLIENTES,
-	   COUNT(TÕTULO) AS QTD_LIVROS_VENDIDOS,
-	   SUM(PRE«O) AS FATURAMENTO,
-	   SUM(PRE«O)/COUNT(DISTINCT(ORDER_ID)) AS TICKET_M…DIO
+	   COUNT(T√çTULO) AS QTD_LIVROS_VENDIDOS,
+	   SUM(PRE√áO) AS FATURAMENTO,
+	   SUM(PRE√áO)/COUNT(DISTINCT(ORDER_ID)) AS TICKET_M√âDIO
 FROM SALES
 GROUP BY DATA
 
+/* PERGUNTA 7 - QUAL A M√âDIA DE AVALIA√á√ïES POR GENERO LITERARIO E POR LIVRO, BEM COMO A QUANTIDADE DE VENDAS POR LIVRO */
 
 
-
-
-/* PERGUNTA 7 - QUAL A M…DIA DE AVALIA«’ES POR GENERO LITERARIO E POR LIVRO, BEM COMO A QUANTIDADE DE VENDAS POR LIVRO */
-
-
-SELECT distinct(GENERO),
-	   TÕTULO,
-	   AVG(Review_Score) OVER (PARTITION BY TÕTULO)	 as [Bookscore],
-	   AVG(Review_Score) over (partition by GENERO) as [GenderScore],
-	   COUNT(TÌtulo) over (partition by TÌtulo) as [Qtd Vendas]
+SELECT DISTINCT(GENERO),
+	   T√çTULO,
+	   AVG(Review_Score) OVER (PARTITION BY T√çTULO)	 AS [Bookscore],
+	   AVG(Review_Score) over (partition BY GENERO) AS [GenderScore],
+	   COUNT(T√≠tulo) over (partition BY T√≠tulo) AS [Qtd Vendas]
 FROM Sales
-order by [Qtd Vendas] DESC
+ORDER BY [Qtd Vendas] DESC
 
 
-/* PERGUNTA 8 - O livro ter prÍmio, afeta a quantidade de vendas? */
+/* PERGUNTA 8 - O livro ter pr√™mio, afeta a quantidade de vendas? */
 
 --Adicionando uma coluna com valores binarios para "Premiado?"
 
@@ -151,19 +146,19 @@ ALTER TABLE Sales
 ADD Premiado VARCHAR(10);
 
 UPDATE Sales
-SET Premiado = CASE 
-					WHEN Award = 'Sem PrÍmio' THEN 0
-					ELSE 1
-                END;
+SET Premiado =  CASE 
+			WHEN Award = 'Sem Pr√™mio' THEN 0
+			ELSE 1
+        	END;
 
+-- Verificando se os livros mais vendidos s√£o premiados
 
-
-SELECT TÌtulo,
-	   Premiado,
-	   COUNT(TÌtulo) as Vendas
-from Sales
-group by TÌtulo, Premiado
-order by Vendas desc
+SELECT T√≠tulo,
+       Premiado,
+       COUNT(T√≠tulo) AS Vendas
+FROM Sales
+GROUP BY T√≠tulo, Premiado
+ORDER BY Vendas DESC
 
 
 
