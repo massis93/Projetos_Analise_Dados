@@ -36,7 +36,7 @@
 
 ## IV - Análise
 
-### 1.Perfil de Idade dos clientes
+### 1. Perfil de Idade dos clientes
 
 - Precisamos verificar como estão distribuidas as idades dos clientes. Para isso, é interessante usar 3 tipos de gráficos: Histograma, Boxplot e Violino. No nosso projeto usaremos o Boxplot.
 
@@ -58,13 +58,15 @@ Agora iremos classificar essas idades, para tornar nossa análise mais direciona
 
 Confirmando o Boxplot, temos um perfil de cliente em sua maioria Adultos, e Adultos-Jovens.
 
-### 2.Perfil de Idade dos clientes
+### 2. Perfil de Idade dos clientes
 
-Agora iremos analisar a distribuição de cientes por profissão, clusterizada por idade. Dessa forma podemos verificar em qual profissão cada Idade está concentrada.
+Agora iremos analisar a distribuição de cientes por profissão, clusterizada por idade. Dessa forma podemos verificar em qual profissão cada Classe de Idade está concentrada.
 
 ![image](https://github.com/user-attachments/assets/a8863c22-eb82-4075-b281-abd041307b88)
 
 
+- Note que a classe adulta é maioria em quase todas as profissões com excessão dos Retired (Aposentados), que são em sua grande maioria Idosos e Estudante, que são Jovens Adultos
 
+### 2. Perfil Financeiro dos Clientes
 
 
