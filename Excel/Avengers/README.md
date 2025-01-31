@@ -1,6 +1,6 @@
 ![image](https://github.com/user-attachments/assets/cff0c95e-0c60-4eeb-bdf1-8ef124a82011)
 
-# 🦸‍♂️Análise Exploratória dos personagens Avengers
+# 🦸‍♂️Análise Exploratória dos personagens
 
 ## I - Introdução
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Avengers/Avengers.xlsx) contém informações de todos os personagens dos Avengers da Marvel. Cada coluna contém features do personagem, como data de entrada, gênero, quantidade de mortes, classificação do personagem, número de aparições, entre outros.
