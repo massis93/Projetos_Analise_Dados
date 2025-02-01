@@ -152,7 +152,7 @@ Aqui nós observamos dois pontos interessantes
 
 - Verificaremos através da probabilidade condicional estatisticamente qual a probabilidade que, se a pessoa tem casa, faça o investimento
 
-![image](https://github.com/user-attachments/assets/e72179df-91f2-46ae-a4e0-b348862f81b8)
+![image](https://github.com/user-attachments/assets/278e7a6b-d7f3-4bcd-be62-997bdf150796)
 
 
 ## V- Conclusão
@@ -162,4 +162,4 @@ Aqui nós observamos dois pontos interessantes
 - Seria interessante oferecer taxas mais atrativas para os clientes que já tem algum investimento em outro lugar
 - A maioria do público é da classe Adulta, portanto, seria interessante contratar telefonistas que tenham também esta faixa etária
 - Seria interessante também que a abordagem por telefone ou celular tenha uma duração maior, pois as chances do cliente fazer o investimento aumentam
-- Para aumentar o faturamento do banco, fazer planos para estudantes ou seguro de casa seria uma boa opção
+- Para aumentar o faturamento do banco, oferecer seguro de casa seria uma boa opção
