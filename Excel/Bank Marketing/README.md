@@ -119,7 +119,7 @@ Agora iremos analisar a taxa de adesão em relação as mesmas variáveis da se�
 
 ![image](https://github.com/user-attachments/assets/85f8334d-2e0f-4b43-bacc-0b7038aba156)
 
-- Lembra-se dessae perfis? Os divorciados são os que tem a menor média de saldo, mas são os que mais investem. Talvez seja por que passaram apuros na hora da divisão de bens e agora querem se previnir financeiramente.
+- Lembra-se desses perfis? Os divorciados são os que tem a menor média de saldo, mas são os que mais investem. Talvez seja por que passaram apuros na hora da divisão de bens e agora querem se previnir financeiramente.
 - Os casados investiram menos do que os solteiros, e ambos em média possuem as mesmas médias de saldo, como vimos na seção anterior. Talvez porque os solteiros são mais jovens e têm uma educação financeira diferente dos casados que podem ser mais velhos.
 
 ![image](https://github.com/user-attachments/assets/4a800b56-7eb2-4aac-8db6-7e6161cff845)
@@ -141,8 +141,8 @@ Agora iremos analisar a taxa de adesão em relação as mesmas variáveis da se�
 ![image](https://github.com/user-attachments/assets/4017d384-c4d7-4063-a9a8-64d8434b51e4)
 
 Aqui nós observamos dois pontos interessantes
-- contactar por telefone ou celular parece não ter influencia na adesão
-- esse método que pode ser algo relacionado à tecnologia, como whatsapp ou email, não é tão eficaz quanto o celular e telefone na adesão.
+- contactar por telefone ou celular parece não ter tanta influência na adesão
+- 'Unknown', que pode ser algo relacionado à tecnologia como whatsapp ou email, não é tão eficaz quanto o celular e telefone na adesão.
 
 ![image](https://github.com/user-attachments/assets/46ff8ff6-c405-4a29-ac92-cdfcebd6162d)
 
@@ -160,4 +160,6 @@ Aqui nós observamos dois pontos interessantes
 - O banco deve utilizar métodos mais tradicionais na abordagem dos clientes, priorizando celular e telefone
 - O saldo bancário influenciou na decisão de fazer ou não o investimento, portanto, em clientes onde o saldo é alto, seria interessante fazer alguma abordagem um pouco mais personalizada
 - Seria interessante oferecer taxas mais atrativas para os clientes que já tem algum investimento em outro lugar
-- 
+- A maioria do público é da classe Adulta, portanto, seria interessante contratar telefonistas que tenham também esta faixa etária
+- Seria interessante também que a abordagem por telefone ou celular tenha uma duração maior, pois as chances do cliente fazer o investimento aumentam
+- Para aumentar o faturamento do banco, fazer planos para estudantes ou seguro de casa seria uma boa opção
