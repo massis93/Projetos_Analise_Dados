@@ -8,9 +8,6 @@
 - Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/An%C3%A1lise.xlsx)
 
-application_id	gender	international	gpa	major	race	gmat	work_exp	work_industry	admission	admited?
-![image](https://github.com/user-attachments/assets/31c6f918-3653-41f8-aa29-7a75a53e66a9)
-
 
 ## II - Dataset
 
