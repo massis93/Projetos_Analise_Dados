@@ -169,7 +169,28 @@ Conforme o esperado, ambos tiveram os mesmos percentuais de aprovação
 - Parece que pessoas com menos de 20 anos de experiência não são bem vistas no programa
 - A taxa de aprovação de programa após os 20 anos não varia muito, portanto, podemos afirmar que após 20 anos de experiência, não há influência na taxa de aprovação do programa
 
+### 8 - Análise admissão por Job
 
+- Por último, avaliaremos se o trabalho que a pessoa exerce influencia na admissão do programa
+
+![image](https://github.com/user-attachments/assets/afb7c8a7-a310-496e-9c4e-040463d349e8)
+
+- Temos profissões com taxa de aprovação no programa maiores do que outras
+- Agora verificaremos as notas das duas profissões com menor e menor taxa de aprovação
+
+![image](https://github.com/user-attachments/assets/0ff37714-0a38-4b2c-8573-fadcb37c8f8b)
+
+
+- Aqui observamos que a profissão de Energy, por mais que tenha uma nota dos aprovados maior que a dos outros, temos uma taxa de aprovação menor do que todos os outros
+- Pode ser que haja profissões que tenham mais vantagem para entrar no programa MBA
+- Ou pode ser que a profissão Energy tirou notas melhores no quarto quartil do que as outras profissões, e tirou notas piores no 1 a 3° quartil comparado às outras profissões. Isso levaria a aumentar a média da nota dos aprovados e ao mesmo tempo diminuir a taxa de aprovação dos candidatos que têm a profissão energy
+- Para tirar essa suspeita precisamos verificar a distribuição das notas de todas as profissões, ou verificar a média dos não aprovados. Se a média dos não aprovados for semelhante nas profissões,podemos concluir que tiraram notas semelhantes nos não aprovados e que há sim viés de escolha por profissão
+
+![image](https://github.com/user-attachments/assets/40671f9a-e442-427b-83c4-82bf3c64234b)
+
+- Veja que o Energy também tem notas maiores entre os não aprovados, portanto, podemos concluir que há algumas profissões que tem mais chances de entrar no programa
+- O retail, por exemplo, tem notas de não aprovados semelhantes às outras profissões, notas de aprovados maiores do que os das outra profissões, e apresenta taxa de aprovação menor do que o Investment management por exemplo
+- Investment magagement
 ## V- Conclusão
 
 
