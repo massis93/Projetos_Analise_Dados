@@ -143,6 +143,32 @@ Iremos analisar agora se a variável Gênero influencia na admissão do programa
 
 - Novamente, como ambos possuem as mesmas notas, e as mulheres estão sendo mais admitidas do que os homens, confirmamos o viés do programa
 
+### 6 - Análise admissão por Major
+
+- Major é a área de formação. Irei verificar se essa formação influecia em ser admitido ou não
+
+![image](https://github.com/user-attachments/assets/3af47d60-3028-4991-ab6c-348806aac392)
+
+- As notas GMAT do grupo Humanities foram ligeiramente superiores, por isso, a média dos aprovados deste grupo deve ser ligeiramente superior também.
+
+![image](https://github.com/user-attachments/assets/3f6b762b-8485-48f2-83bd-746efcdbfd8e)
+
+- Aqui verificamos que a média de aprovados do Humanities é ligeiramente superior como o esperado. Portanto, parece que não existe relação entre o curso de graduação e ser aprovado ou não no programa. Para terminar nossa análise iremos verificar a porcentagem de aprovação de cada major
+
+![image](https://github.com/user-attachments/assets/2761a530-8375-45be-8b55-21bcbb4da127)
+
+Conforme o esperado, ambos tiveram os mesmos percentuais de aprovação
+
+### 7 - Análise admissão por Xp Experience
+
+- Agora iremos analisar se o tempo de experiência profissional influencia na admissão do programa.
+- Para isso iremos construir uma tabela usando a porcentagem de aprovação por anos de experiência, e depois fazer um gráfico de dispersão entre os dois
+
+![image](https://github.com/user-attachments/assets/e424be4a-178f-4cbf-8351-7437c2901487)
+
+- Parece que pessoas com menos de 20 anos de experiência não são bem vistas no programa
+- A taxa de aprovação de programa após os 20 anos não varia muito, portanto, podemos afirmar que após 20 anos de experiência, não há influência na taxa de aprovação do programa
+
 
 ## V- Conclusão
 
