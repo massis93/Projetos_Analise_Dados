@@ -190,7 +190,12 @@ Conforme o esperado, ambos tiveram os mesmos percentuais de aprovação
 
 - Veja que o Energy também tem notas maiores entre os não aprovados, portanto, podemos concluir que há algumas profissões que tem mais chances de entrar no programa
 - O retail, por exemplo, tem notas de não aprovados semelhantes às outras profissões, notas de aprovados maiores do que os das outra profissões, e apresenta taxa de aprovação menor do que o Investment management por exemplo
-- Investment magagement
-## V- Conclusão
+- Investment magagement, por exemplo, apresenta a maior taxa de aprovação, sendo que a nota dos aprovados e não aprovados é inferior aos cursos Energy, que tem a menor taxa de aprovação
 
+## V- Conclusão
+- As mulheres têm mais chances de serem admtidas do que os homens
+- Tirar uma nota maior no GMAT e GPA influenciam positivamente a entrar no programa
+- Hispânicos e Negros tem menor chance do que entrar do que os outros
+- Algumas profissões como Energy, Media, Retail e Health Care, temos chances de entrar
+- Outrs profissões como Investment Management, Financial Services tem mais chances de entrar
 
