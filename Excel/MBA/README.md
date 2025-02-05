@@ -29,7 +29,7 @@
 
 - Primeiro farei uma análise Univariada para descobrir o perfil dos candidatos
 - Analisarei o  GMAT e GPA dos candidatos aprovados e não aprovados para ver se essas duas variáveis influenciam na aprovação do candidato
-- Analisarei se há alguma relação entre ser aprovado e ser de uma raça, gênero, major work_industry específico, com o auxílio de boxplot e graficos de pizza comparativos
+- Analisarei se há alguma relação entre ser aprovado e ser de uma raça, gênero, major ou work_industry específico, com o auxílio de boxplot e graficos de pizza comparativos
 - Tenho certeza de que você irá gostar deste trabalho! 😅
 
 ## IV - Análise
@@ -56,7 +56,7 @@ Agora vamos observar a raça dos candidatos:
 
 ![image](https://github.com/user-attachments/assets/1d66dacb-665f-4079-8cee-eea9d2c5c0b7)
 
-- A maior parte colocou como nulo, e aqui fiz um ajuste colocando na legenda  a classe "Unknown".
+- A maior parte colocou como nulo, e aqui fiz um ajuste inserindo na legenda os valores nulos como "Unknown".
 
 ### 2 - Análise de GPA
 
@@ -68,7 +68,9 @@ Agora verificaremos se a nota GPA pode influenciar em ser aprovado ou não.
 
 ![image](https://github.com/user-attachments/assets/6fd79255-b123-4186-909f-651ad4ee39b1)
 
-- Novamente, pode-se afirmar que a média GPA influencia um pouco na admissão dos candidatos, porém, não podemos descartar a hipótese de que quem tirou maior nota GPA, pode ter tirado maiores notas do GMAT, e o único fator que influenciaria seria o GMAT
+
+- Pode-se afirmar que as notas de GPA dos candidatos aprovados são em média maiores, porém, não podemos afirmar que a nota GPA influencia em ser aprovado ou não
+pois pode ser que quem tirou maior nota GPA, tiraria também maiores notas no GMAT, e o único fator que influenciaria seria o GMAT
 - Posteriormente faremos um gráfico de correlação entre GPA e GMAT
 
 ### 3 - Análise de GMAT
