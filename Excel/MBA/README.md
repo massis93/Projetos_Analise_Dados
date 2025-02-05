@@ -71,7 +71,7 @@ Agora verificarei se a nota GPA pode influenciar em ser aprovado ou não.
 
 - Pode-se afirmar que as notas de GPA dos candidatos aprovados são em média maiores, porém, não podemos afirmar que a nota GPA influencia em ser aprovado ou não
 pois pode ser que quem tirou maior nota GPA, tiraria também maiores notas no GMAT, e o único fator que influenciaria seria o GMAT
-- Posteriormente faremos um gráfico de correlação entre GPA e GMAT para sanar essa questão
+- Posteriormente farei um gráfico de correlação entre GPA e GMAT para sanar essa questão
 
 ### 3 - Análise de GMAT
 
