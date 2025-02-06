@@ -1,8 +1,9 @@
-![image](https://github.com/user-attachments/assets/bff9898f-341f-4cb7-8e7d-a69633230329)
+![image](https://github.com/user-attachments/assets/fb52edf3-b0fd-4287-9241-988c74ae2e0c)
 
 
 
-# ⛽Preço dos Combustíveis no Brasil (2004 a 2025)
+
+# ⛽Dashboard de análise de vendas de um Ecommerce
 
 ## I- Introdução
 - O conjunto de dados deste projeto, fornecido pela Agencia Nacional de Petróleo, contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi registrado, a bandeira do posto e a data de registro.
@@ -29,8 +30,9 @@
 
 ## III- O Dashboard
 - Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+- 
+![image](https://github.com/user-attachments/assets/20d4fa3f-2a06-494d-b181-34a51ac2b9ae)
 
-![image](https://github.com/user-attachments/assets/580199fb-2a56-4769-913d-6c22891b799c)
 
 
 ## IV- Objetivo do Dashboard
