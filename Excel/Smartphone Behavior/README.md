@@ -27,176 +27,89 @@ User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (h
 
 
 
-## III - Escopo do Projeto
+## IV - Análise e Insights
 
-- Primeiro farei uma análise Univariada para descobrir o perfil dos candidatos
-- Analisarei o  GMAT e GPA dos candidatos aprovados e não aprovados para ver se essas duas variáveis influenciam na aprovação do candidato
-- Analisarei se há alguma relação entre ser aprovado e ser de uma raça, gênero, major ou work_industry específico, com o auxílio de boxplot e graficos de pizza comparativos
-- Tenho certeza de que você irá gostar deste trabalho! 😅
+### 1 - Perfil dos usuários
 
-## IV - Análise
+Primeiro analisarei a distribuição de usuários por Gênero com um simples gráfico de pizza:
 
-### 1 - Perfil dos candidatos
+![image](https://github.com/user-attachments/assets/f634cd01-751c-464f-a440-acd6b7fcf59a)
 
-- O arquivo XLSX que contém a análise na íntegra pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/An%C3%A1lise.xlsx)
+- Temos mais homens do que mulheres nesse dataset
 
-Verificarei qual a distribuição dos candidatos por gênero:
+Agora irei analisar a quantidade de usuários por modelo e por sistema operacional, com um gráfico de colunas clusterizado:
 
-![image](https://github.com/user-attachments/assets/b2e2b620-f2f0-4512-89c4-8901e7414851)
+![image](https://github.com/user-attachments/assets/5e99ed6f-de5d-4d8a-9519-664012cdf2d7)
 
-- São homens em sua maioria
+- Temos uma quantidade maior de usuários de Android;
+- Temos quantidades parecidas de usuários nos 4 modelos de smartphone Android;
+- Só temos 1 modelo de IOS neste conjunto de dados;
 
-![image](https://github.com/user-attachments/assets/abf185b5-6b40-429f-840d-a15dae4ff41f)
+Farei um gráfico de boxplot para analisar de que forma as idades estão distribuidas:
 
-- Os candidatos formados em Humanities são maioria
+![image](https://github.com/user-attachments/assets/b0e58c79-0a82-4e48-82fd-6fff6fe175b1)
 
-![image](https://github.com/user-attachments/assets/6a8382ea-cae0-44f8-97b8-ed0dd5672461)
+- 50% dos usuários estão entre 28 e 49 anos
+- As idades variam de 18 a 59 anos de idade
+- Temos um perfil de distribuição simétrico, pois a média é igual a mediana
 
-- São nativos em sua maioria
+### 2 - Análise por Sistema Operacional
 
-Agora vamos observar a raça dos candidatos:
+![image](https://github.com/user-attachments/assets/5e8a7014-f345-476e-9dbe-c36df7d4fc31)
 
-![image](https://github.com/user-attachments/assets/1d66dacb-665f-4079-8cee-eea9d2c5c0b7)
 
-- A maior parte colocou como nulo, e aqui fiz um ajuste inserindo na legenda os valores nulos como "Unknown".
+- A quantidade de usuários com IOS e Android esta bem distribuida em todas as faixas de idade, sendo o IOS a minoria em todas elas
+- Na faixa dos 40-49 anos temos uma proporção menor de IOS comparado com as demais faixas
 
-### 2 - Análise de GPA
+![image](https://github.com/user-attachments/assets/a4055741-8766-4a6b-8465-a6f5a0d2626b)
 
-Agora verificarei se a nota GPA pode influenciar em ser aprovado ou não.
+- A porcentagem de mulheres que usam IOS é ligeiramente maior do que os homens
 
-![image](https://github.com/user-attachments/assets/787eb983-85b2-4cfc-a7be-29d52c1e9660)
+![image](https://github.com/user-attachments/assets/4dca4292-7e9a-4774-b319-eaec86572041)
 
-- Há pouca, mas há diferença entre a média das notas dos admitidos e os não admitidos. Para verificar melhor essa comparação, é necessário o auxílio de um boxplot:
+- A média de Tela ligada, de Tempo de Uso de Apps e de Apps instalados é maior nos Usuários, e pode ser que haja alguma correlação entre essas 3 variáveis. Iremos analisar isso posteriormente
 
-![image](https://github.com/user-attachments/assets/6fd79255-b123-4186-909f-651ad4ee39b1)
+### 3 - Análise por Gênero
 
+![image](https://github.com/user-attachments/assets/251a763b-a31f-44cf-840d-6118f6ca356d)
 
-- Pode-se afirmar que as notas de GPA dos candidatos aprovados são em média maiores, porém, não podemos afirmar que a nota GPA influencia em ser aprovado ou não
-pois pode ser que quem tirou maior nota GPA, tiraria também maiores notas no GMAT, e o único fator que influenciaria seria o GMAT
-- Posteriormente farei um gráfico de correlação entre GPA e GMAT para sanar essa questão
+- Ambos os Gêneros possuem a mesma média de apps instalados, dados utilizados, tempo de uso de apps e tempo de tela ligada
+- Nota-se que ambos os gêneros possuem tempo de uso de app menor que o uso das telas. Isso pode acontecer devido ao possível fenômeno que está acontecendo com as pessoas referente à ansiedade relacionada às telas. As pessoas ligam o celular para visualizar a tela ligada e não fazer nada, apenas por ansiedade
 
-### 3 - Análise de GMAT
+### 3 - Análise por Idade
 
-Verificarei se a nota da prova influencia em ser admitido no programa
+![image](https://github.com/user-attachments/assets/ba3c3df4-4342-4eea-a666-b8b3d86cfca2)
 
-![image](https://github.com/user-attachments/assets/aa4c64ab-fd97-4563-b569-6cf0e174d6cb)
 
-- A distribuição das notas dos admitidos estão em número superiores aos de não admitidos. Por isso, é possível concluir que a nota GMAT influencia em ser aprovado.
+- Aqui acontece esse fenômeno de ansiedade por telas em todas as faixas de idade
+- Há as mesmas médias de uso de tela, e uso médio de apps em todas as idades, com excessão da faixa dos 10-19 anos, que apresenta leve redução nesses dois tempos, comparado às outras faixas de idade.
 
-### 4 - Correlação entre GPA e GMAT
+![image](https://github.com/user-attachments/assets/85fc71da-0123-491a-8b90-ac8e03198861)
 
-Para descartar a possibilidade de que, a nota GPA não influenciaria em ser admitido pois quem foi bem no GPA provavelmente tiraria notas maiores no GMAT, vamos observar a correlação entre as duas variáveis. 
+- Ambas as faixas de idade possuem semelhante média de quantidade de Apps e consumo de Dados
 
-![image](https://github.com/user-attachments/assets/43ff3301-6d5a-4be9-bfd6-237435386b1f)
+Agora irei verificar se há alguma possível correlação entre idade e tempo de uso de apps com um gráfico de dispersão:
 
-- Aqui pode-se observar que não há nenhuma correlação entre tirar altas notas no GPA e altas notas no GMAT.
-- Portanto, é possível concluir que a nota do GPA é sim um fator que influencia na admissão no programa por si só, e não tem nenhuma dependência com a nota do GMAT.
+![image](https://github.com/user-attachments/assets/b60a1cf3-b5c4-46bd-b654-b7c773bb28ad)
 
-### 5 - Análise admissão por Nacionalidade
+- O gráfico demonstra que por mais que aumente a idade, os valores de tempo de uso de apps permanecem variando semelhantemente
 
-- Aqui verificarei se ser estrangeiro ou nativo tem influência na admissão do programa
+### 4 - Análise do consumo de Bateria
 
-![image](https://github.com/user-attachments/assets/e5b2f10b-9b41-4ec4-9549-531947dd6309)
+Irei verificar se existe alguma correlação entre o consumo de bateria e o uso de Aplicativos nos dois Sistemas Operacionais:
 
-- A média dos admitidos e não admitidos dos nativos e estrangeiros são as mesmas, porém os admitidos naturais do país do programa apresentam uma média ligeiramente superior. Talvez eles tenham tirado notas superiores aos estrangeiros.
+![image](https://github.com/user-attachments/assets/a1d59d65-1881-460e-b71f-332ce9aa0b14)
 
-![image](https://github.com/user-attachments/assets/57a5af5e-48be-48f7-9cd1-a0f51084dd47)
+- Em ambos os sistemas operacionais nota-se que quanto maior o uso de aplicativos maior será o consumo de bateria
 
-- Como comprova o boxplot, os nativos tiraram uma nota ligeiramente superior, isso explica o motivo da média dos aprovados naturais serem maiores do que a dos estrangeiros
+Agora irei criar uma coluna no dataset dividindo o consumo de Bateria total pelo tempo de tela ligado, para medir o consumo de bateria por hora de cada dado.
 
-Agora verificarei a porcentagem dos admitidos e não admitidos dessas duas segmentações
+Irei verificar se existe alguma relação entre o tempo de uso de tela e o consumo de bateria por hora
 
-![image](https://github.com/user-attachments/assets/8b287b0b-5a21-4a86-9736-171144bfe9d5)
+![image](https://github.com/user-attachments/assets/63a1bdc8-e1bd-44a8-8431-630c451f3c1e)
 
-- Ambos possuem a mesma porcentagem de aprovados
-- Portanto, não há influência da variável International para ser admitido no programa.
-
-### 5 - Análise admissão por Raça
-
-Verificarei a porcentagem de admissão por raça com um gráfico de cluster de coluna
-
-![image](https://github.com/user-attachments/assets/99bb118e-e60e-49c7-94de-ccac98609dc5)
-
-- Veja que hispânicos e Negros possuem uma porcentagem menor de admissão no programa
-- Talvez possam ter tirado notas menores ou há uma certa seletividade de raça dentro do programa
-
-![image](https://github.com/user-attachments/assets/5ccb9f72-76f8-4a2d-8c56-fb720864e0ad)
-
-- Com o gráfico de boxplot confirmamos que os negros e hispânicos tem notas iguais às outras raças.
-
-![image](https://github.com/user-attachments/assets/2cd0707d-9aaa-4c7f-b41c-fac7509239a8)
-
-- Com o gráfico acima da média de GMAT dos aprovados por raça vemos que a média dos aprovados hispânicos e negros são maiores
-- Portanto é possível afirmar que temos um viés de raça na admissão deste programa
-
-
-### 6 - Análise admissão por Gênero
-
-Irei analisar agora se a variável Gênero influencia na admissão do programa
-
-![image](https://github.com/user-attachments/assets/3f04d47c-f421-40ca-b678-d61c2c7dde2d)
-
-- As notas de ambos os Gêneros são bem semelhantes
-- Verificarei se a média de admissão também é:
-
-![image](https://github.com/user-attachments/assets/562209ae-e729-4baa-8a7b-b982afe520c1)
-
-- Aqui vemos que os homens admitidos no programa tem nota de GMAT em média superiores às das mulheres. Como ambos tem notas iguais, é possível afirmar que há um viés de gênero para a admissão do programa.
-
-![image](https://github.com/user-attachments/assets/c7660a4b-f848-4fb0-9041-2dfc7d19bd9a)
-
-- Novamente, como ambos possuem as mesmas notas, e as mulheres estão sendo mais admitidas do que os homens, confirmamos o viés do programa.
-
-### 6 - Análise admissão por Major
-
-- Major é a área de formação. Irei verificar se essa formação influecia em ser admitido ou não
-
-![image](https://github.com/user-attachments/assets/3af47d60-3028-4991-ab6c-348806aac392)
-
-- As notas GMAT do grupo Humanities foram ligeiramente superiores, por isso, a média dos aprovados deste grupo deve ser ligeiramente superior também.
-
-![image](https://github.com/user-attachments/assets/3f6b762b-8485-48f2-83bd-746efcdbfd8e)
-
-- Aqui verifiquei que a média de aprovados do Humanities é ligeiramente superior como o esperado. Portanto, parece que não existe relação entre o curso de graduação e ser aprovado ou não no programa. Para terminar nossa análise verificarei a porcentagem de aprovação de cada major
-
-![image](https://github.com/user-attachments/assets/2761a530-8375-45be-8b55-21bcbb4da127)
-
-- Conforme o esperado, ambos tiveram os mesmos percentuais de aprovação
-
-### 7 - Análise admissão por Xp Experience
-
-- Agora irei analisar se o tempo de experiência profissional influencia na admissão no programa.
-- Para isso irei construir uma tabela usando a porcentagem de aprovação por anos de experiência, e depois fazer um gráfico de dispersão entre os dois
-
-![image](https://github.com/user-attachments/assets/e424be4a-178f-4cbf-8351-7437c2901487)
-
-- Pessoas com menos de 20 anos tem índice de aprovação menores
-- A taxa de aprovação de programa após os 20 anos não varia muito, portanto, podemos afirmar que após 20 anos de experiência, não há influência na taxa de aprovação do programa
-
-### 8 - Análise admissão por Job
-
-- Por último, avaliaremos se o trabalho que a pessoa exerce influencia na admissão do programa
-
-![image](https://github.com/user-attachments/assets/afb7c8a7-a310-496e-9c4e-040463d349e8)
-
-- Temos profissões com taxa de aprovação no programa maiores do que outras
-- Agora verificaremos a média GMAT dos aprovados por profissão:
-
-![image](https://github.com/user-attachments/assets/0ff37714-0a38-4b2c-8573-fadcb37c8f8b)
-
-
-- Aqui observamos que a profissão de Energy, por mais que tenha uma nota dos aprovados maior que a dos outros, temos uma taxa de aprovação menor do que todos os outros
-- Pode ser que haja profissões que tenham mais vantagem para entrar no programa MBA
-- Ou pode ser que a profissão Energy tirou notas melhores no quarto quartil do que as outras profissões, e tirou notas piores no 1 a 3° quartil comparado às outras profissões. Isso levaria a aumentar a média da nota dos aprovados e ao mesmo tempo diminuir a taxa de aprovação dos candidatos que têm a profissão energy
-- Para tirar essa suspeita precisamos verificar as notas de todas as profissões com um gráfico de boxplot, ou verificar a média dos não aprovados.
-- Se a média GMAT dos não aprovados for semelhante na profissão Energy, por exemplo, a hipotese dos quartis cai por terra, logo, há sim um viés na admissão por profissão exercida.
-
-![image](https://github.com/user-attachments/assets/40671f9a-e442-427b-83c4-82bf3c64234b)
-
-- Veja que o Energy também tem notas maiores entre os não aprovados, portanto, podemos concluir que há algumas profissões que tem mais chances de entrar no programa
-- O retail, por exemplo, tem notas de não aprovados semelhantes às outras profissões, notas de aprovados maiores, e apresenta taxa de aprovação menor do que o Investment management.
-- Investment magagement, por exemplo, apresenta a maior taxa de aprovação, sendo que a nota dos seus aprovados e não aprovados são inferiores aos candidatos de Energy
-- Veja o Real State, que tem notas médias inferiores a Media, Energy e Health Care, e mesmo assim apresenta taxa de aprovação maior
+- Nota-se que há uma linha decrescente de tendência, indicando que quanto maior o tempo de uso, menor é o consumo médio por hora do dispositivo
+- Pode ser um indicativo de que as baterias de ambos os SO consigam-se acostumar com a drenagem de bateria com o passar do tempo de utilização
 
 ## V- Conclusão
 - As mulheres têm mais chances de serem admtidas do que os homens
