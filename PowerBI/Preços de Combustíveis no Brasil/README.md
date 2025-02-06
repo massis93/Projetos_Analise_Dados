@@ -8,7 +8,7 @@
 ## I- Introdução
 - O conjunto de dados deste projeto, fornecido pela Agencia Nacional de Petróleo, contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi registrado, a bandeira do posto e a data de registro.
 - O dataset desde projeto é maior que o permitido para carregar aqui no GitHub, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
-- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZGY0YTAzMzctZmVhYi00NDFkLTkzYWYtMTgwZDcxMzE2ZGM3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
 ## II- O Dataset
 - Após removermos algumas colunas, o Dataset que iremos trabalhar contém apenas as seguintes features, e será chamado no projeto de ANP:
@@ -29,7 +29,7 @@
 
 
 ## III- O Dashboard
-- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZGY0YTAzMzctZmVhYi00NDFkLTkzYWYtMTgwZDcxMzE2ZGM3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 - 
 ![image](https://github.com/user-attachments/assets/20d4fa3f-2a06-494d-b181-34a51ac2b9ae)
 
