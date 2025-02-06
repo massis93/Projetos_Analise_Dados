@@ -111,11 +111,26 @@ Irei verificar se existe alguma relação entre o tempo de uso de tela e o consu
 - Nota-se que há uma linha decrescente de tendência, indicando que quanto maior o tempo de uso, menor é o consumo médio por hora do dispositivo
 - Pode ser um indicativo de que as baterias de ambos os SO consigam-se acostumar com a drenagem de bateria com o passar do tempo de utilização
 
+### 5 - Análise Multivariada
+
+Agora farei uma análise Multivariada da média de uso de aplicativos relacionada a quantidade de aplicativos no celular e à Idade.
+
+- Para isso farei um mapa de calor por sistema operacional
+
+![image](https://github.com/user-attachments/assets/52229a30-7a19-4158-b28e-7a7b3e066bef)
+
+![image](https://github.com/user-attachments/assets/cd509a1c-8538-4afd-9ffa-e9b3cf02efa5)
+
+- Em ambos os sistemas operacionais, quanto maior a quantidade de apps, maior a quantidade de uso de apps, para todas as idades
+- Isto significa que, para incentivar o uso do celular, será necessário incentivar a instalação de mais aplicativos, em qualquer idade
+- Para a mesma quantidade de apps, não houve diferença no tempo de uso médio de aplicativos quando a idade muda
+
+
+
 ## V- Conclusão
-- As mulheres têm mais chances de serem admtidas do que os homens
-- Tirar uma nota maior no GMAT e GPA influenciam positivamente a entrar no programa
-- Hispânicos e Negros tem menor chance do que entrar do que as outras raças
-- Algumas profissões como Energy, Media, Retail e Health Care, tem menos chances de entrar
-- Outras profissões como Investment Management, Financial Services tem mais chances de entrar
+- Quanto maior o uso do celular, maior o consumo de bateria
+- Quanto mais aplicativos instalados, maior o uso do tempo de celular
+- O uso do celular não apresenta diferença, entre os gêneros e as idades
+- Quanto mais é utilizado o celular, menor é o consumo de bateria por hora ao longo das horas
 
 
