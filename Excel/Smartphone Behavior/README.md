@@ -4,25 +4,27 @@
 # 🏦Análise Comportamental de Usuários de Celular
 
 ## I - Introdução
-- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/MBA.csv) refere-se aos incritos de uma prova para entrar em um programa de MBA de uma instituição de ensino. Cada entrada possui informações do candidato tais como gênero, nota GPA e GMAT, profissão, Major entre outros.
-- Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
-- O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/An%C3%A1lise.xlsx)
+- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Smartphone%20Behavior/user_behavior_dataset.csv) refere-se aos dados de uso de smartphone de 700 usuários, como tempo médio de tela, consumo de dados, bem como as características desses usuários, como gênero, idade.
+- Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica.
+- O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Smartphone%20Behavior/User%20Behavior.xlsx)
 
-
+User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (hours/day),Battery Drain (mAh/day),Number of Apps Installed,Data Usage (MB/day),Age,Gender,User Behavior Class
 ## II - Dataset
 
 | Coluna          | Descrição                                                  
 |-|-|                            
-| `Aplication_id`        | Id da inscrição                                         
-| `Gender` | Gênero            
-| `International`       | Se é estrangeiro
-| `GPA`    	  | Média de notas da graduação
-| `Major`    	  | Formação
-| `race`    	  | Raça
-| `GMAT`    	  | Nota da prova do candidato
-| `Work_exp`    	  | Anos de Experiência profissional
-| `Work_industry`    	  | Segmento da Industria onde trabalha
-| `admission`    	  | Se o Canditado foi admitido
+| `User ID`        | Id do Usuário                                        
+| `Device Model` | Modelo de Celular           
+| `Operating System`       | Sistema Operacional do Celular
+| `App Usage Time (min/day)`    	  | Tempo de Uso de Apps em Minutos/dia
+| `Screen On Time (hours/day)`    	  | Temp de tela ligada em Horas/dia
+| `Battery Drain (mAh/day)`    	  | Consumo de bateria em mAh/dia
+| `Number of Apps Installed`    	  | Quantidade de Apps do celular
+| `Data Usage (MB/day)`    	  | Consumo de Dados em Mb/dia
+| `Age`    	  | Idade do Usuário
+| `Gender`    	  | Gênero do Usuário
+| `User Behavior Class`    	  | Classe do Comportamento do Usuário
+
 
 
 ## III - Escopo do Projeto
