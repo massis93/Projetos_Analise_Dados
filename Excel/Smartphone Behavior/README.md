@@ -8,7 +8,7 @@
 - Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica.
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Smartphone%20Behavior/User%20Behavior.xlsx)
 
-User ID,Device Model,Operating System,App Usage Time (min/day),Screen On Time (hours/day),Battery Drain (mAh/day),Number of Apps Installed,Data Usage (MB/day),Age,Gender,User Behavior Class
+
 ## II - Dataset
 
 | Coluna          | Descrição                                                  
