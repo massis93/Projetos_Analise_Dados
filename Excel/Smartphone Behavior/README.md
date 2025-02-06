@@ -113,7 +113,7 @@ Irei verificar se existe alguma relação entre o tempo de uso de tela e o consu
 
 ### 5 - Análise Multivariada
 
-Agora farei uma análise Multivariada da média de uso de aplicativos relacionada à quantidade de aplicativos no celular e à Idade, para verificar se há alguma relação na média de uso App
+Agora farei uma análise Multivariada da média de uso de aplicativos relacionada à quantidade de aplicativos no celular e à Idade, para verificar se há alguma relação na média de uso de App quando varia a idade e a quantidade de Apps instalados.
 
 - Para isso farei um mapa de calor por sistema operacional:
 
@@ -121,9 +121,9 @@ Agora farei uma análise Multivariada da média de uso de aplicativos relacionad
 
 ![image](https://github.com/user-attachments/assets/cd509a1c-8538-4afd-9ffa-e9b3cf02efa5)
 
-- Em ambos os sistemas operacionais, quanto maior a quantidade de apps, maior a quantidade de uso de apps, para todas as idades
-- Isto significa que, para incentivar o uso do celular, será necessário incentivar a instalação de mais aplicativos, em qualquer idade
-- Para a mesma quantidade de apps, não houve diferença no tempo de uso médio de aplicativos quando a idade muda
+- Em ambos os sistemas operacionais, quanto maior a quantidade de apps, maior a quantidade de uso de apps, para todas as idades;
+- Isto significa que, para incentivar o uso do celular, será necessário incentivar a instalação de mais aplicativos, em qualquer idade;
+- Para a mesma quantidade de apps, não houve diferença no tempo de uso médio de aplicativos quando a idade muda;
 
 
 
