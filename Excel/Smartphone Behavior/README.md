@@ -63,18 +63,18 @@ Farei um gráfico de boxplot para analisar de que forma as idades estão distrib
 
 ![image](https://github.com/user-attachments/assets/a4055741-8766-4a6b-8465-a6f5a0d2626b)
 
-- A porcentagem de mulheres que usam IOS é ligeiramente maior do que os homens
+- A porcentagem de mulheres que usam IOS é ligeiramente maior do que os homens, porém, ambos os gêneros preferem majoritariamente o sistema Android.
 
 ![image](https://github.com/user-attachments/assets/4dca4292-7e9a-4774-b319-eaec86572041)
 
-- A média de Tela ligada, de Tempo de Uso de Apps e de Apps instalados é maior nos Usuários, e pode ser que haja alguma correlação entre essas 3 variáveis. Iremos analisar isso posteriormente
+- A média de Tela ligada, de Tempo de Uso de Apps e de Apps instalados é maior nos Usuários de IOS, e pode ser que haja alguma correlação entre essas 3 variáveis. Iremos analisar isso posteriormente
 
 ### 3 - Análise por Gênero
 
 ![image](https://github.com/user-attachments/assets/251a763b-a31f-44cf-840d-6118f6ca356d)
 
-- Ambos os Gêneros possuem a mesma média de apps instalados, dados utilizados, tempo de uso de apps e tempo de tela ligada
-- Nota-se que ambos os gêneros possuem tempo de uso de app menor que o uso das telas. Isso pode acontecer devido ao possível fenômeno que está acontecendo com as pessoas referente à ansiedade relacionada às telas. As pessoas ligam o celular para visualizar a tela ligada e não fazer nada, apenas por ansiedade
+- Ambos os Gêneros possuem a semelhantes médias de apps instalados, dados utilizados, tempo de uso de apps e tempo de tela ligada
+- Nota-se que ambos os gêneros possuem tempo de uso de app menor que o uso das telas. Isso pode acontecer devido ao possível fenômeno que está acontecendo com as pessoas referente à ansiedade relacionada às telas. As pessoas ligam o celular para visualizar a tela e não mexem em nada, apenas por ansiedade.
 
 ### 3 - Análise por Idade
 
@@ -82,17 +82,17 @@ Farei um gráfico de boxplot para analisar de que forma as idades estão distrib
 
 
 - Aqui acontece esse fenômeno de ansiedade por telas em todas as faixas de idade
-- Há as mesmas médias de uso de tela, e uso médio de apps em todas as idades, com excessão da faixa dos 10-19 anos, que apresenta leve redução nesses dois tempos, comparado às outras faixas de idade.
+- Há as semelhantes médias de uso de tela, e uso médio de apps em todas as idades, com excessão da faixa dos 10-19 anos, que apresenta leve redução nesses dois tempos, comparado às outras faixas de idade.
 
 ![image](https://github.com/user-attachments/assets/85fc71da-0123-491a-8b90-ac8e03198861)
 
-- Ambas as faixas de idade possuem semelhante média de quantidade de Apps e consumo de Dados
+- Ambas as faixas de idade possuem semelhante média de quantidade de Apps instalados e consumo de Dados
 
 Agora irei verificar se há alguma possível correlação entre idade e tempo de uso de apps com um gráfico de dispersão:
 
 ![image](https://github.com/user-attachments/assets/b60a1cf3-b5c4-46bd-b654-b7c773bb28ad)
 
-- O gráfico demonstra que por mais que aumente a idade, os valores de tempo de uso de apps permanecem variando semelhantemente
+- O gráfico demonstra que por mais que aumente a idade, os valores de tempo de uso de apps permanecem variando semelhantemente,portanto não há correlação entre as variáveis.
 
 ### 4 - Análise do consumo de Bateria
 
@@ -102,9 +102,9 @@ Irei verificar se existe alguma correlação entre o consumo de bateria e o uso 
 
 - Em ambos os sistemas operacionais nota-se que quanto maior o uso de aplicativos maior será o consumo de bateria
 
-Agora irei criar uma coluna no dataset dividindo o consumo de Bateria total pelo tempo de tela ligado, para medir o consumo de bateria por hora de cada dado.
+Agora irei criar uma coluna no dataset dividindo o consumo de Bateria pelo seu respectivo tempo de tela ligado, para medir o consumo de bateria médio por hora dos dados.
 
-Irei verificar se existe alguma relação entre o tempo de uso de tela e o consumo de bateria por hora
+Irei verificar se existe alguma relação entre o tempo de uso de tela e o consumo de bateria médio por hora.
 
 ![image](https://github.com/user-attachments/assets/63a1bdc8-e1bd-44a8-8431-630c451f3c1e)
 
@@ -113,9 +113,9 @@ Irei verificar se existe alguma relação entre o tempo de uso de tela e o consu
 
 ### 5 - Análise Multivariada
 
-Agora farei uma análise Multivariada da média de uso de aplicativos relacionada a quantidade de aplicativos no celular e à Idade.
+Agora farei uma análise Multivariada da média de uso de aplicativos relacionada à quantidade de aplicativos no celular e à Idade, para verificar se há alguma relação na média de uso App
 
-- Para isso farei um mapa de calor por sistema operacional
+- Para isso farei um mapa de calor por sistema operacional:
 
 ![image](https://github.com/user-attachments/assets/52229a30-7a19-4158-b28e-7a7b3e066bef)
 
