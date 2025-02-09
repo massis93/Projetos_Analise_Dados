@@ -136,9 +136,53 @@ E agora a porcentagem de queijos de maior gordura que cada um produz:
 
 ![image](https://github.com/user-attachments/assets/5c38a09d-3dad-43cf-83cf-16d11bfc559f)
 
-- Podemos concluir que, quanto maior a umidade do queijo, menor a quantidade de gordura que ele terá.
+Podemos concluir que, quanto maior a umidade do queijo, menor a quantidade de gordura que ele terá, provavelmente pois o "espaço" do queijo que seria gordura, é "ocupado" por soro, Portanto, podemos concluir ainda que, quanto maior a dureza de um queijo, menos umidade e mais gordura ele terá. Veja que o Firm e Hard cheese são os queijos com mais gordura, enquanto soft e fresh são os queijos com menos gordura e mais umidade
 
-### 5 - Tipo de Processamento
+### 5 - Tipo de Fabricação
+
+Com já vimos antes, a maior parte dos queijos são fabricos industrialmente. Agora quero verificar se o processo de fabricação tem alguma relação com a quantidade de gordura do queijo.
+
+![image](https://github.com/user-attachments/assets/d6f1e342-8355-49d0-94d5-e33a70b230a7)
+
+Veja que queijos Artesanais tendem a produzir queijos com mais quantidade de gordura. 
+
+Já vimos que a origem do leite faz com que o queijo seja mais ou menos gorduros. Portanto posso levantar uma suspeita que os queijos artesanais estão sendo produzidos com leites mais gordurosos em média? Vou verificar isso:
+
+![image](https://github.com/user-attachments/assets/99ce3325-4bdc-4beb-a064-aae1ccf7c77c)
+
+O gráfico acima nos afirma o contrário. O processo de fabricação industrial de um queijo, usa em sua maioria leite de vaca, que é mais gorduroso. Portanto os queijos artesanais tendem a ser mais gordurosos não pelo leite que utilizam. Será que os queijos artesanais estão usando usando leite com um tratamento específico, e isso pode estar ocasionando esse método de fabricação a produzir queijos com mais gorduras?
+
+Prieiro vou fazer um mapa de calor relacionando o tipo do tratamento que um leite recebe, com a quantidade de umidade dele, e verificar se há alguma relação entra essas variáveis. 
+
+![image](https://github.com/user-attachments/assets/2bc222be-957d-4e5c-a542-779deff712bd)
+
+- Novamente, queijos de leite de vaca tendem a ser menos úmidos, e portanto, mais gordurosos
+- Leite cru tende a produzir queijos mais gordurosos do que leite pasteurizado
+
+Agora verificaremos qual é a composição do tratamento do leite utilizado em cada processo de fabricação:
+
+![image](https://github.com/user-attachments/assets/eab9fee6-02b3-4121-896e-729c4055272a)
+
+- Queijos artesanais usam mais leite cru do que os industriais, portanto, é uma das causas que fazem com que queijos desse tipo tendem a ser mais gordurosos
+- Pode ser que em algum grau, um queijo feito por processo artesanal seja mais gorduroso do que um industrial, para isso vou comparar os queijos que utilizaram raw milk nos dois processos:
+
+![image](https://github.com/user-attachments/assets/25f3a1ff-d9f2-40d5-b010-89d20fad649b)
+
+- A conlusão é que o método de fabricação não interferiu na quantidade de umidade do leite, consequentemente no nível de gordura. Portanto queijos industriais tendem a ter queijos com menor quantidade de gordura pois utilizam em sua maioria leite pasteurizado.
+
+Porém, queijos Farmstead utilizam mais leite cru do que os artesanais, e ainda sim apresentam menor taxa de queijos gordurosos. Portanto podemos concluir que o processo de ser artesão faz com que queijos tendam a ser mais gordurosos do que um o processo de farmstead.
+
+
+Agora irei verificar a utilização de cada tipo de tratamento de leite nos processos de fabricação do queijo:
+
+![image](https://github.com/user-attachments/assets/36197bc6-03be-4095-b0c3-104780dbb11f)
+
+- O uso de Raw Milk acontece somente em queijos Artesanais e de Fazenda
+- Não há utilização de Raw Milk na indústria, provavelmente por normas sanitárias
+- Até queijos artesanais utilizam leite pasteurizado, provavelmente pela facilidade de se econtrar leite pasteurizado em comparação com leite cru
+- Não há leite Thermised em queijos artesanais, talvez pois esse tipo de leite (semi pasteurizado) requer uso de tecnologia que não se encontra em lugares onde são feitos os queijos artesanais, e talvez também não seja possível encontrar esse tipo de leite no mercado
+
+
 ### 6 - Província
 ### 7 - Mapa de Calor
 
