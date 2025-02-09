@@ -4,7 +4,7 @@
 
 ## I - Introdução
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/bank.csv) refere-se à uma campanha de marketing que contactou os seus clientes os convidando a fazer um tipo de investimento. Os dados se referem às características de cada cliente como dinheiro guardado no banco, estado civil, idade, se fez ou não o investimento, entre outros.
-- Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
+- Toda a análise exploratória e diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/an%C3%A1lise_banco.xlsx)
 
 
