@@ -79,7 +79,7 @@ E a maior parte dos queijos são Firm, Soft e Semi-Soft, talvez pela preferênci
 
 ### 3 - Organic
 
-Agora irei fazer uma análise referente ao grão Organic:
+Agora irei fazer uma análise referente à feature Organic:
 
 ![image](https://github.com/user-attachments/assets/0a807f81-3616-4a0b-972b-787b5b73a0e0)
 
@@ -105,10 +105,39 @@ Agora irei verificar se há preferência na escolha da origem do leite para ele 
 
 - O gráfico indica que mais de 10% de todo o leite de origem de vaca é usado para queijos orgânicos, enquanto de cabra e ovelha são menos que  7% e 2% respectivamente. Portanto, podemos considerar que é possível que o leite de vaca seja preferido na produção de queijos orgânicos, talvez pelo sabor mais suave.
 
-
-
-
 ### 4 - FatLevel
+Agora farei uma análise pela feature `FatLevel` de cada queijo
+
+![image](https://github.com/user-attachments/assets/ebc814d6-9798-40c2-a563-7e9f4f6277b6)
+
+A maior parte dos queijos são de baixa gordura. Isso pode indicar a preferência do consumo dos canadenses ou indicar que da forma que acontece a fabricação dos quejos, eles tentem a ser menos gordurosos. Eu escolheria a segunda opção, pois queijos mais gordurosos são mais saborosos.
+
+Verificarei se há alguma relação entre o nível de gordura do queijo, e de qual animal que veio o leite para a produção do queijo.
+
+![image](https://github.com/user-attachments/assets/1e985296-8e79-41e7-9d9e-c9582ce65dbb)
+
+- Leites de vaca e ovelha tendem a produzir queijos mais gordurosos
+- Leites de cabra tendem a produzir queijos menos gordurosos
+- Talvez o leite de vaca e ovelha tenha mais gordura do que o de cabra
+
+Agora iremos verificar a distribuição de umidade dos queijos, por fatlevel:
+
+![image](https://github.com/user-attachments/assets/fc4b3361-cb76-438b-bc2e-18e8ca066dae)
+
+- Queijos mais gordurosos tendem a ter menor umidade, enquanto queijos menos gordurosos maior
+- Talvez o nível de umidade esteja relacionado inversamente proporcional ao nível de gordura do queijo
+
+Vou verificar a umidade de cada categoria de queijo:
+
+![image](https://github.com/user-attachments/assets/7d5df14e-52c0-462f-be35-00f3ae7149a3)
+
+
+E agora a porcentagem de queijos de maior gordura que cada um produz:
+
+![image](https://github.com/user-attachments/assets/5c38a09d-3dad-43cf-83cf-16d11bfc559f)
+
+- Podemos concluir que, quanto maior a umidade do queijo, menor a quantidade de gordura que ele terá.
+
 ### 5 - Tipo de Processamento
 ### 6 - Província
 ### 7 - Mapa de Calor
