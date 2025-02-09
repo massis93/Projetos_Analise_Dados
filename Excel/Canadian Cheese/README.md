@@ -210,6 +210,14 @@ Por último, irei análisar se há alguma relação entre a categoria do queijo 
 
 
 ## IV- Conclusão
-
-
+- O nível de Umidade é inversamente proporcional a quantidade de gordura de um queijo
+- Leite de Vaca e Cabra produzem queijos mais gordurosos do que Cabra
+- A província QC é o maior produtos de queijos do Canadá
+- Pasteurizar um queijo contribui para tornar um queijo menos gorduroso
+- Queijos artesanais são fabricados também por leites pasteurizados
+- Queijos orgânicos podem ser industriais e com leite pasteurizado
+- Não há nenhum processo de fabricação ou província específica que está contribuindo com os dados missing
+- Há uma certa preferência na escolha do leite de vaca para fabricação do queijo orgânico, talvez pelo gosto
+- A indústria não utiliza leite cru, e os artesãos não utilizam leite semi pasteurizado
+- A gordura do queijo não esta relacionada à formação de casca no queijo
 
