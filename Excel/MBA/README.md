@@ -5,7 +5,7 @@
 
 ## I - Introdução
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/MBA.csv) refere-se aos incritos de uma prova para entrar em um programa de MBA de uma instituição de ensino. Cada entrada possui informações do candidato tais como gênero, nota GPA e GMAT, profissão, Major entre outros.
-- Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
+- Toda a análise exploratória e diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/An%C3%A1lise.xlsx)
 
 
