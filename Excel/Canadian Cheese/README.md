@@ -184,15 +184,32 @@ Agora irei verificar a utilização de cada tipo de tratamento de leite nos proc
 
 
 ### 6 - Província
-### 7 - Mapa de Calor
+
+Farei uma análise por `ManufacturerProvCode` para tentar tirar alguns insights dos dados.
+
+Como falei anteriormente, justificando pela analise de pareto, irei analisar somente os 3 maiores estados produtores de queijo.
+
+![image](https://github.com/user-attachments/assets/8a07f3fa-3439-4901-9b4b-fc50c18623e4)
+
+- Veja que a província QC produz a maior parte de todos os queijos de cada origem do leite. Portanto, QC deve ser um polo de produção de leite com uma grande infraestrutura de produção de queijos no país.
+
+### 7 - Sabor
+
+Queijos possuem diversos `FlavourEn`. Após a produção de um queijo, ele pode ficar submerso em um vinho, por exemplo, e formar uma casca escura, dando origem a um novo tipo de queijo. Será que ter casca influencia na quantidade de sabores que podem ser criados a partir de um queijo?
+
+![image](https://github.com/user-attachments/assets/5bcda949-c87f-49fa-aac7-e2c3d1a0e077)
+
+- Queijos sem casca (No Rind) possuem uma proporção menor de diversificação de seus sabores do que os queijos com casca (Washed e Bloomy). Portanto podemos afirmar que queijos com casca tendem a ter mais diversidade de sabores.
+
+Por último, irei análisar se há alguma relação entre a categoria do queijo e a formação de casca, para verificar se a quantidade de gordura influencia na formação de casca:
+
+![image](https://github.com/user-attachments/assets/5ddfbd73-e9e7-4561-bc1e-27a38631a04b)
+
+- Queijos Firm, Fresh e Hard tendem a não ter casca, portanto não tem a ver a formação da casca com umidade ou quantidade de gordura, pois queijos firm e hard possuem alta gordura e queijos fresh possuem baixa gordura.
 
 
 
 ## IV- Conclusão
-- As mulheres têm mais chances de serem admtidas do que os homens
-- Tirar uma nota maior no GMAT e GPA influenciam positivamente a entrar no programa
-- Hispânicos e Negros tem menor chance do que entrar do que as outras raças
-- Algumas profissões como Energy, Media, Retail e Health Care, tem menos chances de entrar
-- Outras profissões como Investment Management, Financial Services tem mais chances de entrar
+
 
 
