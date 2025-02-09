@@ -5,7 +5,7 @@
 
 ## I - Introdução
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Smartphone%20Behavior/user_behavior_dataset.csv) refere-se aos dados de uso de smartphone de 700 usuários, como tempo médio de tela, consumo de dados, bem como as características desses usuários, como gênero, idade.
-- Toda a análise será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica.
+- Toda a análise exploratória e diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica.
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Smartphone%20Behavior/User%20Behavior.xlsx)
 
 
