@@ -4,7 +4,8 @@
 
 ## I - Introdução
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Avengers/Avengers.xlsx) contém informações de todos os personagens dos Avengers da Marvel. Cada coluna contém features do personagem, como data de entrada, gênero, quantidade de mortes, classificação do personagem, número de aparições, entre outros.
-- Toda a análise feita com o dataset será pelo Excel, com o auxílio de fórmulas e do uso da tabela dinâmica.
+- Toda a análise exploratória e diagnóstica do dataset será pelo Excel, com o auxílio de fórmulas e do uso da tabela dinâmica.
+- O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Avengers/Avengers.xlsx)
 
 
 
