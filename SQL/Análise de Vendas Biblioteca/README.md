@@ -115,7 +115,7 @@ Mais um dado interessante em saber, pois nosso site precisa estar adequado ao pe
 
 ![image](https://github.com/user-attachments/assets/e8c54734-aa41-45bc-a2dc-897dfb44af7c)
 
-- E sim! Os 5 livros mais vendidos possuem premiação. Podemos concluir sim que isso afeta na quantidade de vendas. Portanto, seria interessante além de comprar mais livros com prêmios, fazer um marketing no site destacando as premiaçõe dos livros!
+- Não podemos afirmar com exatidão, mas dentre os 5 livros mais vendidos, 4 possuem algum prêmio. Portanto, há uma forte suspeita de que as vendas podem estar relacionadas com o livro ter ou não ter prêmio.
 
   
 ## Conclusão
