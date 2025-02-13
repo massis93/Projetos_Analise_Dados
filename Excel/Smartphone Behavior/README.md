@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/47da0e1e-6f24-4b51-be97-e9020529d737)
 
 
-# 🏦Análise Comportamental de Usuários de Celular
+# 🏦Análise Exploratória e Diagnóstica de Usuários de Celular
 
 ## I - Introdução
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Smartphone%20Behavior/user_behavior_dataset.csv) refere-se aos dados de uso de smartphone de 700 usuários, como tempo médio de tela, consumo de dados, bem como as características desses usuários, como gênero, idade.
