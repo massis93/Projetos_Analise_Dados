@@ -3,8 +3,9 @@
 
 # 🏦Análise da Admissão de uma escola de MBA
 
-## I - Introdução
-- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/MBA.csv) refere-se aos incritos de uma prova para entrar em um programa de MBA de uma instituição de ensino. Cada entrada possui informações do candidato tais como gênero, nota GPA e GMAT, profissão, Major entre outros.
+## I - Problema de Negócio
+- O CEO da instituição de ensino me pediu para investigar o motivo de alguns candidatos que tem notas semelhantes serem classificados e outros não. Será que há algum viés de raça, gênero, profissão na escolha dos candidatos? Isso que vou descobrir.
+- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/MBA.csv) refere-se aos incritos de uma prova para entrar em um programa de MBA de uma instituição de ensino. Cada entrada possui informações do candidato tais como gênero, nota GPA e GMAT, profissão, Major entre outros. 
 - Toda a análise exploratória e diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/MBA/An%C3%A1lise.xlsx)
 
