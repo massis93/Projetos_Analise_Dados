@@ -106,7 +106,7 @@ Agora verificarei a porcentagem dos admitidos e não admitidos dessas duas segme
 
 ![image](https://github.com/user-attachments/assets/8b287b0b-5a21-4a86-9736-171144bfe9d5)
 
-- Ambos possuem a mesma porcentagem de aprovados
+- Ambos possuem semelhante porcentagem de aprovados
 - Portanto, não há influência da variável International para ser admitido no programa.
 
 ### 5 - Análise admissão por Raça
