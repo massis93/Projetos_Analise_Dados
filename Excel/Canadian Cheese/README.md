@@ -4,8 +4,8 @@
 
 ## I - Problema de negócio
 
-- O CEO de uma grande marca de queijos me forneceu um dataset de todos os queijos seu concorrente produz. Ele é novo no mercado de queijos e deseja entender alguns pontos pois quer começar a produzir queijos em larga escala. Ao longo da análise, vou colocando as perguntas que esse CEO me fez e respondendo com os gráficos e os insights gerados por mim.
-- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Canadian%20Cheese/cheese_data.csv) refere-se às features de tipos de queijos Canadenses. Cada entrada possui detalhes da província que foi feito o queijo, o tipo e a origem do leite que foi utilizado, a forma de processamento que esse leite sofreu, nome dos queijos, se a presenta casca, sabores, tipo de fabricação do queijo entre outros.
+- O CEO de uma empresa me forneceu um [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Canadian%20Cheese/cheese_data.csv) de todos os queijos que seu concorrente produz. Ele é novo no mercado e deseja entender alguns pontos pois quer começar a produzir queijos em larga escala. Ao longo da análise, vou colocando as perguntas que esse CEO me fez e respondendo com os gráficos e os insights gerados por mim.
+- Cada entrada do [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Canadian%20Cheese/cheese_data.csv) possui detalhes da província que foi feito o queijo, o tipo e a origem do leite que foi utilizado, a forma de processamento que esse leite sofreu, nome dos queijos, se a presenta casca, sabores, tipo de fabricação do queijo entre outros.
 - Toda a análise Exploratória e Diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](-----------)
 
