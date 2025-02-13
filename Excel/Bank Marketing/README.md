@@ -2,8 +2,9 @@
 
 # 🏦Análise de Marketing de um Banco Europeu Fictício
 
-## I - Introdução
-- Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/bank.csv) refere-se à uma campanha de marketing que contactou os seus clientes os convidando a fazer um tipo de investimento. Os dados se referem às características de cada cliente como dinheiro guardado no banco, estado civil, idade, se fez ou não o investimento, entre outros.
+## I - Problema de negócio:
+
+- Um banco fez uma campanha de marketing para seus clientes fazerem determinado investimento e anotou em um [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/bank.csv) as informações dessa campanha, bem como o perfil dos usuários contactados. O banco deseja que eu faça uma análise para saber como foi essa campanha, para poderem melhorarem para a próxima.
 - Toda a análise exploratória e diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/an%C3%A1lise_banco.xlsx)
 
