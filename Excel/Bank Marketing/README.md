@@ -28,16 +28,15 @@
 
 ## III - Escopo do Projeto
 
-- Primeiramente iremos analisar o perfil de idade e de profissão desses clientes
-- Depois, faremos uma análise do perfil financeiro dos clientes (média do saldo bancário) em relação a algumas variáveis categóricas
-- Faremos também uma análise sobre quem aderiu ou não ao investimento, utilizando algumas variáveis categóricas
+- Primeiramente faremos uma análise exploratória dos clientes do banco, para tentar tirar algum insight
+- Depois, faremos uma análise sobre quem aderiu ou não ao investimento, utilizando algumas variáveis categóricas
 - Após isso, faremos uma análise da forma de contato e o tempo de duração de cada chamada, para ver se isso também pode ter influenciado na adesão ao investimento
 - Finalizeremos fornecendo alguns planos de ação
 - Tenho certeza de que você irá gostar deste trabalho! 😅
 
 ## IV - Análise
 
-### 1. Perfil de Idade dos clientes
+### 1. Perfil dos clientes
 
 - Precisamos verificar como estão distribuidas as idades dos clientes. Para distribuição é interessante usar 3 tipos de gráficos: Histograma, Boxplot e Violino. No nosso projeto usaremos o Boxplot.
 
@@ -68,7 +67,6 @@ Agora iremos analisar a distribuição de cientes por profissão, clusterizada p
 
 - Note que a classe adulta é maioria em quase todas as profissões com excessão dos Retired (Aposentados), que são em sua grande maioria Idosos e Estudante, que são Jovens Adultos
 
-### 2. Perfil Financeiro dos Clientes
 
 - Faremos agora uma análise do saldo bancário em relação a algumas variáveis categóricas para verificar se há alguma possível relação entre a média bancária e ter ou não ter elas
 
@@ -100,7 +98,7 @@ Agora faremos uma análise multivariada entre "Ter casa" e as Classes de idade, 
 - Novamente, quanto mais velho, maior a média do saldo bancário entre os que tem e os que não tem casa
 
 
-### 3. Análise dos clientes que aderiram ao investimento
+### 2. Análise dos clientes que aderiram ao investimento
 
 Agora iremos analisar a taxa de adesão em relação as mesmas variáveis da seção anterior:
 
@@ -129,7 +127,7 @@ Agora iremos analisar a taxa de adesão em relação as mesmas variáveis da se�
 
 
 
-### 4. Analise da abordagem do contato
+### 3. Analise da abordagem do contato
 
 - Aqui iremos analisar os métodos utilizados pelo marketing, para contactar os clientes a aderirem ao investimento.
 
@@ -148,12 +146,6 @@ Aqui nós observamos dois pontos interessantes
 ![image](https://github.com/user-attachments/assets/46ff8ff6-c405-4a29-ac92-cdfcebd6162d)
 
 - Aqui vemos que as pessoas que aderiram ao investimento tiveram em média uma duração de ligação de celular ou telefone maiores!
-
-### 5. Qual a probabilidade de alguem ter casa fazer o investimento
-
-- Verificaremos através da probabilidade condicional estatisticamente qual a probabilidade que, se a pessoa tem casa, faça o investimento
-
-![image](https://github.com/user-attachments/assets/278e7a6b-d7f3-4bcd-be62-997bdf150796)
 
 
 ## V- Conclusão
