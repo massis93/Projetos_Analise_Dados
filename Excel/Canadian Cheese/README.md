@@ -2,11 +2,12 @@
 
 # 🧀Análise de Tipos de Queijos Canadenses
 
-## I - Introdução
+## I - Problema de negócio
+
+- O CEO de uma grande marca de queijos me forneceu um dataset de todos os queijos seu concorrente produz. Ele é novo no mercado de queijos e deseja entender alguns pontos pois quer começar a produzir queijos em larga escala. Ao longo da análise, vou colocando as perguntas que esse CEO me fez e respondendo com os gráficos e os insights gerados por mim.
 - Este [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Canadian%20Cheese/cheese_data.csv) refere-se às features de tipos de queijos Canadenses. Cada entrada possui detalhes da província que foi feito o queijo, o tipo e a origem do leite que foi utilizado, a forma de processamento que esse leite sofreu, nome dos queijos, se a presenta casca, sabores, tipo de fabricação do queijo entre outros.
 - Toda a análise Exploratória e Diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
 - O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](-----------)
-
 
 ## II - Dataset
 
@@ -31,9 +32,9 @@
 
 - O arquivo XLSX que contém a análise na íntegra pode ser acessado [aqui](---------)
 
-### 1 - Análise de Missing
+### 1 - PERGUNTA 1 : "Primeiramente, por que estão faltando alguns dados?"
 
-- Para fazer uma boa análise em grandes quantidades de dados, é interessante verificar se estão faltando dados e fazer uma análise dos padrões que geraram esses dados faltantes, para poder reportar às demais equipes.
+- Para fazer uma boa análise em grandes quantidades de dados, é interessante verificar se estão faltando dados e fazer uma análise dos padrões que geraram esses dados faltantes
 - Começarei verificando a quantidade de dados faltantes por colunas:
 
 ![image](https://github.com/user-attachments/assets/c51c6c9e-cfbb-46ee-ade4-1d2ce3508867)
@@ -46,11 +47,12 @@ A distribuição dos missing `CharacteristicsEn` e `RindTypeEn` é parecida com 
 
 ![image](https://github.com/user-attachments/assets/9d428015-8b8d-4b68-b7f7-90c0934b5b00)
 
-Novamente, a distribuição dos dados missing `CharacteristicsEn` e `RindTypeEn` é parecida com o dataset original de distribuição por Tipo de Fabricação. Podemos concluir que nenhum tipo de fabricação dos queijos está com viés na falta de envio desses dados (os queijos produzidos de forma artesanal poderiam estar vindo sem essas informações).
+Novamente, a distribuição dos dados missing `CharacteristicsEn` e `RindTypeEn` é parecida com o dataset original de distribuição por Tipo de Fabricação. Podemos concluir que nenhum tipo de fabricação dos queijos está com viés na falta de envio desses dados (os queijos produzidos de forma artesanal poderiam estar vindo sem essas informações mas não estão).
 
-### 2 - Análise Exploratória
 
-Agora irei fazer uma rápida análise exploratória para observar de que modo os dados estão distribuidos, e poder tirar conclusões mais acertivas nas análises diagnósticas:
+### 2 - PERGUNTA 2: "Faça uma rápida análise e me mostre como é o queijo que eles produzem"
+
+Agora irei fazer uma rápida análise exploratória para observar de que modo os dados estão distribuidos. Isso me ajudará também a obter respostas mais acertivas de futuras análises diagnósticas:
 
 ![image](https://github.com/user-attachments/assets/a642db30-a642-4ea8-a39d-2ea1e90d43ba)
 
@@ -77,7 +79,7 @@ E a maior parte dos queijos são Firm, Soft e Semi-Soft, talvez pela preferênci
 
 
 
-### 3 - Organic
+### 3 - PERGUNTA 3: "O que precisa ter no queijo para ser considerado Organic?"
 
 Agora irei fazer uma análise referente à feature Organic:
 
@@ -105,12 +107,13 @@ Agora irei verificar se há preferência na escolha da origem do leite para ele 
 
 - O gráfico indica que mais de 10% de todo o leite de origem de vaca é usado para queijos orgânicos, enquanto de cabra e ovelha são menos que  7% e 2% respectivamente. Portanto, podemos considerar que é possível que o leite de vaca seja preferido na produção de queijos orgânicos, talvez pelo sabor mais suave.
 
-### 4 - FatLevel
+### 4 - PERGUNTA 4: "Queremos queijos High Fat, como fazer pra produzir queijos assim?"
+
 Agora farei uma análise pela feature `FatLevel` de cada queijo
 
 ![image](https://github.com/user-attachments/assets/ebc814d6-9798-40c2-a563-7e9f4f6277b6)
 
-A maior parte dos queijos são de baixa gordura. Isso pode indicar a preferência do consumo dos canadenses ou indicar que da forma que acontece a fabricação dos quejos, eles tentem a ser menos gordurosos. Eu escolheria a segunda opção, pois queijos mais gordurosos são mais saborosos.
+A maior parte dos queijos são de baixa gordura. Isso pode indicar a preferência do consumo dos canadenses ou indicar que da forma que acontece a fabricação dos quejos, eles tentem a ser menos gordurosos. 
 
 Verificarei se há alguma relação entre o nível de gordura do queijo, e de qual animal que veio o leite para a produção do queijo.
 
@@ -138,8 +141,7 @@ E agora a porcentagem de queijos de maior gordura que cada um produz:
 
 Podemos concluir que, quanto maior a umidade do queijo, menor a quantidade de gordura que ele terá, provavelmente pois o "espaço" do queijo que seria gordura, é "ocupado" por soro, Portanto, podemos concluir ainda que, quanto maior a dureza de um queijo, menos umidade e mais gordura ele terá. Veja que o Firm e Hard cheese são os queijos com mais gordura, enquanto soft e fresh são os queijos com menos gordura e mais umidade
 
-### 5 - Tipo de Fabricação
-
+---
 Com já vimos antes, a maior parte dos queijos são fabricos industrialmente. Agora quero verificar se o processo de fabricação tem alguma relação com a quantidade de gordura do queijo.
 
 ![image](https://github.com/user-attachments/assets/d6f1e342-8355-49d0-94d5-e33a70b230a7)
@@ -172,8 +174,9 @@ Agora verificaremos qual é a composição do tratamento do leite utilizado em c
 
 Porém, queijos Farmstead utilizam mais leite cru do que os artesanais, e ainda sim apresentam menor taxa de queijos gordurosos. Portanto podemos concluir que o processo de ser artesão faz com que queijos tendam a ser mais gordurosos do que um o processo de farmstead.
 
+### 5 - PERGUNTA 5: "Qual tratamento de leite posso usar em cada processo de fabricação?"
 
-Agora irei verificar a utilização de cada tipo de tratamento de leite nos processos de fabricação do queijo:
+Agora verificarei a utilização de cada tipo de tratamento de leite nos processos de fabricação do queijo:
 
 ![image](https://github.com/user-attachments/assets/36197bc6-03be-4095-b0c3-104780dbb11f)
 
@@ -183,7 +186,7 @@ Agora irei verificar a utilização de cada tipo de tratamento de leite nos proc
 - Não há leite Thermised em queijos artesanais, talvez pois esse tipo de leite (semi pasteurizado) requer uso de tecnologia que não se encontra em lugares onde são feitos os queijos artesanais, e talvez também não seja possível encontrar esse tipo de leite no mercado
 
 
-### 6 - Província
+### 6 - PERGUNTA 6: "Qual província é a que produz mais diversidade de queijos?"
 
 Farei uma análise por `ManufacturerProvCode` para tentar tirar alguns insights dos dados.
 
@@ -193,7 +196,7 @@ Como falei anteriormente, justificando pela analise de pareto, irei analisar som
 
 - Veja que a província QC produz a maior parte de todos os queijos de cada origem do leite. Portanto, QC deve ser um polo de produção de leite com uma grande infraestrutura de produção de queijos no país.
 
-### 7 - Sabor
+### 7 - PERGUNTA 7: "Ter casca influencia no sabor?"
 
 Queijos possuem diversos `FlavourEn`. Após a produção de um queijo, ele pode ficar submerso em um vinho, por exemplo, e formar uma casca escura, dando origem a um novo tipo de queijo. Será que ter casca influencia na quantidade de sabores que podem ser criados a partir de um queijo?
 
@@ -212,7 +215,7 @@ Por último, irei análisar se há alguma relação entre a categoria do queijo 
 ## IV- Conclusão
 - O nível de Umidade é inversamente proporcional a quantidade de gordura de um queijo
 - Leite de Vaca e Cabra produzem queijos mais gordurosos do que Cabra
-- A província QC é o maior produtos de queijos do Canadá
+- A província QC é o maior produtor de queijos do Canadá
 - Pasteurizar um queijo contribui para tornar um queijo menos gorduroso
 - Queijos artesanais são fabricados também por leites pasteurizados
 - Queijos orgânicos podem ser industriais e com leite pasteurizado
