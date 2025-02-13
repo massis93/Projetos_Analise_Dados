@@ -58,17 +58,15 @@ Na figura abaixo temos a nossa distribuição por Idade:
 
 Confirmando o Boxplot, temos um perfil de cliente em sua maioria Adultos, e Adultos-Jovens.
 
-### 2. Perfil de Idade dos clientes
-
 Agora iremos analisar a distribuição de cientes por profissão, clusterizada por idade. Dessa forma podemos verificar em qual profissão cada Classe de Idade está concentrada.
 
 ![image](https://github.com/user-attachments/assets/a8863c22-eb82-4075-b281-abd041307b88)
 
 
-- Note que a classe adulta é maioria em quase todas as profissões com excessão dos Retired (Aposentados), que são em sua grande maioria Idosos e Estudante, que são Jovens Adultos
+- Note que a classe adulta é maioria em quase todas as profissões com excessão dos Retired (Aposentados), que são em sua grande maioria Idosos; e Estudante, que são Jovens Adultos
 
 
-- Faremos agora uma análise do saldo bancário em relação a algumas variáveis categóricas para verificar se há alguma possível relação entre a média bancária e ter ou não ter elas
+Faremos agora uma análise do saldo bancário em relação a algumas variáveis categóricas
 
 ![image](https://github.com/user-attachments/assets/03d24abf-3dcd-48e5-a767-5ba48fd62516)
 
