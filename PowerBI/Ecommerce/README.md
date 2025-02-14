@@ -41,13 +41,28 @@ Os objetivos de fazer um dashboard para este dados são:
 - Fornecer insights para aumentar o score de avaliação por pedido
 - Fornecer insights para a área de marketing realizar campanhas eficazes
 - Fornecer insights para a área de vendas avaliar o comportamento das vendas
+- Fornecer insights para a área de logística
 
 
 
-## V- Insights
+## V- ETL
+
+- Primeiramente foi necessário criar uma tabela de Calendário para conseguir filtrar por data as tabelas fato e dimensão da maneira correta
+- Depois fiz um tratamento do tipo dos dados em todas as colunas de todas as tabelas
+- Depois fiz a tradução de todas as linhas e colunas que estavam em inglês, para português
+- Fiz remoção de valores duplicados na tabela vendedor, cliente, avaliação e produto, pois tabelas dimensão não podem conter valores duplicados, pois vão se relacionar com as tabela fato com um exclusivo valor (conceito tabela fato-dimensão)
+- Carreguei os dados do Power Query para o Power BI
 
 
-### 1. 
+### VI- Análise
+
+Agora vou fazer uma breve análise com o dashboard, para provar que ele foi efetivo nos seus objetivos.
+
+Os KPI's mais importantes dos dados fornecdiso são Ticket Médio, Faturamento Total, Média das avaliações, Tempo de Entrega, portanto, foi criado um Cartão exclusivo com medidas DAX para esses campos.
+
+![image](https://github.com/user-attachments/assets/daf3272f-0deb-4abe-b884-97d5d54f5d63)
+
+
 
 
 
