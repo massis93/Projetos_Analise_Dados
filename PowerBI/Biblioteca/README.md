@@ -36,7 +36,9 @@
 
 ## IV- Objetivo do Dashboard
 - Fornecer e monitorar os KPI's da empresa
-- Fornecer insights para a área de vendas e marketing da empresa
+- Indicar quais livros/genero literário a área de compras deve adquirir
+- Verificar o perfil de compra dos clientes
+- Verificar a sazonalidade das compras
 
 
 
@@ -94,8 +96,13 @@ E agora o Mistery:
 O Gênero Scifi possue muito mais páginas do que o Mistery. Seria interessante trazer livros de Scifi com mneos páginas? Ou trazer livros Mistery com mais páginas? Pode ser que sim, arriscar nesse caso poderia comprovar que a quantidade de páginas de um gênero não precisa estar naquele range fixo para vender. 
 
 
+---
 
+Agora vamos verificar os livros mais vendidos:
 
+![image](https://github.com/user-attachments/assets/5263f0f7-f46e-4774-82f8-44612120b28a)
+
+Aqui temos a lei de paretto, que diz que 20% dos produtos geram 80% da receita. Seria interessante que a livraria fizesse um combo entre esses livros mais vendidos e os menos vendidos oferecendo promoções, para aumentar o ticket médio da empresa. Para isso ela teria que adquirir mais estoque destes 20%, porém, até conseguiria algum desconto na hora da compra.
 
 
 
