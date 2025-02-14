@@ -19,7 +19,7 @@ Ele é composto por várias tabelas relacionadas, como:
 - Vendedores (sellers) – Dados dos vendedores do marketplace.
 - Localizações (geolocation) – Coordenadas geográficas dos clientes e vendedores.
 
-O dataset deste projeto pode ser baixado pelo Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
+O dataset deste projeto pode ser baixado pelo Kaggle pelo [link](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZGY0YTAzMzctZmVhYi00NDFkLTkzYWYtMTgwZDcxMzE2ZGM3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
 ## II- O Dataset
