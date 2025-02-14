@@ -102,7 +102,7 @@ Agora vamos verificar os livros mais vendidos:
 
 ![image](https://github.com/user-attachments/assets/5263f0f7-f46e-4774-82f8-44612120b28a)
 
-Aqui temos a lei de paretto, que diz que 20% dos produtos geram 80% da receita. Seria interessante que a livraria fizesse um combo entre esses livros mais vendidos e os menos vendidos oferecendo promoções, para aumentar o ticket médio da empresa. Para isso ela teria que adquirir mais estoque destes 20%, porém, até conseguiria algum desconto na hora da compra.
+Aqui temos a lei de paretto, que diz que 20% dos produtos geram 80% da receita. Seria interessante que a equipe de compras investisse mais no estoque desses livros, pois são o principal faturamento da empresa. Além disso, a equipe de marketing poderia oferecer um combo de produtos com os produtos menos vendidos e os mais vendidos, para assim, estimular o crescimento do ticket médio.
 
 
 
