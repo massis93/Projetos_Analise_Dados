@@ -115,12 +115,7 @@ Produção de Cana de Açucar no Brasil
 ![image](https://github.com/user-attachments/assets/bcb233e3-2a8d-4f76-b107-9484efb0146d)
 
 
-
-
-
-
-### 3. Analisar o preço de Gasolina por Regiao, fornecendo o mapa de refinaria
-### Analisar o preço do Etanol e da Gasolina ao longo dos anos
+### 2. Analisar o preço do Etanol e da Gasolina ao longo dos anos
 
 Este é o gráfico do valor médio da gasolina no Brasil
 
