@@ -74,7 +74,7 @@ No projeto de SQL, nós decidimos segmentar o clientes em 6 públicos, e aqui n�
 
 ![image](https://github.com/user-attachments/assets/4b948323-0a5c-46ee-a41e-8f28f7e55c9e)
 
-E os Gêneros Literários que mais vendem estão resumidos neste gráfico de barras. O Gênero que mais sai no ano, e em cada mês é o Scifi. Ele sempre é o campeão de vendas independente do mês.
+E os Gêneros Literários que mais vendem estão resumidos neste gráfico de barras. O Gênero que mais sai no ano, e em cada mês é o Scifi. Ele sempre é o campeão de vendas independente do mês. Por isso, seria interessante a equipe de compras destinar um orçamento maior para este gênero literário.
 
 ---
 
