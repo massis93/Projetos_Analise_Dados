@@ -1,11 +1,12 @@
-![image](https://github.com/user-attachments/assets/b4f11912-efdc-493c-a6ea-8e663846eb13)
+![image](https://github.com/user-attachments/assets/0bba30c6-64e7-47b8-851c-6d570d5c8f95)
 
 
- Olá! Nesta seção estão organizados os projetos do meu portifólio.
+
+ Nesta seção estão organizados os projetos do meu portifólio por ferramentas. Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
  
 ## 🗂️Projetos
 
 * ### [SQL](https://github.com/massis93/Projetos_Analise_Dados/tree/main/SQL)
 * ### [POWER BI](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI)
-* ### [Excel](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel)
+* ### [EXCEL](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel)
 
