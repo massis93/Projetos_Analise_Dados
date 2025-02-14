@@ -58,11 +58,21 @@ Os objetivos de fazer um dashboard para este dados são:
 
 Agora vou fazer uma breve análise com o dashboard, para provar que ele foi efetivo nos seus objetivos.
 
+#### A- KPI's
+
 Os KPI's mais importantes dos dados fornecdiso são Ticket Médio, Faturamento Total, Média das avaliações, Tempo de Entrega, portanto, foi criado um Cartão exclusivo com medidas DAX para esses campos.
 
 ![image](https://github.com/user-attachments/assets/daf3272f-0deb-4abe-b884-97d5d54f5d63)
 
+#### B - Avaliação
 
+#### C - Marketing
+
+
+#### D - Vendas
+
+
+#### E - Logística
 
 
 
