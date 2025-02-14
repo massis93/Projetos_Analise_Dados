@@ -6,9 +6,21 @@
 # ⛽Dashboard de análise de vendas de um Ecommerce
 
 ## I- Introdução
-- O conjunto de dados deste projeto, fornecido pela Agencia Nacional de Petróleo, contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi registrado, a bandeira do posto e a data de registro.
-- O dataset desde projeto é maior que o permitido para carregar aqui no GitHub, mas é possível baixar do Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
-- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZGY0YTAzMzctZmVhYi00NDFkLTkzYWYtMTgwZDcxMzE2ZGM3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+O Olist Store Dataset é um conjunto de dados públicos disponibilizado pela Olist, um marketplace brasileiro. Ele contém informações detalhadas sobre vendas online no Brasil, incluindo pedidos, produtos, clientes, pagamentos e avaliações. Esse dataset é amplamente utilizado para análise de dados, machine learning e insights de negócios.
+
+Ele é composto por várias tabelas relacionadas, como:
+
+- Pedidos (orders) – Informações sobre cada pedido, como status, timestamp, etc.
+- Itens do pedido (order_items) – Detalhes dos produtos vendidos em cada pedido.
+- Pagamentos (order_payments) – Informações sobre os pagamentos de cada pedido.
+- Clientes (customers) – Dados dos clientes, como localização.
+- Avaliações (order_reviews) – Reviews e notas deixadas pelos clientes.
+- Produtos (products) – Informações sobre os produtos vendidos.
+- Vendedores (sellers) – Dados dos vendedores do marketplace.
+- Localizações (geolocation) – Coordenadas geográficas dos clientes e vendedores.
+
+O dataset deste projeto pode ser baixado pelo Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
+Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZGY0YTAzMzctZmVhYi00NDFkLTkzYWYtMTgwZDcxMzE2ZGM3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
 
 ## II- O Dataset
 - Após removermos algumas colunas, o Dataset que iremos trabalhar contém apenas as seguintes features, e será chamado no projeto de ANP:
