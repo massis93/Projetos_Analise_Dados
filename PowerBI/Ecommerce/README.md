@@ -97,7 +97,7 @@ Confirmando a afirmação anterior, o gráfico acima nos mostra que o período d
 
 ---
 
-As vendas no estado de São Paulo também tem uma alta no final do ano, provavelmente pela Black Friday e Natal (Presentear alguém), e depois cai no começo do ano, subindo a cada mês que passa. Veja que o ticket-médio em Julho e Agosto é muito baixo. O que acontece nesse período? Seria interessante avaliar com a equipe de marketing como estão as campanhas para estes meses, e se não tiver nenhuma, fazer um incentivo para aumentar o ticket médio dos pedidos, como por exemplo, comprar algum produto e ganhar desconto na compra de outro.
+As vendas no estado de São Paulo também tem uma alta no final do ano, provavelmente pela Black Friday e Natal (Presentear alguém), e depois cai no começo do ano, subindo a cada mês que passa. Veja que o ticket-médio em Julho e Agosto é baixo. O que acontece nesse período? Seria interessante avaliar com a equipe de marketing como estão as campanhas para estes meses, e se não tiver nenhuma, fazer um incentivo para aumentar o ticket médio dos pedidos, como por exemplo, comprar algum produto e ganhar desconto na compra de outro.
 
 ![image](https://github.com/user-attachments/assets/c846965f-1e7e-4c1b-962f-d46bc5ae6e22)
 
