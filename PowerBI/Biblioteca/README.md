@@ -43,8 +43,55 @@
 
 ## V- Análise e Plano de Ação
 
+Primeiramente foi fornecido alguns KPI's importantes dos dados que me foi passados.
+
+![image](https://github.com/user-attachments/assets/9a521cee-8843-462f-9603-a9eb2f49a59b)
+
+E aqui já vemos um ticket médio bem baixo para uma biblioteca. Provavelmente o valor dos produtos é baixo, e o lucro acaba sendo baixo também. Seria interessante trabalhar com produtos de ticket maior!
+
+---
+
+![image](https://github.com/user-attachments/assets/b6eb4baa-fe75-4e32-8c0a-a457efb2545e)
+
+Vemos também uma queda no faturamento a cada ano que passa. O que a empresa tem feito com o marketing dela? Há marketing na empresa? Precisariamos de mais dados para obter essas respostas.
 
 
+![image](https://github.com/user-attachments/assets/6cd036c8-f2ab-4873-b180-53e6414baef3)
+
+Acima nós temos o faturamento médio por mês, dos 3 anos da empresa. Veja que fevereiro e junho são os meses onde o faturamento é o mais baixo. Como junho é um período que começa as férias escolares, seria interessante a equipe de marketing investir em livros para o público mais juvenil.
+
+![image](https://github.com/user-attachments/assets/8e9fa3f7-d3b6-4b26-a9c1-b2b557cd82d8)
+
+
+Agora analisando pelo grão de dia do mês, vemos que o período do fim do mês é onde tem menos vendas. Seria interessante a equipe de marketing fazer algum tipo de promoção nesses dias, ou campanhas de pagamento por cartão de crédito, pois é uma maneira das pessoas que estão sem dinheiro poderem ainda comprar.
+
+
+---
+
+![image](https://github.com/user-attachments/assets/899f1189-de24-4fa7-bc32-32061f306fb4)
+
+No projeto de SQL, nós decidimos segmentar o clientes em 6 públicos, e aqui nós observamos que o Adulto Feminino e Masculino são os que mais compram em todas os gêneros literários. Por isso, é necessário um investimento nos livros que esse tipo de público poderia ler, por exemplo, livros de finanças, material para universidades. 
+
+![image](https://github.com/user-attachments/assets/4b948323-0a5c-46ee-a41e-8f28f7e55c9e)
+
+E os Gêneros Literários que mais vendem estão resumidos neste gráfico de barras. O Gênero que mais sai no ano, e em cada mês é o Scifi. Ele sempre é o campeão de vendas independente do mês.
+
+---
+
+
+![image](https://github.com/user-attachments/assets/4aa8ad2a-72b8-4f80-a16f-b3ad50f36b7b)
+
+Com o nosso gráfico de dispersão conseguimos verificar que, na medida em que cresce a idade, há pouca variação na quantidade de páginas que as pessoas lêem, e isso acontece da mesma forma para cada gênero literário. Portanto, a idade não influencia muito na quantidade de páginas que um livro deve ter.
+
+Porém, vemos que há bastante variação na quantidade de páginas dos livros de cada gênero. Veja o Scifi:
+
+![image](https://github.com/user-attachments/assets/74cc72c0-66c1-4f29-8d05-1a909f25a461)
+
+E agora o Mistery:
+
+![image](https://github.com/user-attachments/assets/06c8053c-a286-4487-9386-12c04b899865)
+
+O Gênero Scifi possue muito mais páginas do que o Mistery. Seria interessante trazer livros de Scifi com mneos páginas? Ou trazer livros Mistery com mais páginas? Pode ser que sim, arriscar nesse caso poderia comprovar que a quantidade de páginas de um gênero não precisa estar naquele range fixo para vender. 
 
 
 
