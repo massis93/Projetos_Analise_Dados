@@ -2,7 +2,7 @@
 
 
 
- Nesta seção estão organizados os projetos do meu portifólio por ferramentas. Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
+Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
  
 ## 🗂️Power BI
 
