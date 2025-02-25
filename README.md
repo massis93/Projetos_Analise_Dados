@@ -21,14 +21,14 @@ Descrição: KPIs de Monitoramento do Etanol e Gasolina ao longo do tempo, forne
 
 ## 🗂️Excel
 
+### 🏦[Bank Marketing](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Bank%20Marketing)
+Descrição: Com os dados da campanha de Marketing, consegui verificar o perfil financeiro dos clientes e as variáveis que influenciaram alguns clientes a aderirem a campanha. Também sugeri alguns planos de ação para melhorar o faturamento do Banco.
+
 ### 📚[MBA Admission](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/MBA)
 Descrição: Verifiquei quais variáveis influenciaram na admissão de alunos no programa de MBA e se houve algum viés nessa admissão.
 
 ### 🧀[Canadian Cheese](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Canadian%20Cheese)
 Descrição: Através de uma análise, verifiquei as variáveis que influenciam na produção de determinados tipos de queijos, e fiz uma análise diagnóstica dos dados missing.
-
-### 🏦[Bank Marketing](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Bank%20Marketing)
-Descrição: Com os dados da campanha de Marketing, consegui verificar o perfil financeiro dos clientes e as variáveis que influenciaram alguns clientes a aderirem a campanha. Também sugeri alguns planos de ação para melhorar o faturamento do Banco.
 
 ### 📲[Análise Comportamental de Usuários Celular](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Smartphone%20Behavior)
 Descrição: Verifiquei os motivos de alguns usuários utilizarem mais o celular do que outros, e também fiz uma análise do consumo de bateria.
