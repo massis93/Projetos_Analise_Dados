@@ -22,4 +22,4 @@ Todos os dados são fictícios e todos os problemas de negócio foram criados po
 ## 🗂️SQL
 
 ### 📖[Análise de vendas Biblioteca](https://github.com/massis93/Projetos_Analise_Dados/tree/main/SQL/An%C3%A1lise%20de%20Vendas%20Biblioteca)
-
+Descrição: A análise foi feita utilizando SQL Server
