@@ -19,3 +19,7 @@
 ### 🏦[Bank Marketing](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Bank%20Marketing)
 ### 📲[Análise Comportamental de Usuários Celular](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Smartphone%20Behavior)
 
+## 🗂️SQL
+
+### 📖[Análise de vendas Biblioteca](https://github.com/massis93/Projetos_Analise_Dados/tree/main/SQL/An%C3%A1lise%20de%20Vendas%20Biblioteca)
+
