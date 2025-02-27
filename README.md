@@ -5,7 +5,7 @@
 Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
 ## 🗂️PYTHON
 
-### [ETL com Pipeline de dados]()
+### [ETL com Pipeline de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Python/Pipeline/README.md)
 - Descrição: Aqui criei uma pipeline para juntar de forma automática todas as planilhas de uma pasta.
  
 ## 🗂️POWER BI
