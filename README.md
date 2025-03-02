@@ -5,7 +5,7 @@
 Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
 ## 🐍 PYTHON
 
-### [Depressão em estudantes]()
+### [Depressão em estudantes](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Depression)
 - Descrição: Análise diagnóstica para saber quais são as possíveis variáveis que podem aumentar a depressão em estudantes.
 
 ### [ETL com Pipeline de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Python/Pipeline/README.md)
