@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/cbe5fe1f-d6a5-4c54-b0eb-0bfb6e601cb7)
 
 
-# 🏦Análise Diagnóstica da Depressão em Estudantes
+# 🧑‍🎓Análise Diagnóstica da Depressão em Estudantes
 
 ## I - Problema de negócio:
 
@@ -13,27 +13,20 @@
 
 | Coluna          | Descrição                                                  
 |-|-|                            
-| `Age`        | Idade do cliente                                          
-| `Job` | Profissão              
-| `Marital`       | Estado Civil 
-| `Education`    	  | Categoria de Formação
-| `default`    	  | Inadimplente?
-| `balance`    	  | Gênero do Personagem
-| `housing`    	  | Saldo bancário
-| `loan`    	  | Tem algum investimento?
-| `contact`    	  | Forma que foi contactado
-| `y`    	  | Fez o investimento?
+| `id`        | id do Estudante                                         
+| `Gender` | Gênero do Estudante             
+| `Age`       | Idade do Estudante
+| `City`    	  | Cidade da Escola do Estudante
+| `Academic Pressure`    	  | Nível de Pressão Escolar
+| `Sleep Duration`    	  | Quantidade de Sono
+| `Dietary Habits`    	  | Hábitos Alimentares
+| `Have you ever had suicidal thoughts ?`    	  | Teve pensamento suicidas?
+| `Work/Study Hours`    	  | Horas de Estudo
+| `Family History of Mental Illness`    	  | Tem Histórico Familiar de Doença Mental?
+| `Depression`    	  | Tem Depressão?
 
 
-## III - Escopo do Projeto
-
-- Primeiramente faremos uma análise exploratória dos clientes do banco, para tentar tirar algum insight
-- Depois, faremos uma análise sobre quem aderiu ou não ao investimento, utilizando algumas variáveis categóricas
-- Após isso, faremos uma análise da forma de contato e o tempo de duração de cada chamada, para ver se isso também pode ter influenciado na adesão ao investimento
-- Finalizeremos fornecendo alguns planos de ação
-- Tenho certeza de que você irá gostar deste trabalho! 😅
-
-## IV - Análise
+## III - Análise
 
 ### 1. Perfil dos clientes
 
