@@ -1,13 +1,12 @@
-![image](https://github.com/user-attachments/assets/8f344950-144c-4d3c-b225-69681e551256)
+![image](https://github.com/user-attachments/assets/cbe5fe1f-d6a5-4c54-b0eb-0bfb6e601cb7)
 
-# 🏦Análise de Marketing de um Banco Europeu Fictício
+
+# 🏦Análise Diagnóstica da Depressão em Estudantes
 
 ## I - Problema de negócio:
 
-- Um banco fez uma campanha de marketing para seus clientes fazerem determinado investimento e anotou em um [conjunto de dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/bank.csv) as informações dessa campanha, bem como o perfil dos usuários contactados. O banco deseja que eu faça uma análise para saber como foi essa campanha, para poderem ter insights que melhorem as próximas campanhas.
-- Toda a análise exploratória e diagnóstica será pelo Excel, com o auxílio de fórmulas e da tabela dinâmica
-- O arquivo XLSX que contém as tabelas e fórmulas pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Excel/Bank%20Marketing/an%C3%A1lise_banco.xlsx)
-
+- O CEO de uma empresa de saúde, me contratou para verificar [dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Python/Depression/Student%20Depression%20Dataset.csv) coletados sobre alunos de diferentes escolas. Cada entrada nesse dataset contém informações se o aluno tem ou não depressão, e algumas features como: pressão escolar, genero, idade, histórico de mental illness, horas de estudo. O CEO da empresa deseja saber quais são os fatores que podem estar influenciando que alunos tenham depressão.
+- O notebook em Jupyter contendo o código em python, pode ser acessado nesse [link]()
 
 
 ## II - Dataset
