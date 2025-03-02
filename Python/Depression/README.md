@@ -6,7 +6,7 @@
 ## I - Problema de negócio:
 
 - O CEO de uma empresa de saúde, me contratou para verificar [dados](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Python/Depression/Student%20Depression%20Dataset.csv) coletados sobre alunos de diferentes escolas. Cada entrada nesse dataset contém informações se o aluno tem ou não depressão, e algumas features como: pressão escolar, genero, idade, histórico de mental illness, horas de estudo. O CEO da empresa deseja saber quais são os fatores que podem estar influenciando que alunos tenham depressão.
-- O notebook em Jupyter contendo o código em python, pode ser acessado nesse [link]()
+- O notebook em Jupyter contendo o código em python, pode ser acessado nesse [link](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Python/Depression/Depression_Analysis.ipynb)
 
 
 ## II - Dataset
