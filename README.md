@@ -4,7 +4,7 @@
 
 Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
 ## 🐍 PYTHON
-### [Car Sales]()
+### [Car Sales](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/CarSales)
 - Descrição: Análise das vendas de uma rede de lojas de venda de carros gerando insights e tendências no mercado Automotivo
 
 ### [Depressão em estudantes](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Depression)
