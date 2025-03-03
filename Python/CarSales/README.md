@@ -29,3 +29,6 @@ Fui contratado para atuar como analista de dados de uma empresa chamada CarCente
 | `Nome Loja`           | Nome da loja onde o carro foi comprado                                                                                                              |
 
 ## III - Análise
+
+Primeiramente vou entender o dataset, observando quantidade de linhas e colunas, tipos das colunas, distribuição por idade de por gênero.
+Logo após farei análises univariadas, bivariadas para compreender relações, e correlações, e gerar insights para o CEO da empresa.
