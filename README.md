@@ -4,6 +4,8 @@
 
 Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
 ## 🐍 PYTHON
+### [Car Sales]()
+- Descrição: Análise das vendas de uma rede de lojas de venda de carros gerando insights e tendências no mercado Automotivo
 
 ### [Depressão em estudantes](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Depression)
 - Descrição: Análise diagnóstica para saber quais são as possíveis variáveis que podem aumentar a depressão em estudantes.
