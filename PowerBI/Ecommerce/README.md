@@ -21,7 +21,8 @@ O [dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) desde p
 ## II- DER
 Um DER (Diagrama Entidade-Relacionamento) é uma representação visual do modelo de dados de um sistema, ele mostra como as tabelas estão relacionadas/conectadas entre si.
 
-![image](https://github.com/user-attachments/assets/4bbce40f-b0fe-42d0-8042-ec01f4fd0b04)
+![image](https://github.com/user-attachments/assets/69dc16fe-5a18-4d58-893d-0f81194bac80)
+
 
 
 
