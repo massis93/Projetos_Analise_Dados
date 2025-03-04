@@ -2,7 +2,7 @@
 
 
 
-# 💹Dashboard de vendas de um Ecommerce
+# 💹Dashboard Olist Sales
 
 ## I- Introdução
 - A Olist é uma empresa brasileira que oferece soluções para pequenos, médios e grandes lojistas venderem seus produtos de forma mais eficiente em marketplaces, como Mercado Livre, Amazon, Americanas, e outros. A empresa forneceu um dataset público de 100k pedidos contendo informações de vendas, clientes, vendedores, transações, preservando a identidade dos clientes e vendedores. Ele é composto por várias tabelas relacionadas, como:
