@@ -55,7 +55,28 @@ As bibliotecas que trabalharemos serão pandas, matplotlib, seaborn e numpy. Def
 
 
 ### 3 - A nota de Condition é afetada por quais parâmetros?
+Sei que a nota de Condition varia de 1 a 49, mas quais parâmetro influenciam nessa nota?
+
+![image](https://github.com/user-attachments/assets/a933ca2d-e389-4c83-862d-9516f28d7a2c)
+
+Veja que há notas de carros variando de 0 a 50 tanto em carros 0, quanto em carros que rodaram 200 mil km. Portanto a Condição do carro parece não ter relação com o odômetro do carro.
+
+Vou verificar se o preço dos carros pode influenciar nessa nota de condição. Antes vou fazer um boxplot dos preços da tabela fipe desses carro, para verificar quantas categorias, e quais as condições das categorias para os preços dos carros que vou criar.
+
+![image](https://github.com/user-attachments/assets/17d76a38-683b-4aee-b013-21f6d48a0668)
+
+- A maioria dos carros se concentram abaixo de 35mil mais ou menos.
+- Vou criar as categorias dos carros para fazer um heatmap
+
+![image](https://github.com/user-attachments/assets/dedfd906-df0a-4197-bc6f-48169d474456)
+
+Veja que quanto menor é a categoria do carro, menor é a média da nota da condição do carro, e quanto mais novo é o carro, maior a nota.
+Portanto, podemos dizer que há uma relação entre essas variáveis, que possivelmente estejam causando o aumento e a diminuição dessas notas.
+
+
 ### 4 - A concessionária vende mais carros de qual classe?
+
+
 ### 5 - Quais os tipos de Body mais vendidos?
 ### 6 - Quais as cores que mais saem
 ### 7 - Qual tipo de transmissão é mais vendida
@@ -65,10 +86,5 @@ As bibliotecas que trabalharemos serão pandas, matplotlib, seaborn e numpy. Def
 
 
 ## IV - Conclusões
-- Alunos que têm histórico de Mental Illness tem maior probabilidade de ter depressão. Por isso, seria interessante olhar com cautela todos os alunos com histórico positivos.
-- Não há relação entre gênero e ter depressão
-- Pensamento suicidas acontecem com mais frequencia em Indivídos com Depressão
-- Alunos que dormem menos que 5 horas, tem maior probabilidade de ter depressão do que alunos que dormem mais que 8 horas.
-- Habitos alimentares saudáveis diminuem a probabilidade de se ter depressão, comparado com não saudáveis.
-- Alunos com depressão tem idade menor do que alunos sem depressão.
+
 
