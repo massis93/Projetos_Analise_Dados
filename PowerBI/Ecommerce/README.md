@@ -4,6 +4,8 @@
 
 # 💹Dashboard Olist Sales
 
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiZGY0YTAzMzctZmVhYi00NDFkLTkzYWYtMTgwZDcxMzE2ZGM3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+
 ## I- Introdução
 - A Olist é uma empresa brasileira que oferece soluções para pequenos, médios e grandes lojistas venderem seus produtos de forma mais eficiente em marketplaces, como Mercado Livre, Amazon, Americanas, e outros. A empresa forneceu um dataset público de 100k pedidos contendo informações de vendas, clientes, vendedores, transações, preservando a identidade dos clientes e vendedores. Ele é composto por várias tabelas relacionadas, como:
 
