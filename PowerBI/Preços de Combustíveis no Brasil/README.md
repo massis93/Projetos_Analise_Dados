@@ -4,6 +4,8 @@
 
 # ⛽Preço dos Combustíveis no Brasil (2004 a 2025)
 
+- Você pode acessar o dashboard online do Power BI deste projeto neste [link](https://app.powerbi.com/view?r=eyJrIjoiMTFmNGZmNjgtY2VjYS00NTE2LWI5ZjMtMGI2MDJkZmM4OWY3IiwidCI6IjRmZDUyYzZkLTcwMDctNDc1NS04NWZhLTI1Zjg2ZTcxYWVjNyJ9).
+
 ## I- Introdução
 - O conjunto de dados deste projeto, fornecido pela Agencia Nacional de Petróleo, contém o preço do Etanol e Gasolina, coletados em diferentes cidades no Brasil, pelo período de 2004 até 2025. Nele contém também o endereço onde o preço foi registrado, a bandeira do posto e a data de registro.
 - O dataset desde projeto pode ser baixado no Kaggle pelo [link](https://www.kaggle.com/datasets/paulogladson/anp-combustveis).
