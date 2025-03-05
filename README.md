@@ -20,30 +20,30 @@ Todos os dados são fictícios e todos os problemas de negócio foram criados po
  
 ## 📊 POWER BI
 
-### [Dashboard Olist](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI/Ecommerce)
+### [Dashboard Olist - Logística e Vendas](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI/Ecommerce)
 - Descrição: KPIs de Vendas, fornecendo visuais e uma análise para o setor de logística, vendas e marketing.
 
-### [Dashboard Vendas Biblioteca](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI/Biblioteca)
+### [Dashboard de Vendas de uma Biblioteca](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI/Biblioteca)
 - Descrição: KPIS de Ecommerce, fornecedo visuais e insights para a equipe de compras, marketing e vendas.
 
-### [Preços de Combustível no Brasil - 2004 a 2025](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI/Pre%C3%A7os%20de%20Combust%C3%ADveis%20no%20Brasil)
+### [Dashboard dos Preços de Combustível no Brasil - 2004 a 2025](https://github.com/massis93/Projetos_Analise_Dados/tree/main/PowerBI/Pre%C3%A7os%20de%20Combust%C3%ADveis%20no%20Brasil)
 - Descrição: KPIs de Monitoramento do Etanol e Gasolina ao longo do tempo, fornecendo um diagnóstico sobre a sazonalidade dos preços de etanol.
 
 
-### [Incêndios no Brasil](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/README.md)
+### [Dashboard dos Incêndios no Brasil](https://github.com/massis93/Projetos_Analise_Dados/blob/main/PowerBI/Monitoramento%20Inc%C3%AAndios%20Brasil/README.md)
 - Descrição: KPIs de Monitoramento dos Incêndios no Brasil, fornecendo planos de ação para conter os incêndios com base na análise do Dashboard.
 
 
 
 ## 🗂️ Excel
 
-### [Bank Marketing](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Bank%20Marketing)
+### [Marketing de um Banco](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Bank%20Marketing)
 - Descrição: Com os dados da campanha de Marketing, consegui verificar o perfil financeiro dos clientes e as variáveis que influenciaram alguns clientes a aderirem a campanha. Também sugeri alguns planos de ação para melhorar o faturamento do Banco.
 
-### [MBA Admission](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/MBA)
+### [Admissão no MBA](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/MBA)
 - Descrição: Verifiquei quais variáveis influenciaram na admissão de alunos no programa de MBA e se houve algum viés nessa admissão.
 
-### [Canadian Cheese](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Canadian%20Cheese)
+### [Produção de Queijos](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Canadian%20Cheese)
 - Descrição: Através de uma análise, verifiquei as variáveis que influenciam na produção de determinados tipos de queijos, e fiz uma análise diagnóstica dos dados missing.
 
 ### [Análise Comportamental de Usuários Celular](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Smartphone%20Behavior)
