@@ -10,7 +10,7 @@ Todos os dados são fictícios e todos os problemas de negócio foram criados po
 
 ## 🐍 PYTHON
 ### [Vendas de Carros](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Car%20Sales)
-- Descriçã: Análise e insights de 500 mil vendas de uma loja de carros.
+- Descrição: Análise e insights de 500 mil vendas de uma loja de carros.
 
 ### [Depressão em estudantes](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Depression)
 - Descrição: Análise diagnóstica para saber quais são as possíveis variáveis que podem aumentar a depressão em estudantes.
