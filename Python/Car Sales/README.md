@@ -174,5 +174,14 @@ Isso nos mostra que carros populares, por mais que sejam mais baratos, impulsion
 
 
 ## IV - Conclusões
-
+- A Ford é o modelo de carro que mais vende e mais contribui para o faturamento da empresa
+- Carros de 10k a 20k são os que mais venderam
+- As vendas tem uma sazonalidade praticamente semanal semanal com picos no dia 3, 10, 18 e 27
+- Carros automáticos venderam muito mais do que carros manuais
+- As cores de carros que mais venderam foram Preto, Branco, Cinza, e Prata. Com foco no Crew cab, que vendeu muito branco, e no g sedan que vendeu bastante preto e cinza.
+- O modelo de body mais vendido foi o Sedan e SUV
+- Quanto maior a condition do carro, maior foram as vendas
+- Carros mais recentes e com valor maior, tem em média maiores notas de condition
+- 75% dos carros vendidos tem valor de até 18,3k
+- Carros mais antigos tiveram menos vendas do que carros mais novos
 
