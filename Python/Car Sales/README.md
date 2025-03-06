@@ -123,12 +123,54 @@ Porém, sabemos que as vendas dos modelos mais recentes é muito maior dos que o
 
 ![image](https://github.com/user-attachments/assets/3ba9d480-d0ce-4182-9583-8b6031904ee0)
 
--Veja que as vendas de carros manuais são minoria até entre carros que são mais antigos.
--Temos dois motivos: ou a maior parte dos carros antigos que tem na loja são de sistema de transmissão automático, ou esse público tem preferido carros automáticos. 
+- Veja que as vendas de carros manuais são minoria até entre carros que são mais antigos.
+- Temos dois motivos: ou a maior parte dos carros antigos que tem na loja são de sistema de transmissão automático, ou esse público tem preferido carros automáticos. 
 
 ### 8 - As vendas tiveram alguma sazonalidade?
+
+Vamos dividir as vendas por ano de 2014 e 2015.
+
+![image](https://github.com/user-attachments/assets/1233d803-0fda-4481-8768-21dbffe833ab)
+
+- Parece que há muitos dados de vendas faltando para o ano de 2014, por isso, vou analisar o ano de 2015.
+
+![image](https://github.com/user-attachments/assets/ef841d40-a85d-4e89-aa87-b354ad6ac888)
+
+- Para o ano de 2015 os dados estão mais completos. Será que essas ondulações indicam alguma sazonalidade? Vou analisar por dia esses dados.
+
+![image](https://github.com/user-attachments/assets/f3346c74-5e7b-4dd9-bf73-52451c718930)
+
+Ficou muito melhor de se observar!
+
+- Traçando um gráfico de linhas com as vendas médias por cada dia, vemos que há 4 picos de vendas. É um pico de vendas quase que semanal. Seria interessante, as concessionárias fazerem algum tipo de promoção nesses vales do gráfico, pois sabem que as vendas irão em média cair nesses dias.
+
+
 ### 9 - Qual faixa de preço de carro é mais vendido?
+
+Fizemos uma divisão de categorias para os carros anteriormente. Vamos verificar qual valor de carro que vendeu mais.
+
+![image](https://github.com/user-attachments/assets/ece1dfff-369a-41da-81bb-bc8b4931c51b)
+
+- A categoria B foi a mais vendida
+- Talvez o poder aquisitivo desse público esteja nessa faixa de valores
+
 ### 10 - Qual marca de carro é a mais vendida?
+
+Para finalizar nossa análise, vamos verificar as 10 marcas de carro mais vendidas.
+
+![image](https://github.com/user-attachments/assets/a78b5651-67b3-4dc2-aef6-bbfaffa33fe7)
+
+- A ford é a marca de carro mais vendida
+- Seria interessante trabalhar com mais carros da ford, e verificar se há aumento no faturamento da empresa.
+
+Porém, sabemos que carros da ford são mais em conta do que uma ferrari. Será que a quantidade de vendas de uma ferrari superaria a quantidade de vendas de uma ford?
+
+![image](https://github.com/user-attachments/assets/4e908c05-7d5e-4b96-8518-6ebb88d9c932)
+
+O faturamento da ford ainda é o campeão.
+Isso nos mostra que carros populares, por mais que sejam mais baratos, impulsionam o faturamento da loja por mais que tenham que vender muito mais para obter o mesmo lucro de um mais caro.
+
+- E se a loja também oferecesse serviços de mecânica automotiva para esses carros? Vemos que o giro de carros populares é bem grande, isso aumentaria bastante o faturamento da loja.
 
 
 ## IV - Conclusões
