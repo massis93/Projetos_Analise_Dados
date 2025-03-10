@@ -9,6 +9,10 @@ Todos os dados são fictícios e todos os problemas de negócio foram criados po
 - Descrição: Uma análise Descritiva e Diagnóstica das vendas de uma Biblioteca utilizando o SQL Server
 
 ## 🐍 PYTHON
+
+### [Churn Telecomunicações](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Churn)
+- Descrição: ETL e análise de churn de uma empresa de Telecomunicações.
+
 ### [Vendas de Carros](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Python/Car%20Sales)
 - Descrição: Análise e insights de 500 mil vendas de uma loja de carros.
 
