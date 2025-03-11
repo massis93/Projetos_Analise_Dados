@@ -48,20 +48,21 @@ As bibliotecas que trabalharemos serão pandas, matplotlib, seaborn e numpy. Def
 
 ### 2 - ETL
 
-Após verificar algumas informações do dataset, vou substituir os valores de 'Yes' e 'No' para 1 e 0, para facilitar nossa análise.
+Após verificar algumas informações do dataset, percebi que algumas colunas possuem valor 'Yes' e 'No' para os serviços que assinam da empresa de telecomunicação. Então, irei substituir essas valores categóricos de object para um valor binário numérico (1 e 0).
 
 ![image](https://github.com/user-attachments/assets/acfff8d4-9d7d-4c82-a774-e7e9908922f4)
 
-- Gerou um erro dizendo que há valores nas colunas que não são 'Yes' ou 'No', mas 'No internet service'.
-- Vou substituir esses valores para 'No', pois como eles não tem o serviço, podem ser categorizados como 'No'.
+Após tentar substituir, gerou um erro dizendo que há valores nas colunas que não são 'Yes' ou 'No', mas 'No internet service'. 
+
+Vou substituir esses valores também para 'No', pois como eles não tem o serviço, podem ser categorizados como 'No'.
 
 ### 3 - Análise dos clientes
 
-Gerei uma tabela simples, usando a função desbribe para quem deu churn, e quem não deu churn. Dessa forma podemos verificar o perfil dos clientes em um gráfico.
+Gerei uma tabela simples, usando a função desbribe para quem deu churn, e quem não deu churn. Dessa forma podemos verificar o perfil dos clientes em um gráfico simples.
 
 ![image](https://github.com/user-attachments/assets/51716344-049b-4924-99df-c609f03437d7)
 
-Agora nós temos o perfil de quem deu churn e ainda é cliente:
+Agora nós temos o perfil de quem deu churn e de quem ainda é cliente:
 
 - Quem deu churn tem uma média mensal maior de gastos
 - Quem deu churn tem maior probabilidade de ter fatura digital , será que ter fatura digital influencia em dar churn por ser mais fácil de cancelar?
