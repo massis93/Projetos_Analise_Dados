@@ -111,13 +111,15 @@ Também farei a conversão para float das duas colunas 'total charges' das duas 
 
 Após o Tratamento dos dados temos a seguinte visualização:
 
-![image](https://github.com/user-attachments/assets/9489eeba-cfcf-4987-a9fa-35a9ebc5b894)
+![image](https://github.com/user-attachments/assets/4cab8c19-ee18-4efe-87ae-84b3ff4bb4fa)
+
 
 Fazendo uma divisão de Total Charges por quem deu churn e quem ainda é cliente, vemos que quem deu churn tem um total de pagamento menor, isso pode significar que o tenure dos clientes que deram churn é menor!
 
 #### 3.3 - Tenure
 
-![image](https://github.com/user-attachments/assets/16c5971c-193e-4ff1-9a6c-724bcf01da18)
+![image](https://github.com/user-attachments/assets/345cc434-d3cc-4e2b-add8-44a2742504cb)
+
 
 - A distribuição de tenure dos clientes é bastante variada. Como já vimos, temos clientes com tenure igual a 0, ou seja, clientes muito recentes, e clientes com tenure de mais de 70, ou seja, com quase 6 anos como cliente.
 - Portanto, a empresa pode ser nova no mercado, comparado a empresas de telecomunicações mais tradicionais.
@@ -210,4 +212,11 @@ Para finalizar, irei analisar se como é a cobrança mensal quanto maior o Tenur
 
 ## IV - Conclusões
 
-
+- A maioria dos cancelamentos ocorrem no primeiro mês, e a maior parte de quem deu churn tinha assinatura mensal. Pode ser que incentivando os clientes a já assinarem planos de contrato anual diminua o número de cancelamentos.
+- Clientes com Parceiros e com dependentes tem menor probabilidade de dar churn. Pode ser que quanto maior a quantidade de utilizadores do plano na mesma casa, menor a chance de dar churn. Uma boa opção seria oferecer um pacote de plano que envolva mais de uma casa para clientes que não tenham parceiros ou dependentes. Por exemplo, um plano para o cliente e para a mãe dele na outra casa, dessa forma, pode ser que diminuiria a taxa de churn desses clientes.
+- Clientes Idosos tem maior chance de dar Churn. Talvez fosse interessante investigar se há dificuldade de acessar aos serviços de streaming nesse público, ou se eles estão utilizando a internet. Caso não estejam, seria interessante fazer alguma campanha oferecendo suporte para instalarem o aplicativo e os ensinarem a utilizar os serviços.
+- Os clientes que tiveram suporte técnico tiveram menos churn. Seria interessante oferecer desconto no suporte técnico para clientes que tem mais probabilidade de dar churn, como idosos, sem parceiros, ou para clientes que assinam plano mensal ao trocarem para um plano anual.
+- Seria interessante investigar como está a avaliação dos clientes referente a internet de fibra, e fazer constantes verificações de velocidade e ping da internet. Talvez a internet de fibra possa estar enfrentando alguma dificuldade por ter mais churn do que a DSL, proporcionalmente.
+- Clientes que utilizam fatura sem papel, provavelmente estão utilizando serviços digitais e conseguem cancelar mais facilmente. Seria interessante obrigar o cliente a ter contato com um representante da empresa, dentro do app, antes de tentarem cancelar, para conseguir conter a taxa de churn.
+- Como a taxa de churn em quem usa o pagamento por eCheck é maior, seria interessante verificar o se os clientes não estão tendo cancelamentos por dificuldades nesse tipo de pagamento, que é bastante burocrático.
+- Veja que oferecer um desconto nos primeiros meses pode ser interessante, pois, com base no gráfico de dispersão e de distribuição de churn, os clientes tendem a cancelar o plano nos primeiros meses, e os clientes, quanto mais tempo permanecem com a empresa, mais tendem a gastar, trazendo o retorno desse desconto dado nos primeiros meses.
