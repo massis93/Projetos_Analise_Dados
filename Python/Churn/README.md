@@ -92,7 +92,7 @@ Agora vou analisar de que forma estão distribuidas as cobranças mensais.
 
 ![image](https://github.com/user-attachments/assets/d96a8b6e-5898-4423-9c1d-f24c172d6942)
 
-- Quem deu churn pagava uma assinatura mais cara do que quem não de será que o preço influenciaria as pessoas a darem churn? 
+- Quem deu churn pagava uma assinatura mais cara do que quem não deu. Será que o preço influenciaria as pessoas a darem churn? 
 
 Agora verificarei o total que os clientes já pagaram:
 
@@ -114,7 +114,7 @@ Após o Tratamento dos dados temos a seguinte visualização:
 ![image](https://github.com/user-attachments/assets/4cab8c19-ee18-4efe-87ae-84b3ff4bb4fa)
 
 
-Fazendo uma divisão de Total Charges por quem deu churn e quem ainda é cliente, vemos que quem deu churn tem um total de pagamento menor, isso pode significar que o tenure dos clientes que deram churn é menor!
+Fazendo uma divisão de Total Charges por quem deu churn e quem ainda é cliente, vemos que quem deu churn tem um total de pagamento menor, isso pode significar que o tenure dos clientes que deram churn é menor. Com quanto tempo será que os clientes, em média, dão churn?
 
 #### 3.3 - Tenure
 
