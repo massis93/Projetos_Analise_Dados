@@ -48,13 +48,13 @@ As bibliotecas que trabalharemos serão pandas, matplotlib, seaborn e numpy. Def
 
 ### 2 - ETL
 
-Após verificar algumas informações do dataset, percebi que algumas colunas possuem valor 'Yes' e 'No' para os serviços que assinam da empresa de telecomunicação. Então, irei substituir essas valores categóricos de object para um valor binário numérico (1 e 0).
+Após verificar algumas informações do dataset, percebi que algumas colunas possuem valor 'Yes' e 'No' para os serviços que os clientes assinam da empresa de telecomunicação. Então, irei substituir essas valores categóricos de object para um valor binário numérico (1 e 0).
 
 ![image](https://github.com/user-attachments/assets/acfff8d4-9d7d-4c82-a774-e7e9908922f4)
 
 Após tentar substituir, gerou um erro dizendo que há valores nas colunas que não são 'Yes' ou 'No', mas 'No internet service'. 
 
-Vou substituir esses valores também para 'No', pois como eles não tem o serviço, podem ser categorizados como 'No'.
+Vou substituir esses valores também para 'No', pois como eles não tem a internet e esses serviços dependem da internet, podem ser categorizados como 'No'.
 
 ### 3 - Análise dos clientes
 
