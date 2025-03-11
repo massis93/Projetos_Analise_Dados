@@ -141,23 +141,24 @@ Como será que é o churn em quem tem e não tem Partner?
 
 ![image](https://github.com/user-attachments/assets/393ec261-74a9-42fe-952d-9ca0e66fe69f)
 
-Veja que os clientes que tem partner tem menor probabilidade de dar churn. Talvez seja pois quem tem um parceiro, tenha mais um dependente dos serviços prestados pela empresa de telecom, criando uma barreira maior para fazer o cancelamento dos serviços.
+Veja que os clientes que tem partner tem menor probabilidade de dar churn. Talvez seja pois quem tem um parceiro, tenha mais uma pessoa que utilize os serviços prestados pela empresa de telecom, dessa forma, o cliente acaba não cancelando tão facilmente.
 
 Agora irei verificar em qual período esta acontecendo o churn.
 
 ![image](https://github.com/user-attachments/assets/d9d11152-d4bc-4892-8570-97d34ce79583)
 
 
-- Quem dá churn concentra-se nos primeiros meses, mais especificamente no primeiro mês.
+- O churn concentra-se nos primeiros meses, mais especificamente no primeiro mês.
 - A distribuição de quem não deu churn tem uma alta quantidade de clientes no tenure 70, ou seja, muitos cliente fiéis.
-- Se há uma alta taxa de fidelidade, porém há muitos clientes cancelando no primeiro mês, será que o tipo de plano estaria influenciando as pessoas a cancelarem o serviço? Por exemplo, se a maioria das pessoas que deu churn, tenha um serviço de contrato mensal, isso estaria desestimulando elas a ficarem como clientes. Talvez oferecendo um desconto para ficarem com um plano anual ou bienal, a taxa de churn diminuiria.
-- Iremos analisar isso mais pra frente
+- Se há clientes muito fiéis, porém há muitos clientes cancelando no primeiro mês, será que o tipo de plano estaria influenciando as pessoas a cancelarem o serviço? Por exemplo, se a maioria das pessoas que deu churn, tinha um serviço de contrato mensal, isso estaria desestimulando elas a ficarem como clientes. Talvez oferecendo um desconto para ficarem com um plano anual ou bienal, a taxa de churn diminuiria.
+
+Iremos analisar isso mais pra frente
 
 
 ![image](https://github.com/user-attachments/assets/737d26b2-8ced-4d6c-972c-2faeabc83914)
 
 
-- Veja que a taxa de churn em quem é senior é maior, talvez seja pois pessoas de idade não utilizem muito internet, streaming de TV e de filmes, portanto não considerem a assinatura como algo de valor.
+- Veja que a taxa de churn em quem dos Seniores é maior, talvez seja pois as pessoas de idade não utilizam muito internet, streaming de TV e de filmes, portanto não considerem a assinatura como algo de valor.
 
 Como é o churn em pessoas que tem algum dependente?
 
@@ -178,7 +179,7 @@ Agora, voltando ao tema de contrato do cliente, vou verificar como esta dividido
 ![image](https://github.com/user-attachments/assets/f4816974-0552-4a0a-b2e1-89709721649d)
 
 Veja que quem não deu churn tem muito menos assinaturas de contratos mensais, enquanto quem deu churn tem praticamente somente assinaturas de contratos mensais.
-- Talvez, ter assinatura com plano de contrato mensal estaria ocasionando os cancelamentos no primeiro mês de assinatura (que é onde a maioria dos churn estão concentrados), pois o plano se encerrará sozinho, não dando chances de fidelizar o cliente.
+- Talvez, ter assinatura com plano de contrato mensal estaria ocasionando os cancelamentos no primeiro mês de assinatura (que é onde a maioria dos churn estão concentrados), pois o plano se encerrará sozinho (ou o cliente não terá vontade de fazer a renovação), não dando chances de fidelizar o cliente.
 
 E o tipo de internet?
 
@@ -192,19 +193,19 @@ Agora vou verificar se ter uma fatura sem papel pode ter alguma relação com ch
 ![image](https://github.com/user-attachments/assets/184b65a6-5f1b-4cdb-a499-db971326824e)
 
 - Quem tem uma fatura sem papel, ou seja, digital, tem maior probabilidade de dar churn
-- Pode ser que quem use a fatura digital, por estar com o aplicativo em mãos, consiga cancelar facilmente os serviço, isso explicaria essa diferença
+- Pode ser que quem use a fatura digital, por estar com o aplicativo em mãos, consiga cancelar facilmente os serviço, isso explicaria essa diferença.
 
 Como se dá o churn nos diferentes pagamentos
 
 ![image](https://github.com/user-attachments/assets/741f4b11-bc8e-4e91-89df-6b4cbcd9c0c3)
 
 - Cartão de Crédito, Mailed Check, e Bank Transfer tiveram praticamente a mesma taxa de churn
-- Agora o eCheck teve um churn muito mais expressivo.
+- Agora, o eCheck teve um churn muito mais expressivo.
 - Como o eCheck demora alguns dias para cair o pagamento, pode fazer com que atrase o pagamento da fatura, levando ao cancelamento dos serviços
 - O eCheck também tem alguns problemas no pagamento pois se tiver alguma assinatura suspeitamente errada, o valor não irá ser recebido. Essas e outras dificuldades burocráticas desse tipo de pagamento, pode fazer com que as pessoas cancelem o serviço da empresa de telecom.
 
 
-Para finalizar, irei analisar se como é a cobrança mensal quanto maior o Tenure do cliente:
+Para finalizar, irei analisar como é a cobrança mensal quanto maior o Tenure do cliente:
 
 ![image](https://github.com/user-attachments/assets/c8f090db-d9a5-45fd-8733-2597902b7602)
 
