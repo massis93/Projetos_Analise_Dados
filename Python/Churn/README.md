@@ -78,7 +78,7 @@ Vamos fazer uma análise mais profunda a seguir.
 
 ![image](https://github.com/user-attachments/assets/7f05343c-ad6e-4fe6-8bac-b59f323f6713)
 
-Os clientes da empresa são proporcionalmente iguais entre homens e mulheres. As campanhas de marketing e a programação dos serviços de streaming teria que se atentar a isso.
+Os clientes da empresa são proporcionalmente iguais entre homens e mulheres. As campanhas de marketing e a programação dos serviços de streaming teriam que se atentar a isso.
 
 #### 3.2 - Mensal e Total Charges
 
@@ -86,14 +86,13 @@ Agora vou analisar de que forma estão distribuidas as cobranças mensais.
 
 ![image](https://github.com/user-attachments/assets/101a867a-137b-49c6-ab64-2f3ecd77038d)
 
-- A mediana esta situada em 70 e temos uma média de 64, portanto teremos uma distribuição quase simétrica.
-- Temos que os valores em sua maioria, variam entre 35 e 90, portanto são planos bem distintos que esses clientes tem, devido aos vários serviços que a empresa possui
-- O menor valor é de 18, então não temos nenhuma cobrança de 0, que estaria errada
+- A mediana esta situada em 70 e temos uma média de 64, portanto teremos uma distribuição quase simétrica de quantidade em torno da variável monthly Charges.
+- Temos que os valores, em sua maioria, variam entre 35 e 90, portanto são planos bem distintos que esses clientes tem devido aos vários serviços que a empresa possui.
+- O menor valor é de 18, então não temos nenhuma cobrança de 0. Caso tivesse, teriamos que investigar o motivo de não estar sendo cobrado nenhum valor.
 
 ![image](https://github.com/user-attachments/assets/d96a8b6e-5898-4423-9c1d-f24c172d6942)
 
-- Quem deu churn pagava uma assinatura mais cara do que quem não deu
-- Será que o preço influenciaria as pessoas a darem churn?
+- Quem deu churn pagava uma assinatura mais cara do que quem não de será que o preço influenciaria as pessoas a darem churn? 
 
 Agora verificarei o total que os clientes já pagaram:
 
