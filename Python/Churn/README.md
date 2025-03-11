@@ -78,7 +78,7 @@ Vamos fazer uma análise mais profunda a seguir.
 
 ![image](https://github.com/user-attachments/assets/7f05343c-ad6e-4fe6-8bac-b59f323f6713)
 
-Os clientes da empresa são proporcionalmente iguais entre homens e mulheres. As campanhas de marketing e a programação dos serviços de streaming teriam que se atentar a isso.
+Os clientes da empresa são proporcionalmente iguais entre homens e mulheres. As campanhas de marketing e a programação que acontece nos serviços de streaming teriam que se atentar a esse fato, para conseguirem manter essas duas categorias de clientes.
 
 #### 3.2 - Mensal e Total Charges
 
@@ -98,11 +98,18 @@ Agora verificarei o total que os clientes já pagaram:
 
 ![image](https://github.com/user-attachments/assets/b9904a39-fd53-43e5-8425-a335484c672e)
 
-Veja que a tabela esta várias legendas, pois a coluna esta como formato de object, fazendo com que seja plotado no gráfico todas os valores de Total Charges na legenda.
+Veja que a tabela esta com várias legendas sobrepostas, pois a coluna 'total charges' esta no formato de object, fazendo com que seja plotado no gráfico todas os valores de Total Charges na legenda.
 
-![image](https://github.com/user-attachments/assets/58c85701-41a9-4b94-b1d0-b4f1dde7ba4d)
+![image](https://github.com/user-attachments/assets/fbc3970c-e606-4e88-bd1c-d4f3aca72f20)
+
 
 Corrigindo o gráfico, agora vemos que há clientes que pagaram no total 0 reais, que provavelmente são clientes que assinaram o plano recentemente e ainda não pagaram a primeira fatura, e há clientes que pagaram mais de 8mil, ou seja, clientes muito antigos.
+
+Agora irei plotar dois boxplots sobre os valores de total charges. O primeiro para quem deu churn e o segundo para quem ainda é cliente.
+
+Também farei a conversão para float das duas colunas 'total charges' das duas tabelas.
+
+Após o Tratamento dos dados temos a seguinte visualização:
 
 ![image](https://github.com/user-attachments/assets/9489eeba-cfcf-4987-a9fa-35a9ebc5b894)
 
@@ -113,7 +120,7 @@ Fazendo uma divisão de Total Charges por quem deu churn e quem ainda é cliente
 ![image](https://github.com/user-attachments/assets/16c5971c-193e-4ff1-9a6c-724bcf01da18)
 
 - A distribuição de tenure dos clientes é bastante variada. Como já vimos, temos clientes com tenure igual a 0, ou seja, clientes muito recentes, e clientes com tenure de mais de 70, ou seja, com quase 6 anos como cliente.
-= Portanto, a empresa pode ser nova no mercado, comparado a empresas de telecomunicações mais tradicionais.
+- Portanto, a empresa pode ser nova no mercado, comparado a empresas de telecomunicações mais tradicionais.
 
 ![image](https://github.com/user-attachments/assets/40c50b97-3bea-4b32-8b76-70af0df9b839)
 
@@ -126,13 +133,13 @@ Agora vou analisar como é o churn entre homens e mulheres:
 
   ![image](https://github.com/user-attachments/assets/dd6fee70-ab16-49f2-90e8-b2889b2deafb)
 
-- Ambos os gêneros tiveram a mesma probabilidade de dar churn
+- Ambos os gêneros tiveram a mesma probabilidade de dar churn, pode ser que o churn não tenha influencia do gênero que o cliente é.
 
 Como será que é o churn em quem tem e não tem Partner?
 
 ![image](https://github.com/user-attachments/assets/393ec261-74a9-42fe-952d-9ca0e66fe69f)
 
-Veja que os clientes que tem partner nem menor probabilidade de dar churn. Talvez seja pois quem tem um parceiro, tenha mais um dependente dos serviços prestados pela empresa de telecom, criando uma barreira maior para fazer o cancelamento dos serviços.
+Veja que os clientes que tem partner tem menor probabilidade de dar churn. Talvez seja pois quem tem um parceiro, tenha mais um dependente dos serviços prestados pela empresa de telecom, criando uma barreira maior para fazer o cancelamento dos serviços.
 
 Agora irei verificar em qual período esta acontecendo o churn.
 
@@ -164,12 +171,12 @@ Será que ter suporte técnico influencia os clientes a não darem churn?
 - Quem teve suporte técnico tem menor probabilidade de dar churn
 - Talvez o suporte técnico esteja fazendo com que os clientes que estariam insatisfeitos com os serviço, utilizassem o suporte para corrigir os problemas, evitando um possível cancelamento.
 
-Agora, voltando ao tema de contrato, vou verificar como esta dividido o plano de contrato em quem deu churn e em quem não deu churn.
+Agora, voltando ao tema de contrato do cliente, vou verificar como esta dividido o plano de contrato em quem deu churn e em quem não deu churn.
 
 ![image](https://github.com/user-attachments/assets/f4816974-0552-4a0a-b2e1-89709721649d)
 
 Veja que quem não deu churn tem muito menos assinaturas de contratos mensais, enquanto quem deu churn tem praticamente somente assinaturas de contratos mensais.
-- Talvez, ter assinatura com plano de contrato mensal estaria ocasionando os cancelamentos no primeiro mês de assinatura (que é onde a maioria dos churn estão concentrados).
+- Talvez, ter assinatura com plano de contrato mensal estaria ocasionando os cancelamentos no primeiro mês de assinatura (que é onde a maioria dos churn estão concentrados), pois o plano se encerrará sozinho, não dando chances de fidelizar o cliente.
 
 E o tipo de internet?
 
@@ -192,7 +199,14 @@ Como se dá o churn nos diferentes pagamentos
 - Cartão de Crédito, Mailed Check, e Bank Transfer tiveram praticamente a mesma taxa de churn
 - Agora o eCheck teve um churn muito mais expressivo.
 - Como o eCheck demora alguns dias para cair o pagamento, pode fazer com que atrase o pagamento da fatura, levando ao cancelamento dos serviços
-- O eCheck também tem alguns problemas no pagamentom pois se tiver alguma assinatura suspeitamente errada, o valor não irá ser recebido. Essas e outras dificuldades burocráticas desse tipo de pagamento, pode fazer com que as pessoas cancelem o serviço da empresa de telecom.
+- O eCheck também tem alguns problemas no pagamento pois se tiver alguma assinatura suspeitamente errada, o valor não irá ser recebido. Essas e outras dificuldades burocráticas desse tipo de pagamento, pode fazer com que as pessoas cancelem o serviço da empresa de telecom.
+
+
+Para finalizar, irei analisar se como é a cobrança mensal quanto maior o Tenure do cliente:
+
+![image](https://github.com/user-attachments/assets/c8f090db-d9a5-45fd-8733-2597902b7602)
+
+- Temos que quanto maior a Tenure, maior o Monthly Cahrges. Talvez isso se deva ao fato de que quando um cliente é mais fiel, ele vai adquirindo mais pacotes adicionais.
 
 ## IV - Conclusões
 
