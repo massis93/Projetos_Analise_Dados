@@ -205,11 +205,28 @@ Como se dá o churn nos diferentes pagamentos
 - O eCheck também tem alguns problemas no pagamento pois se tiver alguma assinatura suspeitamente errada, o valor não irá ser recebido. Essas e outras dificuldades burocráticas desse tipo de pagamento, pode fazer com que as pessoas cancelem o serviço da empresa de telecom.
 
 
-Para finalizar, irei analisar como é a cobrança mensal quanto maior o Tenure do cliente:
+Agora, irei analisar como é a cobrança mensal quanto maior o Tenure do cliente:
 
 ![image](https://github.com/user-attachments/assets/c8f090db-d9a5-45fd-8733-2597902b7602)
 
 - Temos que quanto maior a Tenure, maior o Monthly Cahrges. Talvez isso se deva ao fato de que quando um cliente é mais fiel, ele vai adquirindo mais pacotes adicionais.
+
+Para finalizar, farei um heatmap das correlações lineares das colunas numéricas.
+
+A correlação linear entre duas variáveis é expressa por meio do coeficiente de correlação de Pearson, que varia de -1 a 1. Se for positiva, quanto maior uma correlação, maior a outra, caso seja negativa, quanto maior uma variável menor a outra.
+
+A intensidade dessa correlação pode ser fraca (0 a 0,3), moderada (0,3 a 0,6) e forte (0,6 até 1). Para essa análise irei verificar quem tem correlações moderadas e fortes.
+
+![image](https://github.com/user-attachments/assets/3f48f588-a488-4d7f-81a8-7e13af178abb)
+
+Temos algumas informações interessantes:
+
+- Quanto maior o tenure, menor é a taxa de Churn. Isso pode indicar que clientes que estejam mais fidelizados, tenham menor chance de dar churn (como já vimos).
+- Os serviços de streaming são os que mais tem correlação com o Monthly Charges. Isso pode indicar que nesses serviços estejam sendo oferecidos menos descontos nas mensalidade do cliente do que os outros, ou esses serviços estejam sendo menos ofertados como brinde por adquirir um combo. Por exemplo, no phone Service, há uma fraca correlação, isso indica que um cliente pode ter o serviço e não gerar impacto no pagamento mensal, ou seja, ele ganhou no combo o serviço telefônico.
+- Como já vimos, quanto maior o Tenure, maior o total charges, pois o cliente está a mais tempo pagando.
+- Com uma moderada correlação entre Streaming TV e Movies, ambos podem estar sendo adquiridos juntos normalmente, mas essa correlação poderia melhorar muito ainda. Seria interessante a empresa verificar se essa campanha de combo de pacote esta sendo bem recebida pelos clientes.
+
+
 
 ## IV - Conclusões/ Insights
 
