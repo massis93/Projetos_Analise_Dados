@@ -210,7 +210,8 @@ Para finalizar, irei analisar se como é a cobrança mensal quanto maior o Tenur
 
 - Temos que quanto maior a Tenure, maior o Monthly Cahrges. Talvez isso se deva ao fato de que quando um cliente é mais fiel, ele vai adquirindo mais pacotes adicionais.
 
-## IV - Conclusões
+## IV - Conclusões/ Insights
+
 
 - A maioria dos cancelamentos ocorrem no primeiro mês, e a maior parte de quem deu churn tinha assinatura mensal. Pode ser que incentivando os clientes a já assinarem planos de contrato anual diminua o número de cancelamentos.
 - Clientes com Parceiros e com dependentes tem menor probabilidade de dar churn. Pode ser que quanto maior a quantidade de utilizadores do plano na mesma casa, menor a chance de dar churn. Uma boa opção seria oferecer um pacote de plano que envolva mais de uma casa para clientes que não tenham parceiros ou dependentes. Por exemplo, um plano para o cliente e para a mãe dele na outra casa, dessa forma, pode ser que diminuiria a taxa de churn desses clientes.
