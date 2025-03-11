@@ -65,10 +65,134 @@ Agora nós temos o perfil de quem deu churn e ainda é cliente:
 
 - Quem deu churn tem uma média mensal maior de gastos
 - Quem deu churn tem maior probabilidade de ter fatura digital , será que ter fatura digital influencia em dar churn por ser mais fácil de cancelar?
-- Veja, é somente maior a probabilidade de ter o seviço de streaming em quem deu churn. Os outros serviços é menor a probabilidade de quem deu churn ter. Podemos ter duas conclusões: a primeira é, se quem deu churn tivesses os demais serviços como por exemplo o Tech Support, não iria cancelar a assinatura. E a segunda é, como proporcionalmente quem deu churn tem maior chance de ter Streaming por assinatura, pode ser que haja uma correlação entre ter Streaming TV e Churn
 - Os dois perfis tem a mesma probabilidade de ter PhoneService
 - Quem não deu churn é mais provavel que seja Senior, não tenha dependentes e não tenha parceiro
+- Quem deu churn usa fatura sem papel, provavelmente digital. Será que ser digital faz com que influencie a dar churn mas facilmente?
+- Quem deu churn tem maior proporção de serviços de Streaming, será que o serviço de streaming esta com qualidade ruim, e por isso influencia as pessoas a cancelarem os serviços?
 
+Vamos fazer uma análise mais profunda a seguir.
+
+
+#### 3.1 - Gênero
+
+![image](https://github.com/user-attachments/assets/7f05343c-ad6e-4fe6-8bac-b59f323f6713)
+
+Os clientes da empresa são proporcionalmente iguais entre homens e mulheres. As campanhas de marketing e a programação dos serviços de streaming teria que se atentar a isso.
+
+#### 3.2 - Mensal e Total Charges
+
+Agora vou analisar de que forma estão distribuidas as cobranças mensais.
+
+![image](https://github.com/user-attachments/assets/101a867a-137b-49c6-ab64-2f3ecd77038d)
+
+- A mediana esta situada em 70 e temos uma média de 64, portanto teremos uma distribuição quase simétrica.
+- Temos que os valores em sua maioria, variam entre 35 e 90, portanto são planos bem distintos que esses clientes tem, devido aos vários serviços que a empresa possui
+- O menor valor é de 18, então não temos nenhuma cobrança de 0, que estaria errada
+
+![image](https://github.com/user-attachments/assets/d96a8b6e-5898-4423-9c1d-f24c172d6942)
+
+- Quem deu churn pagava uma assinatura mais cara do que quem não deu
+- Será que o preço influenciaria as pessoas a darem churn?
+
+Agora verificarei o total que os clientes já pagaram:
+
+![image](https://github.com/user-attachments/assets/b9904a39-fd53-43e5-8425-a335484c672e)
+
+Veja que a tabela esta várias legendas, pois a coluna esta como formato de object, fazendo com que seja plotado no gráfico todas os valores de Total Charges na legenda.
+
+![image](https://github.com/user-attachments/assets/58c85701-41a9-4b94-b1d0-b4f1dde7ba4d)
+
+Corrigindo o gráfico, agora vemos que há clientes que pagaram no total 0 reais, que provavelmente são clientes que assinaram o plano recentemente e ainda não pagaram a primeira fatura, e há clientes que pagaram mais de 8mil, ou seja, clientes muito antigos.
+
+![image](https://github.com/user-attachments/assets/9489eeba-cfcf-4987-a9fa-35a9ebc5b894)
+
+Fazendo uma divisão de Total Charges por quem deu churn e quem ainda é cliente, vemos que quem deu churn tem um total de pagamento menor, isso pode significar que o tenure dos clientes que deram churn é menor!
+
+#### 3.3 - Tenure
+
+![image](https://github.com/user-attachments/assets/16c5971c-193e-4ff1-9a6c-724bcf01da18)
+
+- A distribuição de tenure dos clientes é bastante variada. Como já vimos, temos clientes com tenure igual a 0, ou seja, clientes muito recentes, e clientes com tenure de mais de 70, ou seja, com quase 6 anos como cliente.
+= Portanto, a empresa pode ser nova no mercado, comparado a empresas de telecomunicações mais tradicionais.
+
+![image](https://github.com/user-attachments/assets/40c50b97-3bea-4b32-8b76-70af0df9b839)
+
+- Como tinhamos suspeitado, quem deu churn tem um tenure menor do que quem é cliente.
+- Mais pra frente iremos analisar em qual mes os clientes estão dando churn
+
+### 4 - Começando a análise
+
+Agora vou analisar como é o churn entre homens e mulheres:
+
+  ![image](https://github.com/user-attachments/assets/dd6fee70-ab16-49f2-90e8-b2889b2deafb)
+
+- Ambos os gêneros tiveram a mesma probabilidade de dar churn
+
+Como será que é o churn em quem tem e não tem Partner?
+
+![image](https://github.com/user-attachments/assets/393ec261-74a9-42fe-952d-9ca0e66fe69f)
+
+Veja que os clientes que tem partner nem menor probabilidade de dar churn. Talvez seja pois quem tem um parceiro, tenha mais um dependente dos serviços prestados pela empresa de telecom, criando uma barreira maior para fazer o cancelamento dos serviços.
+
+Agora irei verificar em qual período esta acontecendo o churn.
+
+![image](https://github.com/user-attachments/assets/d9d11152-d4bc-4892-8570-97d34ce79583)
+
+
+- Quem dá churn concentra-se nos primeiros meses, mais especificamente no primeiro mês.
+- A distribuição de quem não deu churn tem uma alta quantidade de clientes no tenure 70, ou seja, muitos cliente fiéis.
+- Se há uma alta taxa de fidelidade, porém há muitos clientes cancelando no primeiro mês, será que o tipo de plano estaria influenciando as pessoas a cancelarem o serviço? Por exemplo, se a maioria das pessoas que deu churn, tenha um serviço de contrato mensal, isso estaria desestimulando elas a ficarem como clientes. Talvez oferecendo um desconto para ficarem com um plano anual ou bienal, a taxa de churn diminuiria.
+- Iremos analisar isso mais pra frente
+
+
+![image](https://github.com/user-attachments/assets/737d26b2-8ced-4d6c-972c-2faeabc83914)
+
+
+- Veja que a taxa de churn em quem é senior é maior, talvez seja pois pessoas de idade não utilizem muito internet, streaming de TV e de filmes, portanto não considerem a assinatura como algo de valor.
+
+Como é o churn em pessoas que tem algum dependente?
+
+![image](https://github.com/user-attachments/assets/c1e70423-da6a-4a21-a90e-ad2bd9d79114)
+
+- Veja que novamente quem tem mais pessoas em casa utilizando o serviço, tem menor probabilidade de dar churn
+- Novamente tenho um possível argumento: quanto maior o número de dependentes dos serviços, menor é a chance deles cancelarem.
+
+Será que ter suporte técnico influencia os clientes a não darem churn?
+
+![image](https://github.com/user-attachments/assets/8c0dd89b-6189-410c-b39e-44290afafb57)
+
+- Quem teve suporte técnico tem menor probabilidade de dar churn
+- Talvez o suporte técnico esteja fazendo com que os clientes que estariam insatisfeitos com os serviço, utilizassem o suporte para corrigir os problemas, evitando um possível cancelamento.
+
+Agora, voltando ao tema de contrato, vou verificar como esta dividido o plano de contrato em quem deu churn e em quem não deu churn.
+
+![image](https://github.com/user-attachments/assets/f4816974-0552-4a0a-b2e1-89709721649d)
+
+Veja que quem não deu churn tem muito menos assinaturas de contratos mensais, enquanto quem deu churn tem praticamente somente assinaturas de contratos mensais.
+- Talvez, ter assinatura com plano de contrato mensal estaria ocasionando os cancelamentos no primeiro mês de assinatura (que é onde a maioria dos churn estão concentrados).
+
+E o tipo de internet?
+
+![image](https://github.com/user-attachments/assets/3b137106-76e3-4b12-826a-ba958e2a0bce)
+
+- Curiosamente a internet DSL tem menos churn do que a Fibra
+- Pode ser que o serviço de Fibra esteja enfrentando muita instabilidade no sinal.
+
+Agora vou verificar se ter uma fatura sem papel pode ter alguma relação com churn.
+
+![image](https://github.com/user-attachments/assets/184b65a6-5f1b-4cdb-a499-db971326824e)
+
+- Quem tem uma fatura sem papel, ou seja, digital, tem maior probabilidade de dar churn
+- Pode ser que quem use a fatura digital, por estar com o aplicativo em mãos, consiga cancelar facilmente os serviço, isso explicaria essa diferença
+
+Como se dá o churn nos diferentes pagamentos
+
+![image](https://github.com/user-attachments/assets/741f4b11-bc8e-4e91-89df-6b4cbcd9c0c3)
+
+- Cartão de Crédito, Mailed Check, e Bank Transfer tiveram praticamente a mesma taxa de churn
+- Agora o eCheck teve um churn muito mais expressivo.
+- Como o eCheck demora alguns dias para cair o pagamento, pode fazer com que atrase o pagamento da fatura, levando ao cancelamento dos serviços
+- O eCheck também tem alguns problemas no pagamentom pois se tiver alguma assinatura suspeitamente errada, o valor não irá ser recebido. Essas e outras dificuldades burocráticas desse tipo de pagamento, pode fazer com que as pessoas cancelem o serviço da empresa de telecom.
 
 ## IV - Conclusões
 
