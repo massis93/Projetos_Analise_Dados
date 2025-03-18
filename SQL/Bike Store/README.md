@@ -114,9 +114,3 @@ O CEO da empresa deseja fazer uma campanha de marketing no Instagram nas 5 cidad
 
 ![image](https://github.com/user-attachments/assets/02cd10cc-b540-4d84-b50c-78867f975179)
 
-
-
-
-  
-## Conclusão
-
