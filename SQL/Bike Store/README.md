@@ -26,11 +26,11 @@
 
 ### 1 - Qual o valor total do estoque por marca?
 
-O CEO deseja saber como está dividido o valor de estoque por marca de produto de suas lojas.
+O CEO deseja saber como está dividido o valor do estoque por marca de produto de suas lojas.
 
 ![image](https://github.com/user-attachments/assets/a9327705-f850-453f-b10c-d75ccb1b2ea1)
 
-- As marcas Trek e Electra, juntas, somam 91% do valor de estoque das lojas.
+- As marcas Trek e Electra, juntas, somam 91% do valor do estoque das lojas.
 
 ### 2 - Qual o faturamento por Marca
 
@@ -39,7 +39,7 @@ Para saber se o valor do estoque está de acordo com a demanda, o CEO deseja sab
 ![image](https://github.com/user-attachments/assets/733b01f1-541b-4c55-b166-80389ba35f10)
 
 As marcas Trek e Electra são as preferidas pelos clientes, principalmente a Trek.
-- É interessante observar que o faturamento da Surly é de 10%, e da Sun é de 5%, porém o valor do estoque dessas marcas correspondem a 5% e 3%. Seria interessante dobraro valor de estoque dessas duas marcas para ficar de acordo com a demanda do mercado.
+- É interessante observar que o faturamento da Surly é de 10%, e da Sun é de 5%, porém o valor do estoque dessas marcas correspondem a 5% e 3%. Seria interessante dobrar o valor de estoque dessas duas marcas para ficar de acordo com a demanda do mercado.
 
 
 
@@ -50,10 +50,6 @@ O CEO da empresa percebeu que há marcas que estão vendendo muito pouco, e quer
 ![image](https://github.com/user-attachments/assets/5ab42288-434b-49ed-beb8-ff5a0e06dcfe)
 
 Veja que a Ritchey possui apenas 1 tipo de produto, enquanto a Trek possui 135. Marcas que possuem menor variedade estão faturando menos. 
-
-
-
-
 
 
 ### 4 - Qual é o valor de estoque por Loja?
@@ -81,7 +77,7 @@ O CEO deseja investir em mais estoque, para isso, ele deseja saber qual produto 
 
 
 
-### 8 - Quais os 10 clientes que mais compraram?
+### 7 - Quais os 10 clientes que mais compraram?
 
 O CEO deseja ofertar um cupom de desconto para os 10 clientes que mais compraram na loja.
 
@@ -89,21 +85,21 @@ O CEO deseja ofertar um cupom de desconto para os 10 clientes que mais compraram
 
 
 
-### 9 - Qual o produto de cada categoria que mais vende?
+### 8 - Qual o produto de cada categoria que mais vende?
 
-Nas lojas existem 7 categorias de produtos. O CEO quer identificar qual o produto de cada categoria mais vende, pois quer colocar nas mídias digitais da empresa, produtos atraentes por categoria de bicicletas.
+Nas lojas existem 7 categorias de produtos. O CEO quer identificar qual o produto de cada categoria mais vende, pois quer colocar nas mídias digitais da empresa os produtos atraentes por categoria de bicicleta.
 
 ![image](https://github.com/user-attachments/assets/45c8605f-2212-42a9-9935-b36e003555fa)
 
 
-### 10 - Qual foi o  faturamento de cada categoria por valor monetario e percentual?
+### 9 - Qual foi o  faturamento de cada categoria por valor monetario e percentual?
 
-O CEO da empresa deseja investir em mais produtos da categoria que mais vende para as lojas. Dessa forma ele deseja saber qual categoria é a que mais tem sido procurada nas lojas.
+O CEO da empresa deseja investir em mais produtos da categoria que mais vende para as lojas. Dessa forma, ele deseja saber qual categoria é a que mais tem sido procurada nas lojas.
 
 ![image](https://github.com/user-attachments/assets/46eaaccc-7e42-461e-a22e-04c61a87553e)
 
 
-### 11 - Quais os 3 produto que mais venderam por loja?
+### 10 - Quais os 3 produto que mais venderam por loja?
 O CEO da empresa deseja colocar na vitrine das lojas alguns produtos, para atrair os pedestres que passam na calçada da loja.
 
 ![image](https://github.com/user-attachments/assets/40f1bdfe-b01b-4168-91e9-8c920297ed11)
@@ -111,7 +107,7 @@ O CEO da empresa deseja colocar na vitrine das lojas alguns produtos, para atrai
 
 
 
-### 12 - Qual as 5 cidades que mais gastaram?
+### 11 - Qual as 5 cidades que mais gastaram?
 
 O CEO da empresa deseja fazer uma campanha de marketing no Instagram nas 5 cidades que mais compraram. Dessa forma, ele pode explorar todo o potencial do perfil de cliente daquelas cidades.
 
