@@ -4,7 +4,7 @@
 
 ## I - Problema de Negócio
 - O CEO de uma rede de lojas de bicicletas quer aumentar o faturamento de sua empresa e otimizar o estoque através de uma análise de dados. Para isso, fui contratado para prestar serviços à empresa e gerar insights estratégicos para tomadas de decisões, através de análise de dados. O CEO me fez 10 perguntas.
-- A análise será feita no SQL SERVER da Microsoft e o código usado em SQL pode ser acessado [aqui]()
+- A análise será feita no SQL SERVER da Microsoft e o código usado em SQL pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/SQL/Bike%20Store/Bikestore.sql)
 - O [conjunto de dados](https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database) foi baixado do site Kaggle e o DER do database está desenhado na parte 2.
 
 
@@ -19,7 +19,7 @@
 
 ## III - Perguntas e Análises
 
-- O código usado em SQL pode ser acessado [aqui]()
+- O código usado em SQL pode ser acessado [aqui](https://github.com/massis93/Projetos_Analise_Dados/blob/main/SQL/Bike%20Store/Bikestore.sql)
 - Antes de iniciar a análise, irei fazer a divisão do list_price da tabela order_items e da products por 100, pois o valor do preço está errado.
 
 
