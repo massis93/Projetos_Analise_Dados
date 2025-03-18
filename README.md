@@ -5,6 +5,9 @@
 Todos os dados são fictícios e todos os problemas de negócio foram criados por mim.
 ## 🎲 SQL
 
+### [Análise de vendas Bike Store](https://github.com/massis93/Projetos_Analise_Dados/tree/main/SQL/Bike%20Store)
+- Descrição: Serão respondidas 10 perguntas do CEO da empresa que gerarão insights para aumentar o faturamento da empresa
+
 ### [Análise de vendas Biblioteca](https://github.com/massis93/Projetos_Analise_Dados/tree/main/SQL/An%C3%A1lise%20de%20Vendas%20Biblioteca)
 - Descrição: Uma análise Descritiva e Diagnóstica das vendas de uma Biblioteca utilizando o SQL Server
 
