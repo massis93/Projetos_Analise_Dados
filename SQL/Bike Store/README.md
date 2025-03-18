@@ -22,9 +22,12 @@
 - o código usado em SQL pode ser acessado [aqui]()
 - Antes de iniciar a análise, irei fazer a divisão do list_price da tabela order_items e da products por 100, pois o valor do preço está errado.
 
-### 1 - Quantos modelos de Bicicleta cada marca possui?
+### 1 - Quantos modelos de produtos cada marca possui?
 
 ![image](https://github.com/user-attachments/assets/107efd0a-5232-44a1-a561-3dbbdd0645c2)
+
+- A Marca TREK é a que possui maior variedade de produtos em seu estoque.
+- Veja que há algumas marcas que possuem pouquíssimas variedades de produtos, seria interessante trabalhar com uma distribuição maior na variedade de produtos por marca, para intensificar o faturamento.
 
 
 
@@ -36,6 +39,10 @@
 ### 3 - Quantos PRODUTOS tem no estoque por marca?
 
 ![image](https://github.com/user-attachments/assets/445421f3-6532-4f0a-994c-db1cdc7b6bdb)
+
+### 4- Qual o faturamento por Marca
+![image](https://github.com/user-attachments/assets/0d7d8ad1-dca1-49fe-aa7c-537c7fc6dfe5)
+
 
 
 ### 4 - Qual é o valor de estoque por Loja?
