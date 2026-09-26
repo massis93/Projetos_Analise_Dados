@@ -47,6 +47,9 @@ Todos os dados são fictícios e todos os problemas de negócio foram criados po
 ### [Guia de Engenharia de Prompt — 104 tópicos (Iniciante ao Avançado)](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Prompt%20Engineering)
 - Descrição: Guia atualizado (2026) com 104 tópicos de engenharia de prompt, organizados por nível e com exemplos práticos.
 
+### [Trilha de Estudo — Análise de Dados, Martech e Método para TDAH](https://github.com/massis93/Projetos_Analise_Dados/blob/main/Prompt%20Engineering/Trilha-de-Estudo.md)
+- Descrição: Método de estudo (inclusive adaptado para TDAH), referências gratuitas e trilha por tema (estatística, bases de dados, martech, storytelling, vendas) cruzada com o guia de prompt.
+
 ## 🗂️ Excel
 
 ### [Marketing de um Banco](https://github.com/massis93/Projetos_Analise_Dados/tree/main/Excel/Bank%20Marketing)

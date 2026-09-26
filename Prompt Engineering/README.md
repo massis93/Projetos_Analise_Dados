@@ -4,6 +4,8 @@
 
 Guia com **104 tópicos** organizados em 3 níveis. Cada linha tem: o tópico, o que significa (sem jargão solto) e um exemplo pronto pra copiar.
 
+> Quer saber **onde estudar, como praticar e um método de estudo pra TDAH**, com foco em análise de dados, estatística, martech, storytelling e vendas? Veja a [Trilha de Estudo](./Trilha-de-Estudo.md).
+
 ---
 
 ## 📗 Nível Iniciante (fundamentos)
