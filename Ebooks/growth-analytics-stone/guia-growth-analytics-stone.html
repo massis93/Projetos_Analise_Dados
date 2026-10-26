@@ -1,0 +1,1897 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Guia Growth Analytics Sênior</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>pre { line-height: 125%; }
+td.linenos .normal { color: #666666; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #666666; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.hl .hll { background-color: #ffffcc }
+.hl { background: #f0f0f0; }
+.hl .c { color: #60A0B0; font-style: italic } /* Comment */
+.hl .err { border: 1px solid #F00 } /* Error */
+.hl .k { color: #007020; font-weight: bold } /* Keyword */
+.hl .o { color: #666 } /* Operator */
+.hl .ch { color: #60A0B0; font-style: italic } /* Comment.Hashbang */
+.hl .cm { color: #60A0B0; font-style: italic } /* Comment.Multiline */
+.hl .cp { color: #007020 } /* Comment.Preproc */
+.hl .cpf { color: #60A0B0; font-style: italic } /* Comment.PreprocFile */
+.hl .c1 { color: #60A0B0; font-style: italic } /* Comment.Single */
+.hl .cs { color: #60A0B0; background-color: #FFF0F0 } /* Comment.Special */
+.hl .gd { color: #A00000 } /* Generic.Deleted */
+.hl .ge { font-style: italic } /* Generic.Emph */
+.hl .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.hl .gr { color: #F00 } /* Generic.Error */
+.hl .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.hl .gi { color: #00A000 } /* Generic.Inserted */
+.hl .go { color: #888 } /* Generic.Output */
+.hl .gp { color: #C65D09; font-weight: bold } /* Generic.Prompt */
+.hl .gs { font-weight: bold } /* Generic.Strong */
+.hl .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.hl .gt { color: #04D } /* Generic.Traceback */
+.hl .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.hl .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.hl .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.hl .kp { color: #007020 } /* Keyword.Pseudo */
+.hl .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.hl .kt { color: #902000 } /* Keyword.Type */
+.hl .m { color: #40A070 } /* Literal.Number */
+.hl .s { color: #4070A0 } /* Literal.String */
+.hl .na { color: #4070A0 } /* Name.Attribute */
+.hl .nb { color: #007020 } /* Name.Builtin */
+.hl .nc { color: #0E84B5; font-weight: bold } /* Name.Class */
+.hl .no { color: #60ADD5 } /* Name.Constant */
+.hl .nd { color: #555; font-weight: bold } /* Name.Decorator */
+.hl .ni { color: #D55537; font-weight: bold } /* Name.Entity */
+.hl .ne { color: #007020 } /* Name.Exception */
+.hl .nf { color: #06287E } /* Name.Function */
+.hl .nl { color: #002070; font-weight: bold } /* Name.Label */
+.hl .nn { color: #0E84B5; font-weight: bold } /* Name.Namespace */
+.hl .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.hl .nv { color: #BB60D5 } /* Name.Variable */
+.hl .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.hl .w { color: #BBB } /* Text.Whitespace */
+.hl .mb { color: #40A070 } /* Literal.Number.Bin */
+.hl .mf { color: #40A070 } /* Literal.Number.Float */
+.hl .mh { color: #40A070 } /* Literal.Number.Hex */
+.hl .mi { color: #40A070 } /* Literal.Number.Integer */
+.hl .mo { color: #40A070 } /* Literal.Number.Oct */
+.hl .sa { color: #4070A0 } /* Literal.String.Affix */
+.hl .sb { color: #4070A0 } /* Literal.String.Backtick */
+.hl .sc { color: #4070A0 } /* Literal.String.Char */
+.hl .dl { color: #4070A0 } /* Literal.String.Delimiter */
+.hl .sd { color: #4070A0; font-style: italic } /* Literal.String.Doc */
+.hl .s2 { color: #4070A0 } /* Literal.String.Double */
+.hl .se { color: #4070A0; font-weight: bold } /* Literal.String.Escape */
+.hl .sh { color: #4070A0 } /* Literal.String.Heredoc */
+.hl .si { color: #70A0D0; font-style: italic } /* Literal.String.Interpol */
+.hl .sx { color: #C65D09 } /* Literal.String.Other */
+.hl .sr { color: #235388 } /* Literal.String.Regex */
+.hl .s1 { color: #4070A0 } /* Literal.String.Single */
+.hl .ss { color: #517918 } /* Literal.String.Symbol */
+.hl .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.hl .fm { color: #06287E } /* Name.Function.Magic */
+.hl .vc { color: #BB60D5 } /* Name.Variable.Class */
+.hl .vg { color: #BB60D5 } /* Name.Variable.Global */
+.hl .vi { color: #BB60D5 } /* Name.Variable.Instance */
+.hl .vm { color: #BB60D5 } /* Name.Variable.Magic */
+.hl .il { color: #40A070 } /* Literal.Number.Integer.Long */@page { size: A4; margin: 20mm 18mm 20mm 18mm; }
+@page :first { margin: 0; }
+:root { --ink:#14201b; --mute:#5b6b64; --line:#dfe7e3; --acc:#0a8f5a; --acc2:#e6f4ee; --hot:#d9480f; --code:#f6f8f7; }
+* { box-sizing:border-box; }
+html { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { font-family:'Inter',sans-serif; color:var(--ink); font-size:10pt; line-height:1.55; margin:0; background:#fff; }
+a { color:inherit; text-decoration:none; }
+
+.cover { height:297mm; width:210mm; background:#0e1f18; color:#fff; padding:22mm 20mm; display:flex; flex-direction:column; justify-content:space-between; page-break-after:always; position:relative; overflow:hidden; }
+.cover::after { content:''; position:absolute; right:-60mm; top:-40mm; width:170mm; height:170mm; border-radius:50%; background:radial-gradient(circle, rgba(10,143,90,.55), rgba(10,143,90,0) 70%); }
+.cover-top { font-size:8.5pt; letter-spacing:.18em; color:#8fd3b4; font-weight:600; position:relative; z-index:1; }
+.cover-mid { position:relative; z-index:1; }
+.kicker { font-size:13pt; color:#8fd3b4; font-weight:600; margin-bottom:4mm; }
+.cover h1 { font-family:'Inter Display','Inter',sans-serif; font-size:44pt; line-height:1.02; margin:0 0 6mm; font-weight:800; letter-spacing:-.02em; max-width:150mm; }
+.cover .sub { font-size:12pt; color:#c9d8d1; max-width:130mm; margin:0 0 14mm; }
+.funnel { display:flex; flex-direction:column; gap:2.2mm; width:120mm; }
+.funnel span { display:block; background:rgba(255,255,255,.08); border-left:3px solid #3fbf8a; padding:2mm 4mm; font-size:9pt; color:#dfeee7; }
+.funnel span.hot { background:rgba(217,72,15,.25); border-left-color:#ff7a45; color:#fff; font-weight:700; }
+.cover-bot { display:flex; justify-content:space-between; align-items:flex-end; font-size:10pt; color:#c9d8d1; position:relative; z-index:1; border-top:1px solid rgba(255,255,255,.15); padding-top:6mm; }
+.cover-bot b { color:#fff; }
+.stats { display:flex; gap:9mm; text-align:right; }
+.stats div { font-size:8pt; color:#8fd3b4; text-transform:uppercase; letter-spacing:.08em; }
+.stats b { display:block; font-size:20pt; color:#fff; letter-spacing:0; }
+
+.toc { page-break-after:always; }
+.toc ol { list-style:none; padding:0; margin:8mm 0 0; columns:1; }
+.toc li a { display:flex; gap:5mm; padding:2.6mm 0; border-bottom:1px solid var(--line); font-size:11pt; }
+.toc .tn { color:var(--acc); font-weight:700; width:9mm; }
+
+.chapter { page-break-before:always; }
+.chap-head { border-bottom:2px solid var(--acc); padding-bottom:4mm; margin-bottom:6mm; }
+.chap-num { font-size:8.5pt; letter-spacing:.16em; text-transform:uppercase; color:var(--acc); font-weight:700; }
+h2 { font-family:'Inter Display','Inter',sans-serif; font-size:24pt; line-height:1.1; margin:1.5mm 0 0; letter-spacing:-.01em; font-weight:800; }
+h3 { font-size:12.5pt; margin:8mm 0 3mm; color:var(--acc); page-break-after:avoid; }
+p { margin:0 0 3.2mm; }
+p strong:first-child { color:var(--ink); }
+ul, ol { padding-left:5.5mm; margin:0 0 4mm; }
+li { margin-bottom:1.2mm; }
+
+table { width:100%; border-collapse:collapse; margin:3mm 0 5mm; font-size:8.6pt; page-break-inside:auto; }
+thead { display:table-header-group; }
+tr { page-break-inside:avoid; }
+th { background:var(--acc2); color:#0b5c3c; text-align:left; font-weight:700; padding:2mm 2.4mm; border-bottom:1.5px solid var(--acc); }
+td { padding:1.9mm 2.4mm; border-bottom:1px solid var(--line); vertical-align:top; }
+tr:nth-child(even) td { background:#fafcfb; }
+td strong { color:var(--hot); }
+
+code { font-family:'DejaVu Sans Mono',monospace; font-size:8pt; background:var(--code); padding:.3mm 1.2mm; border-radius:1mm; }
+.hl { background:var(--code); border:1px solid var(--line); border-left:3px solid var(--acc); border-radius:1.5mm; padding:3mm 4mm; margin:2mm 0 4mm; page-break-inside:avoid; }
+.hl pre { margin:0; font-family:'DejaVu Sans Mono',monospace; font-size:7.6pt; line-height:1.45; white-space:pre-wrap; }
+.hl code { background:none; padding:0; font-size:inherit; }
+
+.formula { background:var(--acc2); border-radius:2mm; padding:5mm; margin:3mm 0 5mm; text-align:center; font-size:12pt; display:flex; align-items:center; justify-content:center; gap:2.5mm; flex-wrap:wrap; }
+.formula .v { font-weight:800; color:#0b5c3c; }
+.frac { display:inline-flex; flex-direction:column; text-align:center; vertical-align:middle; }
+.frac span:first-child { border-bottom:1.2px solid var(--ink); padding:0 2mm 1mm; }
+.frac span:last-child { padding:1mm 2mm 0; }
+
+aside { display:block; border-radius:1.5mm; padding:3mm 4mm; margin:0 0 5mm; font-size:9.3pt; page-break-inside:avoid; }
+aside b { display:block; font-size:7.5pt; letter-spacing:.14em; text-transform:uppercase; margin-bottom:1mm; }
+.note { background:#fff6ed; border-left:3px solid var(--hot); }
+.note b { color:var(--hot); }
+.quote { background:var(--acc2); border-left:3px solid var(--acc); font-style:italic; }
+.quote b { color:var(--acc); font-style:normal; }
+
+.checklist { list-style:none; padding-left:0; }
+.checklist li { display:flex; gap:3mm; align-items:flex-start; padding:1.6mm 0; border-bottom:1px dashed var(--line); margin:0; }
+.chk { flex:none; width:3.8mm; height:3.8mm; border:1.4px solid var(--acc); border-radius:.8mm; margin-top:.6mm; }
+
+.back { page-break-before:always; height:240mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+.back p { font-family:'Inter Display','Inter',sans-serif; font-size:22pt; font-weight:700; max-width:140mm; line-height:1.25; }
+.back span { color:var(--acc); font-weight:600; }
+</style><style>@media screen{body{background:#eef2f0}
+section{max-width:210mm;margin:0 auto 10mm;background:#fff;padding:18mm;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+section.cover{padding:22mm 20mm;max-width:210mm;height:auto;min-height:297mm;width:auto}
+section.back{height:auto;min-height:120mm}
+@media (max-width:700px){section{padding:16px}section.cover{padding:24px 16px;min-height:auto}.cover h1{font-size:30pt}.funnel{width:100%}.stats{gap:16px}table{display:block;overflow-x:auto}}}</style></head><body>
+<section class="cover">
+  <div class="cover-top">EBOOK · PREPARAÇÃO PARA ENTREVISTA</div>
+  <div class="cover-mid">
+    <div class="kicker">Growth Analytics Sênior</div>
+    <h1>Do funil ao case ao vivo</h1>
+    <p class="sub">SQL, métricas de aquisição, testes A/B, atribuição e o roteiro para chegar agindo como sênior na Stone.</p>
+    <div class="funnel"><span style="width:100%">Clique</span><span style="width:84%">Lead</span><span style="width:68%">Cadastro</span><span style="width:52%">Aprovação</span><span class="hot" style="width:36%">Ativação</span></div>
+  </div>
+  <div class="cover-bot"><div><b>Mateus Silva</b><br>Outubro de 2026</div><div class="stats"><div><b>17</b>capítulos</div><div><b>20</b>exercícios SQL</div><div><b>8</b>cases</div></div></div>
+</section>
+<section class="toc"><div class="chap-num">Sumário</div><h2>O que tem aqui</h2><ol><li><a href="#cap1"><span class="tn">01</span><span class="tt">Como usar este guia</span></a></li><li><a href="#cap2"><span class="tn">02</span><span class="tt">A vaga e o vocabulário da Stone</span></a></li><li><a href="#cap3"><span class="tn">03</span><span class="tt">Sênior x Pleno</span></a></li><li><a href="#cap4"><span class="tn">04</span><span class="tt">Ferramentas: onde baixar e configurar</span></a></li><li><a href="#cap5"><span class="tn">05</span><span class="tt">Métricas de Growth: fórmulas e benchmarks</span></a></li><li><a href="#cap6"><span class="tn">06</span><span class="tt">SQL essencial em 4 passos</span></a></li><li><a href="#cap7"><span class="tn">07</span><span class="tt">SQL do básico às window functions</span></a></li><li><a href="#cap8"><span class="tn">08</span><span class="tt">Base de treino</span></a></li><li><a href="#cap9"><span class="tn">09</span><span class="tt">Exercícios de SQL com gabarito</span></a></li><li><a href="#cap10"><span class="tn">10</span><span class="tt">Cases de negócio com resposta estruturada</span></a></li><li><a href="#cap11"><span class="tn">11</span><span class="tt">Testes A/B e experimentação</span></a></li><li><a href="#cap12"><span class="tn">12</span><span class="tt">Atribuição e incrementalidade</span></a></li><li><a href="#cap13"><span class="tn">13</span><span class="tt">Dashboard de aquisição no Looker Studio</span></a></li><li><a href="#cap14"><span class="tn">14</span><span class="tt">Excel e Google Sheets essencial</span></a></li><li><a href="#cap15"><span class="tn">15</span><span class="tt">Roteiro do case ao vivo</span></a></li><li><a href="#cap16"><span class="tn">16</span><span class="tt">Banco de perguntas da entrevista técnica</span></a></li><li><a href="#cap17"><span class="tn">17</span><span class="tt">Checklist final e dia da entrevista</span></a></li></ol></section>
+<section class="chapter" id="cap1"><div class="chap-head"><div class="chap-num">Capítulo 01</div><h2>Como usar este guia</h2></div>
+<p>Este guia prepara para a segunda fase da vaga de Analista de Growth Analytics da Stone: entrevista técnica com a gestora e case técnico ao vivo. O objetivo é chegar agindo como sênior, não como pleno.</p>
+<p>Use assim: leia os capítulos 2 a 5 em um dia, rode a base de treino (capítulo 8) e faça os exercícios digitando, nunca só lendo. Simule o case em voz alta pelo menos duas vezes com cronômetro.</p>
+<table>
+<thead>
+<tr>
+<th>Dia</th>
+<th>Foco</th>
+<th>Entrega do dia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Capítulos 2, 3 e 5: vaga, sênior x pleno, métricas</td>
+<td>Decorar as fórmulas de CAC, ROAS, LTV e payback</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Capítulo 4 e 8: criar conta no BigQuery e rodar a base</td>
+<td>Tabelas criadas e primeira query funcionando</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Capítulos 6 e 7, exercícios 1 a 10</td>
+<td>Dominar JOIN com agregação prévia e window functions</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Exercícios 11 a 20</td>
+<td>Refazer os que errou sem olhar o gabarito</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Capítulos 10, 11 e 12: cases, testes A/B, atribuição</td>
+<td>Responder cada case em voz alta em 3 minutos</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Capítulos 13 e 14: dashboard no Looker Studio e Sheets</td>
+<td>Um painel com 5 KPIs ligado à base de treino</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Capítulos 15, 16 e 17: simulação completa do case</td>
+<td>Case de 60 minutos cronometrado, gravado em áudio</td>
+</tr>
+</tbody>
+</table>
+<p>Se tiver menos de 7 dias, priorize nesta ordem: capítulo 15 (roteiro do case), capítulo 9 (exercícios) e capítulo 10 (cases de negócio).</p>
+</section><section class="chapter" id="cap2"><div class="chap-head"><div class="chap-num">Capítulo 02</div><h2>A vaga e o vocabulário da Stone</h2></div>
+<p>A vaga pede uma pessoa que diagnostica funis de aquisição, modela dados em SQL, cria dashboards e transforma análise em recomendação de investimento em marketing digital. O time existe para melhorar o retorno da verba de mídia que traz novos lojistas.</p>
+<p>O que a descrição da vaga pede e como isso aparece no case:</p>
+<table>
+<thead>
+<tr>
+<th>Requisito da vaga</th>
+<th>Como é testado</th>
+<th>Onde estudar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SQL avançado</td>
+<td>Query ao vivo com JOIN, agregação e window function</td>
+<td>Capítulos 6 a 9</td>
+</tr>
+<tr>
+<td>Looker Studio, Power BI ou Tableau</td>
+<td>Pergunta sobre como montaria o painel</td>
+<td>Capítulo 13</td>
+</tr>
+<tr>
+<td>Diagnosticar funil de aquisição</td>
+<td>Case: onde o funil vaza e por quê</td>
+<td>Capítulos 5 e 10</td>
+</tr>
+<tr>
+<td>Hipóteses e testes com ROI</td>
+<td>Desenhar um teste A/B e um geo-test</td>
+<td>Capítulo 11</td>
+</tr>
+<tr>
+<td>Monitorar KPIs de marketing</td>
+<td>Explicar variação de CAC e ROAS</td>
+<td>Capítulos 5 e 10</td>
+</tr>
+<tr>
+<td>Comunicação com negócio</td>
+<td>Fechar o case com recomendação em reais</td>
+<td>Capítulo 15</td>
+</tr>
+<tr>
+<td>Diferencial: IA aplicada a dados</td>
+<td>Contar como usa Claude Code ou similar na rotina</td>
+<td>Capítulo 16</td>
+</tr>
+</tbody>
+</table>
+<p>Vocabulário que precisa sair natural na conversa:</p>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Significado</th>
+<th>Exemplo de uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead</td>
+<td>Pessoa que deixou contato interessada na maquininha</td>
+<td>"Geramos 12 mil leads no mês"</td>
+</tr>
+<tr>
+<td>Credenciamento</td>
+<td>Cadastro do lojista na Stone</td>
+<td>"A taxa de lead para credenciamento caiu"</td>
+</tr>
+<tr>
+<td>Aprovação</td>
+<td>Análise de risco aceitou o lojista</td>
+<td>"Aprovação depende da política de crédito, não de marketing"</td>
+</tr>
+<tr>
+<td>Ativação</td>
+<td>Lojista fez a primeira venda na maquininha</td>
+<td>"Ativo é quem transacionou em 30 dias"</td>
+</tr>
+<tr>
+<td>TPV</td>
+<td>Total Payment Volume, volume transacionado</td>
+<td>"TPV de R$ 10 mil no primeiro mês"</td>
+</tr>
+<tr>
+<td>Take rate ou MDR</td>
+<td>Percentual que a Stone fica de cada transação</td>
+<td>"Com take rate de 1,5%, R$ 10 mil de TPV viram R$ 150 de receita"</td>
+</tr>
+<tr>
+<td>Churn</td>
+<td>Lojista parou de transacionar</td>
+<td>"Churn de 5% ao mês"</td>
+</tr>
+<tr>
+<td>CAC</td>
+<td>Custo de aquisição por cliente ativo</td>
+<td>"CAC de R$ 400 no Google"</td>
+</tr>
+<tr>
+<td>LTV</td>
+<td>Receita que o cliente gera na vida dele</td>
+<td>"LTV/CAC acima de 3 é saudável"</td>
+</tr>
+<tr>
+<td>Hub</td>
+<td>Time comercial regional que visita lojistas</td>
+<td>"Lead do digital que fecha no hub"</td>
+</tr>
+<tr>
+<td>Incrementalidade</td>
+<td>Resultado que só aconteceu por causa da campanha</td>
+<td>"Busca de marca tem baixa incrementalidade"</td>
+</tr>
+</tbody>
+</table>
+</section><section class="chapter" id="cap3"><div class="chap-head"><div class="chap-num">Capítulo 03</div><h2>Sênior x Pleno</h2></div>
+<p>A diferença não é saber mais SQL. O sênior decide o que vale analisar, valida antes de concluir, quantifica em reais e assume a recomendação. O pleno executa bem o que foi pedido.</p>
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th>Pleno</th>
+<th>Sênior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Começo do case</td>
+<td>Abre os dados e começa a escrever SQL</td>
+<td>Faz 3 perguntas: qual decisão, qual métrica norte, o que já suspeitam</td>
+</tr>
+<tr>
+<td>Dados</td>
+<td>Confia na base</td>
+<td>Checa duplicidade, período, nulos e granularidade antes</td>
+</tr>
+<tr>
+<td>Métrica</td>
+<td>Reporta o número</td>
+<td>Decompõe: CAC subiu porque o investimento subiu ou porque ativos caíram?</td>
+</tr>
+<tr>
+<td>Profundidade</td>
+<td>Abre 5 frentes rasas</td>
+<td>Escolhe o maior vazamento e vai fundo nele</td>
+</tr>
+<tr>
+<td>Insight</td>
+<td>"TikTok tem CAC alto"</td>
+<td>"TikTok perde na ativação, não no lead. Realocar 30% gera X ativos a mais"</td>
+</tr>
+<tr>
+<td>Teste</td>
+<td>Executa o A/B pedido</td>
+<td>Define hipótese, amostra, duração e critério de decisão antes de rodar</td>
+</tr>
+<tr>
+<td>Atribuição</td>
+<td>Usa last click</td>
+<td>Sabe os vieses do last click e propõe incrementalidade</td>
+</tr>
+<tr>
+<td>Erro</td>
+<td>Fica em silêncio ou defende</td>
+<td>"Me enganei aqui, corrigindo" e segue</td>
+</tr>
+<tr>
+<td>Fechamento</td>
+<td>Mostra gráficos</td>
+<td>Abre com a recomendação, mostra 3 evidências, nomeia risco e próximo passo</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>Coloca tudo que pediram</td>
+<td>Hierarquiza: 1 métrica norte, 5 de topo, detalhe a um clique</td>
+</tr>
+<tr>
+<td>Modelagem</td>
+<td>Refaz o JOIN toda semana</td>
+<td>Cria a tabela tratada para o time inteiro usar</td>
+</tr>
+<tr>
+<td>Com o negócio</td>
+<td>Entrega o que pediram</td>
+<td>Reformula a pergunta quando ela está errada e explica por quê</td>
+</tr>
+</tbody>
+</table>
+<p>Três hábitos que a gestora vai observar no case ao vivo:</p>
+<ol>
+<li>Pensar alto. Narrar o raciocínio a cada passo, inclusive quando travar.</li>
+<li>Resumir a cada 10 minutos. "Até aqui vi X. Agora vou olhar Y porque Z."</li>
+<li>Trocar adjetivo por número. Nunca "caiu bastante"; sempre "caiu 18%, de R$ 380 para R$ 450 de CAC".</li>
+</ol>
+</section><section class="chapter" id="cap4"><div class="chap-head"><div class="chap-num">Capítulo 04</div><h2>Ferramentas: onde baixar e configurar</h2></div>
+<p>Quase tudo roda no navegador. A stack recomendada é BigQuery Sandbox para SQL e Looker Studio para dashboard, porque é a stack do Google que a vaga cita.</p>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Para quê</th>
+<th>Onde</th>
+<th>Instalação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BigQuery Sandbox</td>
+<td>Treinar SQL (dialeto mais provável na Stone)</td>
+<td><a href="https://console.cloud.google.com/bigquery">console.cloud.google.com/bigquery</a></td>
+<td>Nenhuma, só conta Google, sem cartão</td>
+</tr>
+<tr>
+<td>Looker Studio</td>
+<td>Dashboards</td>
+<td><a href="https://lookerstudio.google.com">lookerstudio.google.com</a></td>
+<td>Nenhuma</td>
+</tr>
+<tr>
+<td>Google Sheets</td>
+<td>Análise rápida em planilha</td>
+<td><a href="https://sheets.google.com">sheets.google.com</a></td>
+<td>Nenhuma</td>
+</tr>
+<tr>
+<td>Power BI Desktop</td>
+<td>Dashboards, alternativa</td>
+<td>Microsoft Store (só Windows)</td>
+<td>Grátis</td>
+</tr>
+<tr>
+<td>Tableau Public</td>
+<td>Dashboards, alternativa</td>
+<td><a href="https://public.tableau.com">public.tableau.com</a></td>
+<td>Grátis</td>
+</tr>
+<tr>
+<td>Google Colab</td>
+<td>Python, se o case pedir</td>
+<td><a href="https://colab.research.google.com">colab.research.google.com</a></td>
+<td>Nenhuma</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td>Diferencial citado na vaga</td>
+<td><a href="https://claude.ai/code">claude.ai/code</a></td>
+<td>Nenhuma pelo navegador</td>
+</tr>
+<tr>
+<td>DBeaver</td>
+<td>Cliente SQL local, se preferir</td>
+<td><a href="https://dbeaver.io">dbeaver.io</a></td>
+<td>Grátis</td>
+</tr>
+</tbody>
+</table>
+<p>Passo a passo para o BigQuery Sandbox:</p>
+<ol>
+<li>Entre em console.cloud.google.com/bigquery com uma conta Google.</li>
+<li>Aceite os termos e crie um projeto (qualquer nome, por exemplo <code>treino-growth</code>).</li>
+<li>No editor de consultas, cole os scripts do capítulo 8 e clique em Executar.</li>
+<li>As tabelas aparecem no painel esquerdo dentro do dataset <code>treino</code>.</li>
+<li>O sandbox dá 1 TB de consulta por mês de graça; a base de treino usa menos de 1 GB.</li>
+</ol>
+<p>Passo a passo para o Looker Studio:</p>
+<ol>
+<li>Entre em lookerstudio.google.com e clique em Criar, depois Fonte de dados.</li>
+<li>Escolha o conector BigQuery, selecione o projeto, o dataset <code>treino</code> e a tabela <code>leads</code>.</li>
+<li>Clique em Criar relatório. Adicione um gráfico de série temporal com <code>data_lead</code> e um cartão de resultado com contagem de <code>lead_id</code>.</li>
+<li>Monte o painel do capítulo 13.</li>
+</ol>
+</section><section class="chapter" id="cap5"><div class="chap-head"><div class="chap-num">Capítulo 05</div><h2>Métricas de Growth: fórmulas e benchmarks</h2></div>
+<p>Toda análise de aquisição se resume a três perguntas: quanto custou trazer o cliente (CAC), quanto ele devolve (LTV) e em quanto tempo (payback). As outras métricas explicam por que essas três mudaram.</p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Métrica</th>
+<th>Dono do vazamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clique</td>
+<td>CTR e CPC</td>
+<td>Criativo e mídia</td>
+</tr>
+<tr>
+<td>Lead</td>
+<td>CPL</td>
+<td>Landing page</td>
+</tr>
+<tr>
+<td>Cadastro</td>
+<td>Taxa de cadastro</td>
+<td>Produto</td>
+</tr>
+<tr>
+<td>Aprovação</td>
+<td>Taxa de aprovação</td>
+<td>Risco e crédito</td>
+</tr>
+<tr>
+<td><strong>Ativação</strong></td>
+<td>Taxa de ativação, CAC</td>
+<td>CRM e logística</td>
+</tr>
+</tbody>
+</table>
+<p>O funil anda da esquerda para a direita; a ativação, em destaque, é a etapa que define o CAC e onde o TikTok perde na base de treino.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Fórmula</th>
+<th>Referência de mercado</th>
+<th>O que explica quando muda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTR</td>
+<td>Cliques / Impressões</td>
+<td>1% a 3% em busca; 0,5% a 1,5% em social</td>
+<td>Criativo e público</td>
+</tr>
+<tr>
+<td>CPC</td>
+<td>Investimento / Cliques</td>
+<td>Varia por leilão</td>
+<td>Concorrência e qualidade do anúncio</td>
+</tr>
+<tr>
+<td>CPL</td>
+<td>Investimento / Leads</td>
+<td>Depende do canal</td>
+<td>Landing page e oferta</td>
+</tr>
+<tr>
+<td>Taxa de ativação</td>
+<td>Ativos / Aprovados</td>
+<td>40% a 60% em 30 dias</td>
+<td>Onboarding, entrega da maquininha, CRM</td>
+</tr>
+<tr>
+<td>CAC</td>
+<td>Investimento / Clientes ativos</td>
+<td>Deve ficar abaixo de LTV / 3</td>
+<td>Qualquer etapa acima</td>
+</tr>
+<tr>
+<td>ROAS</td>
+<td>Receita / Investimento</td>
+<td>Acima de 1 paga a mídia; acima de 3 é bom</td>
+<td>Mix de canal e ticket</td>
+</tr>
+<tr>
+<td>LTV</td>
+<td>Receita mensal por cliente / Churn mensal</td>
+<td>Depende do take rate e do TPV</td>
+<td>Retenção e volume do lojista</td>
+</tr>
+<tr>
+<td>LTV/CAC</td>
+<td>LTV / CAC</td>
+<td>Acima de 3 é saudável; abaixo de 1 destrói valor</td>
+<td>Tudo junto</td>
+</tr>
+<tr>
+<td>Payback</td>
+<td>CAC / Receita mensal por cliente</td>
+<td>Abaixo de 12 meses</td>
+<td>Preço e CAC</td>
+</tr>
+<tr>
+<td>Churn mensal</td>
+<td>Clientes perdidos no mês / Clientes no início do mês</td>
+<td>2% a 5% em PMEs</td>
+<td>Qualidade do lead e atendimento</td>
+</tr>
+</tbody>
+</table>
+<p>As duas fórmulas que mais aparecem em case:</p>
+<div class="formula"><span class="v">CAC</span> = <span class="frac"><span>Investimento</span><span>Clientes ativos</span></span> = <span class="frac"><span>Investimento</span><span>Leads × Tx<sub>cadastro</sub> × Tx<sub>aprovação</sub> × Tx<sub>ativação</sub></span></span></div>
+
+<div class="formula"><span class="v">LTV</span> = <span class="frac"><span>TPV<sub>mensal</sub> × Take rate</span><span>Churn<sub>mensal</sub></span></span></div>
+
+<p>Exemplo numérico para ter na ponta da língua: lojista com TPV de R$ 10 mil por mês, take rate de 1,5% e churn de 3% ao mês gera R$ 150 por mês e LTV de R$ 5.000. Com CAC de R$ 1.000, o LTV/CAC é 5 e o payback é de 6,7 meses.</p>
+<p>Regras que o sênior fala sem pensar:</p>
+<ul>
+<li>CAC geral é soma do investimento dividida pela soma de ativos, nunca a média dos CACs por canal.</li>
+<li>CAC médio decide o passado; CAC marginal (custo do próximo cliente) decide onde colocar o próximo real.</li>
+<li>Cohort recente ainda não maturou: não compare ativação de 30 dias de um mês que fechou há 10 dias.</li>
+<li>Aprovação de crédito é política de risco, não marketing. Se ela caiu, pergunte ao time de risco antes de culpar o canal.</li>
+</ul>
+</section><section class="chapter" id="cap6"><div class="chap-head"><div class="chap-num">Capítulo 06</div><h2>SQL essencial em 4 passos</h2></div>
+<p>Os 20 exercícios do capítulo 9 cobrem tudo o que pode cair. Num case de 30 minutos, quatro padrões resolvem 80% das perguntas. Domine estes antes de abrir os avançados.</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Padrão</th>
+<th>Para que serve no case</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Básico</td>
+<td>SELECT, WHERE, GROUP BY, COUNT, SUM</td>
+<td>Contar leads e somar investimento por canal</td>
+<td>Obrigatório</td>
+</tr>
+<tr>
+<td>Básico</td>
+<td>COUNTIF</td>
+<td>Contar quem ativou</td>
+<td>Obrigatório</td>
+</tr>
+<tr>
+<td>Médio</td>
+<td>WITH (CTE) + JOIN</td>
+<td>Juntar investimento com leads</td>
+<td>Obrigatório</td>
+</tr>
+<tr>
+<td>Médio</td>
+<td>DATE_TRUNC</td>
+<td>Agrupar por mês</td>
+<td>Importante</td>
+</tr>
+<tr>
+<td>Avançado</td>
+<td>LAG, ROW_NUMBER, QUALIFY</td>
+<td>Comparar com mês anterior, atribuição</td>
+<td>Bônus</td>
+</tr>
+</tbody>
+</table>
+<p>Dois termos que aparecem o tempo todo:</p>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>O que é, em português</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTE</td>
+<td>Uma tabela-rascunho com nome, criada dentro da própria query com <code>WITH</code></td>
+</tr>
+<tr>
+<td>Window function</td>
+<td>Conta que olha outras linhas sem juntar tudo numa só, como "valor do mês anterior"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Passo 1. Contar.</strong> Uma linha por canal com o total de leads.</p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">leads</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>Passo 2. Contar com condição.</strong> Só acrescenta uma coluna com <code>COUNTIF</code>.</p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ativos</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>Passo 3. Taxa.</strong> Divide uma coluna pela outra.</p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">taxa_ativacao</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>Passo 4. CAC: juntar duas tabelas.</strong> É o único ponto realmente difícil.</p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">custo</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">invest</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span>
+<span class="w">  </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span>
+<span class="p">),</span>
+<span class="n">clientes</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ativos</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="w">  </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span>
+<span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">invest</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">invest</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">cac</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">custo</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">clientes</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">canal</span><span class="p">);</span>
+</code></pre></div>
+
+<p>Leia como três blocos:</p>
+<table>
+<thead>
+<tr>
+<th>Bloco</th>
+<th>O que faz</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>custo</td>
+<td>Soma o gasto por canal</td>
+<td>4 linhas</td>
+</tr>
+<tr>
+<td>clientes</td>
+<td>Conta ativos por canal</td>
+<td>4 linhas</td>
+</tr>
+<tr>
+<td>SELECT final</td>
+<td>Cola os dois pelo canal e divide</td>
+<td>4 linhas com CAC</td>
+</tr>
+</tbody>
+</table>
+<aside class="note"><b>Nota de sênior</b>Some antes de juntar. O investimento tem uma linha por dia e os leads têm milhares de linhas; juntar direto repete o gasto em cada lead e multiplica o investimento (o fan-out do capítulo 7).</aside>
+<p>Plano de treino de 4 dias:</p>
+<table>
+<thead>
+<tr>
+<th>Dia</th>
+<th>Treino</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Passos 1 a 3 digitando, trocando <code>canal</code> por <code>variante_lp</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Passo 4 de memória, três vezes seguidas</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Passo 4 com <code>DATE_TRUNC(data_lead, MONTH)</code> para ver o CAC por mês</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Só então abrir o exercício 8 (LAG)</td>
+</tr>
+</tbody>
+</table>
+<aside class="quote"><b>Frase pronta</b>"Vou somar o investimento por canal, contar os ativos por canal, juntar os dois e dividir." Se travar na sintaxe, escreva isso em português e fale em voz alta: lógica certa vale mais que vírgula no lugar.</aside>
+</section><section class="chapter" id="cap7"><div class="chap-head"><div class="chap-num">Capítulo 07</div><h2>SQL do básico às window functions</h2></div>
+<p>O case vai exigir cinco coisas: agregar, juntar tabelas sem duplicar, filtrar depois de agregar, comparar linhas vizinhas e rankear dentro de grupos. Tudo abaixo é dialeto BigQuery.</p>
+<p>Ordem em que o SQL executa (saber isso resolve 80% das dúvidas de WHERE x HAVING):</p>
+<ol>
+<li>FROM e JOIN: monta a tabela base.</li>
+<li>WHERE: filtra linhas.</li>
+<li>GROUP BY: agrupa.</li>
+<li>HAVING: filtra grupos.</li>
+<li>SELECT: calcula as colunas (aqui entram as window functions).</li>
+<li>QUALIFY: filtra pelo resultado da window function (exclusivo do BigQuery).</li>
+<li>ORDER BY e LIMIT.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Para quê</th>
+<th>Sintaxe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNTIF</td>
+<td>Contar com condição sem CASE WHEN</td>
+<td><code>COUNTIF(ativou)</code></td>
+</tr>
+<tr>
+<td>SAFE_DIVIDE</td>
+<td>Dividir sem erro quando o divisor é zero</td>
+<td><code>SAFE_DIVIDE(invest, ativos)</code></td>
+</tr>
+<tr>
+<td>DATE_TRUNC</td>
+<td>Agrupar por mês ou semana</td>
+<td><code>DATE_TRUNC(data, MONTH)</code></td>
+</tr>
+<tr>
+<td>CTE (WITH)</td>
+<td>Quebrar a query em blocos legíveis</td>
+<td><code>WITH inv AS (...), f AS (...) SELECT ...</code></td>
+</tr>
+<tr>
+<td>LAG / LEAD</td>
+<td>Pegar o valor da linha anterior ou seguinte</td>
+<td><code>LAG(cac) OVER (PARTITION BY canal ORDER BY mes)</code></td>
+</tr>
+<tr>
+<td>ROW_NUMBER</td>
+<td>Numerar linhas dentro de um grupo</td>
+<td><code>ROW_NUMBER() OVER (PARTITION BY lead_id ORDER BY ts DESC)</code></td>
+</tr>
+<tr>
+<td>RANK / DENSE_RANK</td>
+<td>Rankear com empates</td>
+<td><code>RANK() OVER (PARTITION BY mes ORDER BY cac)</code></td>
+</tr>
+<tr>
+<td>SUM OVER ()</td>
+<td>Total geral para calcular share</td>
+<td><code>ativos / SUM(ativos) OVER ()</code></td>
+</tr>
+<tr>
+<td>Média móvel</td>
+<td>Suavizar ruído diário</td>
+<td><code>AVG(x) OVER (ORDER BY data ROWS BETWEEN 6 PRECEDING AND CURRENT ROW)</code></td>
+</tr>
+<tr>
+<td>QUALIFY</td>
+<td>Filtrar pelo rank sem subquery</td>
+<td><code>QUALIFY ROW_NUMBER() OVER (...) = 1</code></td>
+</tr>
+<tr>
+<td>APPROX_QUANTILES</td>
+<td>Mediana e percentis</td>
+<td><code>APPROX_QUANTILES(x, 100)[OFFSET(50)]</code></td>
+</tr>
+<tr>
+<td>PIVOT</td>
+<td>Transformar linhas em colunas</td>
+<td><code>PIVOT (COUNTIF(ativou) FOR canal IN ('a','b'))</code></td>
+</tr>
+</tbody>
+</table>
+<p>Os três erros que derrubam candidato sênior:</p>
+<table>
+<thead>
+<tr>
+<th>Erro</th>
+<th>O que acontece</th>
+<th>Como evitar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fan-out no JOIN</td>
+<td>Juntar investimento diário com leads multiplica linhas e infla o investimento</td>
+<td>Agregar cada tabela no seu grain antes do JOIN, em CTEs separadas</td>
+</tr>
+<tr>
+<td>Média de razões</td>
+<td>Fazer AVG(cac) por canal como se fosse o CAC geral</td>
+<td>Somar numerador e denominador e dividir no fim</td>
+</tr>
+<tr>
+<td>Divisão inteira ou por zero</td>
+<td><code>5/10</code> dá 0 em alguns bancos; divisor zero quebra a query</td>
+<td>Usar SAFE_DIVIDE e multiplicar por 1.0 em bancos sem ela</td>
+</tr>
+</tbody>
+</table>
+<p>Diferenças de dialeto, caso o case use outro banco:</p>
+<table>
+<thead>
+<tr>
+<th>BigQuery</th>
+<th>PostgreSQL / Redshift</th>
+<th>SQL Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>COUNTIF(x)</code></td>
+<td><code>COUNT(*) FILTER (WHERE x)</code> ou <code>SUM(CASE WHEN x THEN 1 ELSE 0 END)</code></td>
+<td><code>SUM(CASE WHEN x THEN 1 ELSE 0 END)</code></td>
+</tr>
+<tr>
+<td><code>SAFE_DIVIDE(a, b)</code></td>
+<td><code>a / NULLIF(b, 0)</code></td>
+<td><code>a / NULLIF(b, 0)</code></td>
+</tr>
+<tr>
+<td><code>DATE_TRUNC(d, MONTH)</code></td>
+<td><code>DATE_TRUNC('month', d)</code></td>
+<td><code>DATEFROMPARTS(YEAR(d), MONTH(d), 1)</code></td>
+</tr>
+<tr>
+<td><code>QUALIFY</code></td>
+<td>Subquery com WHERE</td>
+<td>Subquery com WHERE</td>
+</tr>
+</tbody>
+</table>
+</section><section class="chapter" id="cap8"><div class="chap-head"><div class="chap-num">Capítulo 08</div><h2>Base de treino</h2></div>
+<p>Quatro tabelas simulam a aquisição digital da Stone no primeiro semestre de 2026. Cole cada bloco no BigQuery e clique em Executar, na ordem.</p>
+<table>
+<thead>
+<tr>
+<th>Tabela</th>
+<th>Grain (uma linha por)</th>
+<th>Colunas principais</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>treino.investimento</code></td>
+<td>Dia e canal</td>
+<td>investimento, impressoes, cliques</td>
+</tr>
+<tr>
+<td><code>treino.leads</code></td>
+<td>Lead</td>
+<td>data_lead, canal, variante_lp, cadastrou, aprovado, ativou, tpv_90d</td>
+</tr>
+<tr>
+<td><code>treino.touchpoints</code></td>
+<td>Ponto de contato de um lead</td>
+<td>lead_id, canal, ts</td>
+</tr>
+<tr>
+<td><code>treino.clientes</code></td>
+<td>Cliente ativo</td>
+<td>data_ativacao, data_churn, tpv_90d</td>
+</tr>
+</tbody>
+</table>
+<p>Bloco 1: schema e investimento.</p>
+<div class="hl"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">SCHEMA</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">treino</span><span class="p">;</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">REPLACE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="mi">1000</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">4000</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">investimento</span><span class="p">,</span>
+<span class="w">  </span><span class="k">CAST</span><span class="p">(</span><span class="mi">20000</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">80000</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">INT64</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">impressoes</span><span class="p">,</span>
+<span class="w">  </span><span class="k">CAST</span><span class="p">(</span><span class="mi">500</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">2500</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">INT64</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">cliques</span>
+<span class="k">FROM</span><span class="w"> </span><span class="k">UNNEST</span><span class="p">(</span><span class="n">GENERATE_DATE_ARRAY</span><span class="p">(</span><span class="s1">'2026-01-01'</span><span class="p">,</span><span class="s1">'2026-06-30'</span><span class="p">))</span><span class="w"> </span><span class="n">d</span><span class="p">,</span>
+<span class="w">     </span><span class="k">UNNEST</span><span class="p">([</span><span class="s1">'google_ads'</span><span class="p">,</span><span class="s1">'meta_ads'</span><span class="p">,</span><span class="s1">'tiktok'</span><span class="p">,</span><span class="s1">'afiliados'</span><span class="p">])</span><span class="w"> </span><span class="n">canal</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Bloco 2: leads e funil. A variante B da landing page converte um pouco melhor e o TikTok ativa menos, de propósito, para os exercícios terem o que achar.</p>
+<div class="hl"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">REPLACE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">GENERATE_UUID</span><span class="p">()</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span>
+<span class="w">    </span><span class="n">DATE_ADD</span><span class="p">(</span><span class="nb">DATE</span><span class="w"> </span><span class="s1">'2026-01-01'</span><span class="p">,</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="k">CAST</span><span class="p">(</span><span class="n">FLOOR</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">181</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">INT64</span><span class="p">)</span><span class="w"> </span><span class="k">DAY</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">data_lead</span><span class="p">,</span>
+<span class="w">    </span><span class="p">[</span><span class="s1">'google_ads'</span><span class="p">,</span><span class="s1">'meta_ads'</span><span class="p">,</span><span class="s1">'tiktok'</span><span class="p">,</span><span class="s1">'afiliados'</span><span class="p">][</span><span class="k">OFFSET</span><span class="p">(</span><span class="k">CAST</span><span class="p">(</span><span class="n">FLOOR</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">INT64</span><span class="p">))]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">    </span><span class="k">IF</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s1">'A'</span><span class="p">,</span><span class="w"> </span><span class="s1">'B'</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">variante_lp</span><span class="p">,</span>
+<span class="w">    </span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="n">r1</span><span class="p">,</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="n">r2</span><span class="p">,</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="n">r3</span><span class="p">,</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="n">r4</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="k">UNNEST</span><span class="p">(</span><span class="n">GENERATE_ARRAY</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">40000</span><span class="p">))</span>
+<span class="p">),</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">r1</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">IF</span><span class="p">(</span><span class="n">variante_lp</span><span class="o">=</span><span class="s1">'B'</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">63</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">cadastrou</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">base</span>
+<span class="p">),</span><span class="w"> </span><span class="k">g</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">cadastrou</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">r2</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">70</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">aprovado</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">f</span>
+<span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span><span class="w"> </span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">variante_lp</span><span class="p">,</span><span class="w"> </span><span class="n">cadastrou</span><span class="p">,</span><span class="w"> </span><span class="n">aprovado</span><span class="p">,</span>
+<span class="w">  </span><span class="n">aprovado</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">r3</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">CASE</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">'google_ads'</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">55</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">'meta_ads'</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">40</span>
+<span class="w">                               </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">'tiktok'</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">25</span><span class="w"> </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">45</span><span class="w"> </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ativou</span><span class="p">,</span>
+<span class="w">  </span><span class="k">IF</span><span class="p">(</span><span class="n">aprovado</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">r3</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">55</span><span class="p">,</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="n">r4</span><span class="o">*</span><span class="mi">30000</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">tpv_90d</span>
+<span class="k">FROM</span><span class="w"> </span><span class="k">g</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Bloco 3: pontos de contato e clientes.</p>
+<div class="hl"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">REPLACE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">touchpoints</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span><span class="w"> </span><span class="n">canal_tp</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="n">TIMESTAMP_SUB</span><span class="p">(</span><span class="k">TIMESTAMP</span><span class="p">(</span><span class="n">data_lead</span><span class="p">),</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="k">CAST</span><span class="p">(</span><span class="n">FLOOR</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">72</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">INT64</span><span class="p">)</span><span class="w"> </span><span class="n">HOUR</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ts</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="k">UNNEST</span><span class="p">([</span><span class="s1">'google_ads'</span><span class="p">,</span><span class="s1">'meta_ads'</span><span class="p">,</span><span class="s1">'tiktok'</span><span class="p">,</span><span class="s1">'organico'</span><span class="p">])</span><span class="w"> </span><span class="n">canal_tp</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">;</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">REPLACE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">clientes</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">data_lead</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">data_ativacao</span><span class="p">,</span>
+<span class="w">  </span><span class="k">IF</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">DATE_ADD</span><span class="p">(</span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="k">CAST</span><span class="p">(</span><span class="n">FLOOR</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">120</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">INT64</span><span class="p">)</span><span class="w"> </span><span class="k">DAY</span><span class="p">),</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">data_churn</span><span class="p">,</span>
+<span class="w">  </span><span class="n">tpv_90d</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">ativou</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Teste rápido de que tudo funcionou:</p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="s1">'investimento'</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span>
+<span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="s1">'leads'</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="s1">'touchpoints'</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">touchpoints</span>
+<span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="s1">'clientes'</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">clientes</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Esperado: 724 linhas de investimento, 40.000 leads, cerca de 80.000 touchpoints e cerca de 7.000 clientes. Os números variam porque a base usa RAND().</p>
+</section><section class="chapter" id="cap9"><div class="chap-head"><div class="chap-num">Capítulo 09</div><h2>Exercícios de SQL com gabarito</h2></div>
+<p>Vinte exercícios na ordem em que um case real costuma pedir: validar, medir o funil, calcular custo, olhar tendência, retenção e atribuição. Tente cada um por 10 minutos antes de abrir o gabarito e leia a nota de sênior ao final de cada um.</p>
+<h3>Bloco A: validar a base</h3>
+<p><strong>1. Valide a tabela de leads antes de analisar.</strong> Linhas, IDs únicos, nulos, período e inconsistências lógicas.</p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">linhas</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">)</span><span class="w"> </span><span class="n">ids_unicos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">canal</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span><span class="w"> </span><span class="n">canal_nulo</span><span class="p">,</span>
+<span class="w">  </span><span class="k">MIN</span><span class="p">(</span><span class="n">data_lead</span><span class="p">)</span><span class="w"> </span><span class="n">inicio</span><span class="p">,</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="n">data_lead</span><span class="p">)</span><span class="w"> </span><span class="n">fim</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">aprovado</span><span class="p">)</span><span class="w"> </span><span class="n">inconsistentes</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>falar em voz alta "linhas igual a IDs únicos, zero nulos, período fechado, zero ativados sem aprovação; posso seguir".</aside>
+<p><strong>2. Confirme que investimento tem uma linha por dia e canal.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">n</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span>
+<span class="k">HAVING</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>resultado vazio significa grain correto. Se vier linha, somar antes de dar JOIN.</aside>
+<h3>Bloco B: funil e custo</h3>
+<p><strong>3. Funil por canal com taxa de conversão em cada etapa.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">cadastrou</span><span class="p">)</span><span class="w"> </span><span class="n">cad</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">aprovado</span><span class="p">)</span><span class="w"> </span><span class="n">aprov</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">cadastrou</span><span class="p">),</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">pct_lead_cad</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">aprovado</span><span class="p">),</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">cadastrou</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">pct_cad_aprov</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">),</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">aprovado</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">pct_aprov_ativ</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>o TikTok perde na ativação, não na geração de leads. Dizer isso já direciona a recomendação.</aside>
+<p><strong>4. CPL, CAC e ROAS por canal.</strong> Take rate de 1,5% como premissa.</p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="n">invest</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="p">),</span>
+<span class="n">f</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">tpv_90d</span><span class="p">)</span><span class="w"> </span><span class="n">tpv</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">invest</span><span class="p">,</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">invest</span><span class="p">,</span><span class="w"> </span><span class="n">leads</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cpl</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">invest</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cac</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">tpv</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">015</span><span class="p">,</span><span class="w"> </span><span class="n">invest</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">roas</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">canal</span><span class="p">)</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cac</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>agregar antes do JOIN evita fan-out. Dizer a premissa do take rate em voz alta.</aside>
+<p><strong>5. CTR, CPC e conversão de clique para lead.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="n">inv</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">impressoes</span><span class="p">)</span><span class="w"> </span><span class="n">imp</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">cliques</span><span class="p">)</span><span class="w"> </span><span class="n">cli</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">l</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">leads</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">cli</span><span class="p">,</span><span class="w"> </span><span class="n">imp</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">ctr_pct</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">inv</span><span class="p">,</span><span class="w"> </span><span class="n">cli</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cpc</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">cli</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">conv_clique_lead_pct</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">canal</span><span class="p">);</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>CTR baixo é criativo; conversão clique para lead baixa é landing page. Separar os dois evita culpar o canal errado.</aside>
+<p><strong>6. Share de cada canal no total de ativos.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">))</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">share_pct</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>7. Canais com CAC acima do CAC geral.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">l</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="k">c</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">inv</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">canal</span><span class="p">))</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="n">inv</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cac</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">inv</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">ativos</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cac_geral</span>
+<span class="k">FROM</span><span class="w"> </span><span class="k">c</span>
+<span class="n">QUALIFY</span><span class="w"> </span><span class="n">cac</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">cac_geral</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>CAC geral é soma dividida por soma, nunca AVG dos CACs.</aside>
+<h3>Bloco C: tendência</h3>
+<p><strong>8. Ativos por mês com variação MoM.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">DATE_TRUNC</span><span class="p">(</span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="k">MONTH</span><span class="p">)</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span>
+<span class="w">  </span><span class="n">LAG</span><span class="p">(</span><span class="n">ativos</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">)</span><span class="w"> </span><span class="n">mes_ant</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">ativos</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">LAG</span><span class="p">(</span><span class="n">ativos</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">),</span>
+<span class="w">                    </span><span class="n">LAG</span><span class="p">(</span><span class="n">ativos</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">var_pct</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>9. CAC mensal por canal com variação MoM dentro de cada canal.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">DATE_TRUNC</span><span class="p">(</span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="k">MONTH</span><span class="p">)</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="n">inv</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+<span class="n">a</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">DATE_TRUNC</span><span class="p">(</span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="k">MONTH</span><span class="p">)</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+<span class="k">c</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">inv</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="p">)</span><span class="w"> </span><span class="n">cac</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">))</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="n">cac</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cac</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">SAFE_DIVIDE</span><span class="p">(</span><span class="n">cac</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">LAG</span><span class="p">(</span><span class="n">cac</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">),</span>
+<span class="w">                    </span><span class="n">LAG</span><span class="p">(</span><span class="n">cac</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">var_mom_pct</span>
+<span class="k">FROM</span><span class="w"> </span><span class="k">c</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">mes</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>PARTITION BY canal é o que impede comparar junho do Google com maio do Meta.</aside>
+<p><strong>10. Média móvel de 7 dias de leads.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">leads</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="n">leads</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">data_lead</span><span class="w"> </span><span class="k">ROWS</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="n">PRECEDING</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">CURRENT</span><span class="w"> </span><span class="k">ROW</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">mm7</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">data_lead</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>média móvel tira o efeito de fim de semana. Em dashboard, mostrar as duas linhas.</aside>
+<p><strong>11. Dias atípicos: leads fora de 2 desvios padrão.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">leads</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">s</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">leads</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="n">media</span><span class="p">,</span><span class="w"> </span><span class="n">STDDEV</span><span class="p">(</span><span class="n">leads</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="n">dp</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">ROUND</span><span class="p">((</span><span class="n">leads</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">media</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dp</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">z</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">s</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="k">ABS</span><span class="p">(</span><span class="n">leads</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">media</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dp</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">data_lead</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>anomalia é ponto de partida da investigação, não conclusão. Cruzar com investimento e com mudanças de tracking no mesmo dia.</aside>
+<p><strong>12. Melhor dia da semana por canal.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">FORMAT_DATE</span><span class="p">(</span><span class="s1">'%A'</span><span class="p">,</span><span class="w"> </span><span class="n">data_lead</span><span class="p">)</span><span class="w"> </span><span class="n">dia_sem</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">d</span>
+<span class="n">QUALIFY</span><span class="w"> </span><span class="n">RANK</span><span class="p">()</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">DESC</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>13. Pivot: ativos por mês com um canal em cada coluna.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">DATE_TRUNC</span><span class="p">(</span><span class="n">data_lead</span><span class="p">,</span><span class="w"> </span><span class="k">MONTH</span><span class="p">)</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">ativou</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="p">)</span>
+<span class="n">PIVOT</span><span class="w"> </span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">'google_ads'</span><span class="p">,</span><span class="w"> </span><span class="s1">'meta_ads'</span><span class="p">,</span><span class="w"> </span><span class="s1">'tiktok'</span><span class="p">,</span><span class="w"> </span><span class="s1">'afiliados'</span><span class="p">))</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">mes</span><span class="p">;</span>
+</code></pre></div>
+
+<h3>Bloco D: retenção e valor</h3>
+<p><strong>14. Churn por mês de ativação.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">DATE_TRUNC</span><span class="p">(</span><span class="n">data_ativacao</span><span class="p">,</span><span class="w"> </span><span class="k">MONTH</span><span class="p">)</span><span class="w"> </span><span class="n">mes</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">ativados</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">data_churn</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span><span class="w"> </span><span class="n">churnaram</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">data_churn</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">churn_pct</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">clientes</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>15. Cohort: percentual retido aos 30, 60 e 90 dias.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">DATE_TRUNC</span><span class="p">(</span><span class="n">data_ativacao</span><span class="p">,</span><span class="w"> </span><span class="k">MONTH</span><span class="p">)</span><span class="w"> </span><span class="n">cohort</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">base</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">data_churn</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">DATE_DIFF</span><span class="p">(</span><span class="n">data_churn</span><span class="p">,</span><span class="w"> </span><span class="n">data_ativacao</span><span class="p">,</span><span class="w"> </span><span class="k">DAY</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">30</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">ret_30</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">data_churn</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">DATE_DIFF</span><span class="p">(</span><span class="n">data_churn</span><span class="p">,</span><span class="w"> </span><span class="n">data_ativacao</span><span class="p">,</span><span class="w"> </span><span class="k">DAY</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">ret_60</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">data_churn</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">DATE_DIFF</span><span class="p">(</span><span class="n">data_churn</span><span class="p">,</span><span class="w"> </span><span class="n">data_ativacao</span><span class="p">,</span><span class="w"> </span><span class="k">DAY</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">90</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">ret_90</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">clientes</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>cohorts recentes ainda não completaram 90 dias, então a retenção delas parece melhor do que é. Dizer isso antes que a gestora pergunte.</aside>
+<p><strong>16. LTV, CAC e LTV/CAC por canal.</strong> Receita mensal = TPV de 90 dias vezes 1,5% dividido por 3. Churn mensal = churn observado dividido por 4 meses.</p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">rec</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">cli</span><span class="p">,</span>
+<span class="w">    </span><span class="k">SUM</span><span class="p">(</span><span class="n">tpv_90d</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">015</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="n">rec_mensal</span><span class="p">,</span>
+<span class="w">    </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">data_churn</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">churn_mensal</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">clientes</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">inv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">ati</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="n">cac</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">ativos</span><span class="w"> </span><span class="n">cac</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">ati</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">canal</span><span class="p">))</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">rec_mensal</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">cli</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">rec_cliente_mes</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">((</span><span class="n">rec_mensal</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">cli</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">churn_mensal</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">ltv</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">cac</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">cac</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(((</span><span class="n">rec_mensal</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">cli</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">churn_mensal</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">cac</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">ltv_cac</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">(</span><span class="n">cac</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">rec_mensal</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">cli</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">payback_meses</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">rec</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">cac</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">canal</span><span class="p">)</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ltv_cac</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>canal com CAC baixo e payback longo pode ser pior do que o contrário. Olhar as duas colunas juntas.</aside>
+<p><strong>17. Pareto: que percentual dos clientes gera 80% do TPV.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span><span class="w"> </span><span class="n">tpv_90d</span><span class="p">,</span>
+<span class="w">    </span><span class="k">SUM</span><span class="p">(</span><span class="n">tpv_90d</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">tpv_90d</span><span class="w"> </span><span class="k">DESC</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">tpv_90d</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="n">acum</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ROW_NUMBER</span><span class="p">()</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">tpv_90d</span><span class="w"> </span><span class="k">DESC</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="n">pct_clientes</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">clientes</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="k">MIN</span><span class="p">(</span><span class="n">pct_clientes</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">pct_clientes_para_80pct_tpv</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">acum</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">8</span><span class="p">;</span>
+</code></pre></div>
+
+<h3>Bloco E: atribuição e experimento</h3>
+<p><strong>18. First click x last click por canal.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ROW_NUMBER</span><span class="p">()</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">lead_id</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ts</span><span class="p">)</span><span class="w"> </span><span class="n">primeiro</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ROW_NUMBER</span><span class="p">()</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">lead_id</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="k">DESC</span><span class="p">)</span><span class="w"> </span><span class="n">ultimo</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">touchpoints</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">primeiro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">first_click</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ultimo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">last_click</span><span class="p">,</span>
+<span class="w">  </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">primeiro</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ultimo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">diferenca</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">diferenca</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>canal com first maior que last abre o funil (descoberta). Last maior que first fecha o funil (busca de marca). Nenhum modelo de clique mede incrementalidade.</aside>
+<p><strong>19. Atribuição linear: crédito dividido entre os pontos de contato.</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">credito</span>
+<span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">lead_id</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">OVER</span><span class="w"> </span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">lead_id</span><span class="p">)</span><span class="w"> </span><span class="n">n</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">touchpoints</span><span class="p">)</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">canal</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">credito</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+
+<p><strong>20. Teste A/B da landing page: a variante B converte mais em cadastro?</strong></p>
+<div class="hl"><pre><span></span><code><span class="k">WITH</span><span class="w"> </span><span class="n">ab</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">variante_lp</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">cadastrou</span><span class="p">)</span><span class="w"> </span><span class="k">c</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">v</span><span class="p">),</span>
+<span class="n">p</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="k">IF</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'A'</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="k">NULL</span><span class="p">))</span><span class="w"> </span><span class="n">nA</span><span class="p">,</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="k">IF</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'A'</span><span class="p">,</span><span class="w"> </span><span class="k">c</span><span class="p">,</span><span class="w"> </span><span class="k">NULL</span><span class="p">))</span><span class="w"> </span><span class="n">cA</span><span class="p">,</span>
+<span class="w">         </span><span class="k">MAX</span><span class="p">(</span><span class="k">IF</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'B'</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="k">NULL</span><span class="p">))</span><span class="w"> </span><span class="n">nB</span><span class="p">,</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="k">IF</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'B'</span><span class="p">,</span><span class="w"> </span><span class="k">c</span><span class="p">,</span><span class="w"> </span><span class="k">NULL</span><span class="p">))</span><span class="w"> </span><span class="n">cB</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">ab</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="n">cA</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nA</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">pA</span><span class="p">,</span><span class="w"> </span><span class="n">ROUND</span><span class="p">(</span><span class="n">cB</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nB</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">pB</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">((</span><span class="n">cB</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nB</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cA</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nA</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">lift_pp</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ROUND</span><span class="p">((</span><span class="n">cB</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nB</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cA</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nA</span><span class="p">)</span><span class="w"> </span><span class="o">/</span>
+<span class="w">    </span><span class="n">SQRT</span><span class="p">(((</span><span class="n">cA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cB</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">nA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nB</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">cA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cB</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">nA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nB</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">nB</span><span class="p">)),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">z</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
+</code></pre></div>
+
+<aside class="note"><b>Nota de sênior</b>z acima de 1,96 significa diferença significativa com 95% de confiança. Mesmo assim, checar se B não piorou aprovação ou ativação (métricas de guardrail) antes de recomendar.</aside>
+<p>Como se auto-avaliar:</p>
+<table>
+<thead>
+<tr>
+<th>Resultado</th>
+<th>Leitura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acertou 16 ou mais sem olhar o gabarito</td>
+<td>SQL em nível sênior; foque nos capítulos 10 e 15</td>
+</tr>
+<tr>
+<td>Acertou 11 a 15</td>
+<td>Refaça os blocos C e E; window functions precisam ficar automáticas</td>
+</tr>
+<tr>
+<td>Acertou 10 ou menos</td>
+<td>Volte ao capítulo 6 (4 passos) e refaça tudo digitando, um bloco por dia</td>
+</tr>
+</tbody>
+</table>
+</section><section class="chapter" id="cap10"><div class="chap-head"><div class="chap-num">Capítulo 10</div><h2>Cases de negócio com resposta estruturada</h2></div>
+<p>Todo case de growth é uma destas oito perguntas disfarçadas. Responda sempre na mesma estrutura: validar o dado, decompor a métrica, achar a causa, recomendar com número, propor como medir.</p>
+<p><strong>Case 1. "O CAC subiu 25% no mês. Por quê?"</strong></p>
+<ol>
+<li>Validar: tracking quebrou? Ativação tem atraso, então o mês atual sempre parece pior.</li>
+<li>Decompor: CAC = investimento dividido por ativos. Subiu o investimento ou caíram os ativos?</li>
+<li>Abrir por canal e campanha: um canal puxou ou foi geral?</li>
+<li>Abrir por etapa: CPC, CTR, lead para cadastro, aprovação, ativação. Cada etapa tem um dono.</li>
+<li>Fatores externos: sazonalidade, concorrente, mudança de política de crédito.</li>
+<li>Recomendar: "Pausar a campanha X economiza R$ Y sem perder ativos, porque ela gera lead que não aprova."</li>
+</ol>
+<p><strong>Case 2. "Leads caíram 40% em uma semana."</strong></p>
+<ol>
+<li>Bug primeiro: cliques normais e leads zero significa pixel ou formulário quebrado.</li>
+<li>Orçamento: campanha pausada ou verba esgotada aparece no investimento diário.</li>
+<li>Leilão: CPC subiu por concorrência ou data comemorativa.</li>
+<li>Só depois: caiu em todo canal e dispositivo, ou em um só?</li>
+</ol>
+<aside class="quote"><b>Frase pronta</b>"Antes de culpar o mercado, descarto bug e orçamento. Na maioria das vezes é um dos dois."</aside>
+<p><strong>Case 3. "Você tem R$ 100 mil a mais. Onde investe?"</strong></p>
+<p>Resposta: no canal com menor CAC marginal, não menor CAC médio. Canais saturam: cada real a mais compra um cliente mais caro. Subir aos poucos, 20% por vez, medindo o CAC da verba adicional. Parar quando o CAC marginal passar de LTV dividido por 3.</p>
+<p><strong>Case 4. "Mídia quer dobrar o TikTok. Aprova?"</strong></p>
+<p>Não com o dado atual. O TikTok tem CPL baixo e ativação baixa, então o CAC real é alto. Proposta: subir 30% em duas regiões (geo-test), manter as demais como controle, medir ativos incrementais em três semanas. Critério fixado antes: segue se CAC marginal ficar abaixo de LTV dividido por 3.</p>
+<p><strong>Case 5. "A taxa de aprovação caiu. É marketing ou risco?"</strong></p>
+<ol>
+<li>Mudou a política de crédito? Perguntar ao time de risco antes de qualquer query.</li>
+<li>Mudou o mix de canal? Um canal que traz lead pior (CNPJ novo, MEI informal) derruba a aprovação geral mesmo sem ninguem piorar.</li>
+<li>Abrir aprovação por canal e por segmento do lojista. Se caiu em todos os canais ao mesmo tempo, é política. Se caiu em um canal só, é qualidade de lead.</li>
+</ol>
+<p><strong>Case 6. "Priorize três iniciativas de otimização."</strong></p>
+<p>Usar impacto em reais vezes confiança dividido por esforço. Exemplo de raciocínio:</p>
+<table>
+<thead>
+<tr>
+<th>Iniciativa</th>
+<th>Impacto estimado</th>
+<th>Confiança</th>
+<th>Esforço</th>
+<th>Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Realocar 30% do TikTok para Google</td>
+<td>Alto, CAC geral cai</td>
+<td>Alta, dado histórico</td>
+<td>Baixo</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Nova landing page para Meta</td>
+<td>Médio, conversão de lead</td>
+<td>Média, precisa de teste</td>
+<td>Médio</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Fluxo de CRM para ativação</td>
+<td>Alto, ativação de todos os canais</td>
+<td>Baixa, depende de outro time</td>
+<td>Alto</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Case 7. "A gestora quer 30 métricas no dashboard."</strong></p>
+<p>Resposta: uma métrica norte, cinco de topo, funil por etapa e o restante em uma aba de diagnóstico com filtros. Frase pronta: "Painel com 30 números é painel que ninguem lê. Proponho 5 na tela inicial e o detalhe a um clique."</p>
+<p><strong>Case 8. "Last click ou data-driven?"</strong></p>
+<p>Last click é simples e todos entendem, mas dá crédito demais a quem fecha (busca de marca) e de menos a quem abre (social, vídeo). Data-driven redistribui com base em padrões de jornada, mas continua medindo correlação. Para decidir verba, o que vale é incrementalidade: geo-test ou holdout. Recomendar last click para operar o dia a dia e incrementalidade trimestral para decidir o mix.</p>
+</section><section class="chapter" id="cap11"><div class="chap-head"><div class="chap-num">Capítulo 11</div><h2>Testes A/B e experimentação</h2></div>
+<p>Um teste bem desenhado tem a decisão definida antes de começar. Se a gestora pedir "desenhe um teste", responda nesta ordem: hipótese, métrica, guardrails, amostra, duração, critério.</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>O que é</th>
+<th>Exemplo para a Stone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hipótese</td>
+<td>Mudança esperada, com número</td>
+<td>"A landing page B sobe a taxa de cadastro de 60% para 63%"</td>
+</tr>
+<tr>
+<td>Métrica primária</td>
+<td>A única que decide</td>
+<td>Taxa de lead para cadastro</td>
+</tr>
+<tr>
+<td>Guardrails</td>
+<td>Métricas que não podem piorar</td>
+<td>Taxa de aprovação, taxa de ativação, TPV médio</td>
+</tr>
+<tr>
+<td>Unidade de aleatorização</td>
+<td>Quem recebe A ou B</td>
+<td>Lead (ou região, em geo-test)</td>
+</tr>
+<tr>
+<td>Amostra</td>
+<td>Quantos por grupo para ver o efeito</td>
+<td>Cerca de 4.300 leads por grupo (fórmula abaixo)</td>
+</tr>
+<tr>
+<td>Duração</td>
+<td>Tempo mínimo</td>
+<td>2 semanas inteiras, para cobrir dias da semana</td>
+</tr>
+<tr>
+<td>Critério</td>
+<td>Regra de decisão fixada antes</td>
+<td>"Lança B se lift maior que 2 p.p. com p menor que 0,05 e guardrails estáveis"</td>
+</tr>
+</tbody>
+</table>
+<p>Fórmula rápida de amostra por grupo, com 80% de poder e 95% de confiança:</p>
+<div class="formula"><span class="v">n</span> ≈ <span class="frac"><span>16 × p(1 − p)</span><span>Δ<sup>2</sup></span></span></div>
+
+<p>Exemplo: p = 0,60 e Δ = 0,03 dá 16 × 0,24 ÷ 0,0009, cerca de 4.270 leads por grupo. Com 300 leads por dia, são 29 dias.</p>
+<p>Erros que a gestora vai testar se você conhece:</p>
+<table>
+<thead>
+<tr>
+<th>Erro</th>
+<th>Por que quebra o teste</th>
+<th>Como falar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parar quando der significante</td>
+<td>Olhar todo dia infla o falso positivo</td>
+<td>"Fixo a duração antes e só leio no fim"</td>
+</tr>
+<tr>
+<td>Testar 10 métricas</td>
+<td>Alguma vai dar significante por acaso</td>
+<td>"Uma métrica primária; o resto é guardrail"</td>
+</tr>
+<tr>
+<td>Mudar o teste no meio</td>
+<td>Mistura populações diferentes</td>
+<td>"Mudou? Reinicia o relógio"</td>
+</tr>
+<tr>
+<td>Ignorar novidade</td>
+<td>Efeito das primeiras semanas some</td>
+<td>"Comparo a segunda semana com a primeira"</td>
+</tr>
+<tr>
+<td>Grupos desbalanceados</td>
+<td>Diferença já existia antes</td>
+<td>"Checo se A e B tinham o mesmo perfil de canal e região"</td>
+</tr>
+</tbody>
+</table>
+<p>Quando não dá para fazer A/B no lead (branding, TV, influenciador), o teste muda de unidade:</p>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Como funciona</th>
+<th>Quando usar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Geo-test</td>
+<td>Liga a campanha em algumas regiões e compara com regiões parecidas</td>
+<td>Canal que não permite aleatorizar por pessoa</td>
+</tr>
+<tr>
+<td>Holdout</td>
+<td>Esconde a campanha de 10% do público</td>
+<td>Remarketing e CRM</td>
+</tr>
+<tr>
+<td>Diff-in-diff</td>
+<td>Compara a variação do grupo tratado com a do controle</td>
+<td>Quando os grupos já eram diferentes antes</td>
+</tr>
+<tr>
+<td>Marketing mix model</td>
+<td>Regressão do resultado contra investimento de cada canal ao longo do tempo</td>
+<td>Decidir o mix anual, não a campanha da semana</td>
+</tr>
+</tbody>
+</table>
+</section><section class="chapter" id="cap12"><div class="chap-head"><div class="chap-num">Capítulo 12</div><h2>Atribuição e incrementalidade</h2></div>
+<p>Atribuição responde "quem leva o crédito pelo lead". Incrementalidade responde "quantos leads não existiriam sem a campanha". São perguntas diferentes, e confundir as duas é o erro mais comum em marketing digital.</p>
+<table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>Regra</th>
+<th>Favorece</th>
+<th>Viés</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Last click</td>
+<td>100% para o último ponto de contato</td>
+<td>Busca de marca, remarketing</td>
+<td>Infla quem fecha, ignora quem abriu</td>
+</tr>
+<tr>
+<td>First click</td>
+<td>100% para o primeiro</td>
+<td>Social, vídeo, display</td>
+<td>Infla descoberta, ignora quem converteu</td>
+</tr>
+<tr>
+<td>Linear</td>
+<td>Divide igual entre todos</td>
+<td>Jornadas longas</td>
+<td>Trata contato inútil igual ao decisivo</td>
+</tr>
+<tr>
+<td>Time decay</td>
+<td>Mais peso para os últimos</td>
+<td>Fundo de funil</td>
+<td>Parecido com last click, mais suave</td>
+</tr>
+<tr>
+<td>Position based</td>
+<td>40% primeiro, 40% último, 20% meio</td>
+<td>Equilíbrio</td>
+<td>Pesos arbitrários</td>
+</tr>
+<tr>
+<td>Data-driven</td>
+<td>Peso aprendido pelas jornadas que converteram x não converteram</td>
+<td>Depende dos dados</td>
+<td>Ainda mede correlação, não causa</td>
+</tr>
+<tr>
+<td>Incrementalidade</td>
+<td>Compara grupo exposto com grupo não exposto</td>
+<td>Nenhum</td>
+<td>Caro e lento, mas é o único que mede causa</td>
+</tr>
+</tbody>
+</table>
+<p>Raciocínio que o sênior apresenta no case:</p>
+<ol>
+<li>Last click para operar o dia a dia, porque é rápido e todos entendem.</li>
+<li>Comparar first e last por canal (exercício 18) para ver quem abre e quem fecha o funil.</li>
+<li>Incrementalidade trimestral por geo-test ou holdout para decidir o mix de verba.</li>
+<li>Busca de marca é o caso clássico: last click dá CAC baixíssimo, mas boa parte desses leads viria de qualquer jeito.</li>
+</ol>
+<p>Exemplo numérico para o case: uma campanha mostra 1.000 leads por last click. No holdout, o grupo exposto converteu 2,0% e o não exposto 1,6%. Só 20% dos leads são incrementais, então o CAC real é cinco vezes o CAC reportado.</p>
+<aside class="quote"><b>Frase pronta</b>"Atribuição distribui crédito; incrementalidade mede causa. Para alocar verba eu uso a segunda e para acompanhar a semana eu uso a primeira."</aside>
+</section><section class="chapter" id="cap13"><div class="chap-head"><div class="chap-num">Capítulo 13</div><h2>Dashboard de aquisição no Looker Studio</h2></div>
+<p>Um bom painel de aquisição responde em 10 segundos se o mês está bom ou ruim e em 1 minuto por quê. A estrutura é sempre a mesma: topo com KPIs, meio com funil e tendência, base com abertura por canal.</p>
+<table>
+<thead>
+<tr>
+<th>Faixa</th>
+<th>Conteúdo</th>
+<th>Tipo de visual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topo</td>
+<td>Investimento, Ativos, CAC, ROAS, LTV/CAC, cada um com variação vs mês anterior e vs meta</td>
+<td>Cartão de resultado (scorecard)</td>
+</tr>
+<tr>
+<td>Meio esquerdo</td>
+<td>Funil: leads, cadastros, aprovados, ativos com taxa entre etapas</td>
+<td>Barras horizontais</td>
+</tr>
+<tr>
+<td>Meio direito</td>
+<td>CAC e ativos por semana com média móvel</td>
+<td>Linha com duas séries</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>Canal e campanha: investimento, leads, CAC, ROAS, taxa de ativação</td>
+<td>Tabela com barras e formatação condicional</td>
+</tr>
+<tr>
+<td>Filtros</td>
+<td>Período, canal, região, variante de landing page</td>
+<td>Controles no topo</td>
+</tr>
+</tbody>
+</table>
+<p>Regras de construção:</p>
+<ul>
+<li>Uma métrica norte em destaque. Para aquisição, ativos ou LTV/CAC.</li>
+<li>Máximo de 5 cartões no topo. O resto vai para uma segunda página de diagnóstico.</li>
+<li>Toda métrica com comparação: vs período anterior e vs meta. Número sem referência não é insight.</li>
+<li>Cores com significado: verde acima da meta, vermelho abaixo, cinza para o resto. Nada decorativo.</li>
+<li>Fonte única: uma tabela tratada no BigQuery (por exemplo <code>fato_aquisicao_diaria</code>) com uma linha por dia e canal já com investimento e funil juntos. O Looker só soma; nenhum JOIN no painel.</li>
+</ul>
+<p>Tabela tratada que alimenta o painel:</p>
+<div class="hl"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">REPLACE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">fato_aquisicao_diaria</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">investimento</span><span class="p">)</span><span class="w"> </span><span class="n">investimento</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">impressoes</span><span class="p">)</span><span class="w"> </span><span class="n">impressoes</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">cliques</span><span class="p">)</span><span class="w"> </span><span class="n">cliques</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">investimento</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+<span class="n">fun</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">data_lead</span><span class="w"> </span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">cadastrou</span><span class="p">)</span><span class="w"> </span><span class="n">cadastros</span><span class="p">,</span>
+<span class="w">    </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">aprovado</span><span class="p">)</span><span class="w"> </span><span class="n">aprovados</span><span class="p">,</span><span class="w"> </span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">ativou</span><span class="p">)</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">tpv_90d</span><span class="p">)</span><span class="w"> </span><span class="n">tpv_90d</span>
+<span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">treino</span><span class="p">.</span><span class="n">leads</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">,</span><span class="w"> </span><span class="n">investimento</span><span class="p">,</span><span class="w"> </span><span class="n">impressoes</span><span class="p">,</span><span class="w"> </span><span class="n">cliques</span><span class="p">,</span>
+<span class="w">  </span><span class="n">leads</span><span class="p">,</span><span class="w"> </span><span class="n">cadastros</span><span class="p">,</span><span class="w"> </span><span class="n">aprovados</span><span class="p">,</span><span class="w"> </span><span class="n">ativos</span><span class="p">,</span><span class="w"> </span><span class="n">tpv_90d</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="k">FULL</span><span class="w"> </span><span class="k">OUTER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">fun</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">canal</span><span class="p">);</span>
+</code></pre></div>
+
+<p>No Looker Studio, CAC vira um campo calculado <code>SUM(investimento) / SUM(ativos)</code>, nunca uma média de CACs diários.</p>
+<p>Se a gestora perguntar sobre Power BI ou Tableau, a resposta é a mesma estrutura. No Power BI o campo calculado é uma medida DAX: <code>CAC = DIVIDE(SUM(fato[investimento]), SUM(fato[ativos]))</code>.</p>
+</section><section class="chapter" id="cap14"><div class="chap-head"><div class="chap-num">Capítulo 14</div><h2>Excel e Google Sheets essencial</h2></div>
+<p>Se o case vier em CSV, planilha é mais rápida que SQL para as primeiras respostas. Google Sheets é grátis e usa as mesmas fórmulas do Excel; treine nele.</p>
+<table>
+<thead>
+<tr>
+<th>Função</th>
+<th>Para quê no case</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tabela dinâmica</td>
+<td>Funil por canal em 30 segundos</td>
+<td>Linhas: canal. Valores: contagem de lead_id, soma de ativou</td>
+</tr>
+<tr>
+<td><code>SOMASES</code> (<code>SUMIFS</code>)</td>
+<td>Investimento por canal e mês</td>
+<td><code>=SOMASES(C:C; B:B; "google_ads"; A:A; "&gt;="&amp;DATA(2026;3;1))</code></td>
+</tr>
+<tr>
+<td><code>CONT.SES</code> (<code>COUNTIFS</code>)</td>
+<td>Leads que ativaram por canal</td>
+<td><code>=CONT.SES(C:C; "tiktok"; G:G; VERDADEIRO)</code></td>
+</tr>
+<tr>
+<td><code>PROCX</code> (<code>XLOOKUP</code>)</td>
+<td>Trazer investimento para a linha do canal</td>
+<td><code>=PROCX(A2; Inv!A:A; Inv!B:B; 0)</code></td>
+</tr>
+<tr>
+<td><code>SEERRO</code> (<code>IFERROR</code>)</td>
+<td>Evitar erro de divisão por zero</td>
+<td><code>=SEERRO(B2/C2; 0)</code></td>
+</tr>
+<tr>
+<td><code>MÉDIASES</code></td>
+<td>Ticket médio por canal</td>
+<td><code>=MÉDIASES(H:H; C:C; "meta_ads")</code></td>
+</tr>
+<tr>
+<td>Formatação condicional</td>
+<td>Destacar CAC acima da meta</td>
+<td>Regra: valor maior que 500, fundo vermelho</td>
+</tr>
+<tr>
+<td>Gráfico combinado</td>
+<td>CAC em linha e ativos em barra</td>
+<td>Inserir gráfico, tipo combinado, eixo secundário para CAC</td>
+</tr>
+</tbody>
+</table>
+<p>Sequência de 5 minutos para abrir um CSV e ter o funil:</p>
+<ol>
+<li>Importar o CSV e congelar a primeira linha.</li>
+<li>Checar duplicidade: <code>=CONT.SE(A:A; A2)&gt;1</code> em uma coluna auxiliar, ou tabela dinâmica contando lead_id.</li>
+<li>Inserir tabela dinâmica: canal nas linhas, contagem de lead_id e soma de cadastrou, aprovado e ativou nos valores.</li>
+<li>Adicionar colunas de taxa ao lado da dinâmica, dividindo etapa por etapa anterior.</li>
+<li>Trazer investimento com <code>PROCX</code> e calcular CAC.</li>
+</ol>
+<p>O que não fazer: digitar números à mão, fórmulas que apontam para células soltas sem nome, e gráfico de pizza para comparar canais.</p>
+</section><section class="chapter" id="cap15"><div class="chap-head"><div class="chap-num">Capítulo 15</div><h2>Roteiro do case ao vivo</h2></div>
+<p>O case ao vivo avalia raciocínio, não velocidade de digitação. A gestora quer ver como você pensa, prioriza e se comunica sob pressão. Siga o roteiro e fale o tempo todo.</p>
+<table>
+<thead>
+<tr>
+<th>Minuto</th>
+<th>Ação</th>
+<th>O que falar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 a 5</td>
+<td>Entender e alinhar</td>
+<td>"Qual decisão essa análise apoia? Qual a métrica norte? Tem algo que vocês já suspeitam? Posso assumir take rate de 1,5%?"</td>
+</tr>
+<tr>
+<td>5 a 10</td>
+<td>Validar a base</td>
+<td>"Antes de analisar, checo grain, duplicidade, nulos e período. Linhas igual a IDs, posso seguir."</td>
+</tr>
+<tr>
+<td>10 a 25</td>
+<td>Visão geral: funil e CAC por canal</td>
+<td>"Vou agregar cada tabela no seu grain e juntar depois, para não duplicar. O funil mostra que..."</td>
+</tr>
+<tr>
+<td>25 a 30</td>
+<td>Resumo e escolha</td>
+<td>"Até aqui vi X e Y. O maior vazamento é Z. Vou aprofundar nele e deixar o resto como próximo passo."</td>
+</tr>
+<tr>
+<td>30 a 45</td>
+<td>Aprofundar um ponto</td>
+<td>Abrir por mês, por etapa, por variante. Buscar a causa, não só o sintoma.</td>
+</tr>
+<tr>
+<td>45 a 55</td>
+<td>Recomendação</td>
+<td>"Recomendo A. Estimo impacto de R$ B por mês. Validaria com o teste C em duas semanas, com critério D."</td>
+</tr>
+<tr>
+<td>55 a 60</td>
+<td>Limitações e próximos passos</td>
+<td>"O dado não permite E. Com mais tempo eu faria F, G e H."</td>
+</tr>
+</tbody>
+</table>
+<p>Frases para cada situação:</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Frase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Travou na sintaxe</td>
+<td>"Não lembro a sintaxe exata, mas a lógica é uma window function particionada por lead. Escrevo o pseudocódigo e sigo?"</td>
+</tr>
+<tr>
+<td>Errou um número</td>
+<td>"Me enganei aqui. O correto é X. Corrigindo e seguindo."</td>
+</tr>
+<tr>
+<td>Não sabe a resposta</td>
+<td>"Não sei de cabeça. Meu raciocínio seria A, B e C, e eu validaria assim."</td>
+</tr>
+<tr>
+<td>Gestora discorda</td>
+<td>"Faz sentido. Qual dado te faz pensar isso? Se for X, eu mudaria minha leitura para Y."</td>
+</tr>
+<tr>
+<td>Pediram algo fora do escopo</td>
+<td>"Anoto como próximo passo. Prefiro fechar o diagnóstico principal com qualidade."</td>
+</tr>
+<tr>
+<td>Dado estranho</td>
+<td>"Esse número não bate com o resto. Antes de interpretar, verifico se é problema de dado."</td>
+</tr>
+<tr>
+<td>Terminou cedo</td>
+<td>"Posso usar o tempo restante para testar a robustez da recomendação por região."</td>
+</tr>
+</tbody>
+</table>
+<p>Como apresentar o fechamento, na ordem:</p>
+<ol>
+<li>Recomendação em uma frase, com impacto em reais.</li>
+<li>Contexto e premissas (take rate, janela de ativação, período).</li>
+<li>Três evidências, uma por vez, cada uma com um número.</li>
+<li>Teste proposto, métrica de sucesso e duração.</li>
+<li>Riscos, limitações do dado e próximos passos.</li>
+</ol>
+<p>Pergunta quase garantida no fim: "O que você faria com mais tempo?" Tenha três respostas prontas: medir incrementalidade com holdout, calcular LTV real por cohort e criar a tabela tratada para automatizar o painel.</p>
+<p>O que não fazer: ficar em silêncio por mais de 30 segundos, abrir cinco frentes sem fechar nenhuma, apresentar gráfico sem dizer o que ele prova, e terminar sem recomendação.</p>
+</section><section class="chapter" id="cap16"><div class="chap-head"><div class="chap-num">Capítulo 16</div><h2>Banco de perguntas da entrevista técnica</h2></div>
+<p>A entrevista com a gestora mistura perguntas de SQL, de métricas e de comportamento. Responda em até 1 minuto cada; profundidade vem quando ela pedir.</p>
+<h3>SQL</h3>
+<table>
+<thead>
+<tr>
+<th>Pergunta</th>
+<th>Resposta curta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WHERE x HAVING?</td>
+<td>WHERE filtra linhas antes de agrupar; HAVING filtra grupos depois de agregar.</td>
+</tr>
+<tr>
+<td>LEFT JOIN x INNER JOIN?</td>
+<td>LEFT mantém tudo da esquerda e preenche com nulo; INNER só o que casa nas duas.</td>
+</tr>
+<tr>
+<td>ROW_NUMBER x RANK x DENSE_RANK?</td>
+<td>Em empate: ROW_NUMBER dá 1, 2, 3; RANK dá 1, 1, 3; DENSE_RANK dá 1, 1, 2.</td>
+</tr>
+<tr>
+<td>O que é window function?</td>
+<td>Cálculo sobre um conjunto de linhas relacionadas sem colapsar o resultado, como LAG, SUM OVER e ROW_NUMBER.</td>
+</tr>
+<tr>
+<td>Como evitar duplicar linhas em JOIN?</td>
+<td>Agregar cada tabela no grain certo antes de juntar, e validar contagem antes e depois.</td>
+</tr>
+<tr>
+<td>Como otimizar uma query lenta no BigQuery?</td>
+<td>Filtrar por partição de data, selecionar só as colunas necessárias, evitar SELECT *, agregar antes do JOIN.</td>
+</tr>
+<tr>
+<td>Como garantir que o resultado está certo?</td>
+<td>Conferir totais com a fonte, contar distintos, checar nulos, comparar com o mês anterior.</td>
+</tr>
+<tr>
+<td>CTE x subquery?</td>
+<td>Mesma coisa em performance na maioria dos bancos; CTE é mais legível e reutilizável.</td>
+</tr>
+</tbody>
+</table>
+<h3>Métricas e negócio</h3>
+<table>
+<thead>
+<tr>
+<th>Pergunta</th>
+<th>Resposta curta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Como calcula CAC?</td>
+<td>Investimento dividido por clientes ativos no período, com cuidado na janela de ativação.</td>
+</tr>
+<tr>
+<td>O que é um bom LTV/CAC?</td>
+<td>Acima de 3. Abaixo de 1 destrói valor. Payback abaixo de 12 meses.</td>
+</tr>
+<tr>
+<td>Correlação x causalidade?</td>
+<td>Correlação é andar junto; causalidade se prova com teste ou grupo de controle.</td>
+</tr>
+<tr>
+<td>Como define sucesso de uma campanha?</td>
+<td>CAC marginal abaixo do LTV dividido por 3, com guardrails de aprovação e ativação estáveis.</td>
+</tr>
+<tr>
+<td>Como lida com atraso de ativação?</td>
+<td>Uso cohort por mês de lead e janela fixa de 30 dias; não comparo mês incompleto.</td>
+</tr>
+<tr>
+<td>Como prioriza pedidos de várias áreas?</td>
+<td>Impacto em reais vezes confiança dividido por esforço; alinho com a gestora toda semana.</td>
+</tr>
+<tr>
+<td>O que faz se o negócio discorda do dado?</td>
+<td>Entendo a hipótese deles, busco o dado que a testaria, e trago os dois lados com número.</td>
+</tr>
+</tbody>
+</table>
+<h3>Comportamentais (responder em STAR: Situação, Tarefa, Ação, Resultado)</h3>
+<table>
+<thead>
+<tr>
+<th>Pergunta</th>
+<th>O que a gestora quer ouvir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conte uma análise que mudou uma decisão</td>
+<td>Um número no início, um número no fim, e o que você fez no meio.</td>
+</tr>
+<tr>
+<td>Conte um erro que cometeu com dados</td>
+<td>Como descobriu, como corrigiu, o que mudou no processo para não repetir.</td>
+</tr>
+<tr>
+<td>Como explica algo técnico para quem não é técnico?</td>
+<td>Começa pela decisão, usa analogia, mostra um gráfico só.</td>
+</tr>
+<tr>
+<td>Por que Stone e por que Growth?</td>
+<td>Ligar sua experiência com o problema real: trazer lojista com CAC saudável.</td>
+</tr>
+<tr>
+<td>Como usa IA no trabalho?</td>
+<td>Exemplos concretos: gerar e revisar SQL, documentar tabelas, acelerar análise exploratória, sempre validando o resultado.</td>
+</tr>
+</tbody>
+</table>
+<p>Preparo para a pergunta sobre IA, que a vaga cita como diferencial: tenha um exemplo pronto de como usou Claude Code ou similar para escrever uma query complexa, revisar lógica, criar documentação ou montar um script de validação. Diga também o limite: a IA acelera, mas você valida cada número antes de apresentar.</p>
+</section><section class="chapter" id="cap17"><div class="chap-head"><div class="chap-num">Capítulo 17</div><h2>Checklist final e dia da entrevista</h2></div>
+<p>Marque cada item conforme completar. Chegar ao dia com tudo marcado é o que separa o candidato que "sabe" do candidato que "mostra".</p>
+<p>Preparação técnica:</p>
+<ul class="checklist">
+<li><span class="chk"></span>Conta no BigQuery Sandbox criada e as 4 tabelas de treino rodando</li>
+<li><span class="chk"></span>20 exercícios feitos digitando, com pelo menos 16 acertos sem gabarito</li>
+<li><span class="chk"></span>Fórmulas de CAC, ROAS, LTV, payback e amostra de A/B decoradas</li>
+<li><span class="chk"></span>Painel de 5 KPIs montado no Looker Studio sobre a base de treino</li>
+<li><span class="chk"></span>Tabela dinâmica de funil feita no Sheets a partir de um CSV</li>
+<li><span class="chk"></span>Os 8 cases do capítulo 10 respondidos em voz alta em até 3 minutos cada</li>
+</ul>
+<p>Simulação:</p>
+<ul class="checklist">
+<li><span class="chk"></span>Case de 60 minutos cronometrado, falando o tempo todo, pelo menos 2 vezes</li>
+<li><span class="chk"></span>Gravação em áudio ouvida: cortar silêncios longos e adjetivos sem número</li>
+<li><span class="chk"></span>Três histórias em formato STAR com número no início e no fim</li>
+<li><span class="chk"></span>Um exemplo concreto de uso de IA em análise de dados</li>
+<li><span class="chk"></span>Três respostas para "o que faria com mais tempo"</li>
+</ul>
+<p>Dia da entrevista:</p>
+<ul class="checklist">
+<li><span class="chk"></span>Testar câmera, microfone e compartilhamento de tela 30 minutos antes</li>
+<li><span class="chk"></span>BigQuery, Sheets e um bloco de notas já abertos em abas</li>
+<li><span class="chk"></span>Papel e caneta para rascunhar o funil enquanto fala</li>
+<li><span class="chk"></span>Perguntas para a gestora prontas (abaixo)</li>
+</ul>
+<p>Perguntas para fazer à gestora no fim, que mostram senioridade:</p>
+<table>
+<thead>
+<tr>
+<th>Pergunta</th>
+<th>Por que funciona</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Qual foi a última decisão de verba que o time de Analytics mudou com dado?"</td>
+<td>Mostra que você mede impacto, não entrega</td>
+</tr>
+<tr>
+<td>"Como vocês medem incrementalidade hoje: last click, MMM ou testes?"</td>
+<td>Mostra domínio de atribuição</td>
+</tr>
+<tr>
+<td>"Qual a maior dor de dado do time hoje: qualidade, latência ou modelagem?"</td>
+<td>Mostra que você pensa em infraestrutura analítica</td>
+</tr>
+<tr>
+<td>"O que diferencia, na prática, um sênior de um pleno no seu time?"</td>
+<td>Mostra autoconsciência e dá a resposta que você precisa</td>
+</tr>
+</tbody>
+</table>
+<p>Última regra: na dúvida entre parecer esperto e ser claro, seja claro. Direto ao ponto é um dos cinco valores da Stone.</p></section>
+<section class="back"><p>“Na dúvida entre parecer esperto e ser claro, seja claro.”</p><span>Bons estudos — e boa entrevista.</span></section>
+</body></html>
