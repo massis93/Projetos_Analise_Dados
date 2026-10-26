@@ -1,6 +1,6 @@
 # Ebook: Guia Growth Analytics Sênior (Stone)
 
-- `guia-growth-analytics-stone.pdf`: ebook pronto (A4, 33 páginas).
+- `guia-growth-analytics-stone.pdf`: ebook pronto (A4, 35 páginas).
 - `guia-growth-analytics-stone.md`: texto-fonte.
 - `build/`: scripts para regerar o PDF.
 

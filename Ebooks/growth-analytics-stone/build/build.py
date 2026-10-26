@@ -47,7 +47,7 @@ out = f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>G
     <p class="sub">SQL, métricas de aquisição, testes A/B, atribuição e o roteiro para chegar agindo como sênior na Stone.</p>
     <div class="funnel"><span style="width:100%">Clique</span><span style="width:84%">Lead</span><span style="width:68%">Cadastro</span><span style="width:52%">Aprovação</span><span class="hot" style="width:36%">Ativação</span></div>
   </div>
-  <div class="cover-bot"><div><b>Mateus Silva</b><br>Outubro de 2026</div><div class="stats"><div><b>16</b>capítulos</div><div><b>20</b>exercícios SQL</div><div><b>8</b>cases</div></div></div>
+  <div class="cover-bot"><div><b>Mateus Silva</b><br>Outubro de 2026</div><div class="stats"><div><b>{len(toc)}</b>capítulos</div><div><b>20</b>exercícios SQL</div><div><b>8</b>cases</div></div></div>
 </section>
 <section class="toc"><div class="chap-num">Sumário</div><h2>O que tem aqui</h2><ol>{toc_html}</ol></section>
 {body}

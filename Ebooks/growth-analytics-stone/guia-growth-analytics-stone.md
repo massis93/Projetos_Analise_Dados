@@ -6,19 +6,19 @@ Oct 25, 2026 · @Mateus Silva
 
 Este guia prepara para a segunda fase da vaga de Analista de Growth Analytics da Stone: entrevista técnica com a gestora e case técnico ao vivo. O objetivo é chegar agindo como sênior, não como pleno.
 
-Use assim: leia os capítulos 2 a 5 em um dia, rode a base de treino (capítulo 7) e faça os exercícios digitando, nunca só lendo. Simule o case em voz alta pelo menos duas vezes com cronômetro.
+Use assim: leia os capítulos 2 a 5 em um dia, rode a base de treino (capítulo 8) e faça os exercícios digitando, nunca só lendo. Simule o case em voz alta pelo menos duas vezes com cronômetro.
 
 | Dia | Foco | Entrega do dia |
 | --- | --- | --- |
 | 1 | Capítulos 2, 3 e 5: vaga, sênior x pleno, métricas | Decorar as fórmulas de CAC, ROAS, LTV e payback |
-| 2 | Capítulo 4 e 7: criar conta no BigQuery e rodar a base | Tabelas criadas e primeira query funcionando |
-| 3 | Capítulo 6 e exercícios 1 a 10 | Dominar JOIN com agregação prévia e window functions |
+| 2 | Capítulo 4 e 8: criar conta no BigQuery e rodar a base | Tabelas criadas e primeira query funcionando |
+| 3 | Capítulos 6 e 7, exercícios 1 a 10 | Dominar JOIN com agregação prévia e window functions |
 | 4 | Exercícios 11 a 20 | Refazer os que errou sem olhar o gabarito |
-| 5 | Capítulos 9, 10 e 11: cases, testes A/B, atribuição | Responder cada case em voz alta em 3 minutos |
-| 6 | Capítulos 12 e 13: dashboard no Looker Studio e Sheets | Um painel com 5 KPIs ligado à base de treino |
-| 7 | Capítulos 14, 15 e 16: simulação completa do case | Case de 60 minutos cronometrado, gravado em áudio |
+| 5 | Capítulos 10, 11 e 12: cases, testes A/B, atribuição | Responder cada case em voz alta em 3 minutos |
+| 6 | Capítulos 13 e 14: dashboard no Looker Studio e Sheets | Um painel com 5 KPIs ligado à base de treino |
+| 7 | Capítulos 15, 16 e 17: simulação completa do case | Case de 60 minutos cronometrado, gravado em áudio |
 
-Se tiver menos de 7 dias, priorize nesta ordem: capítulo 14 (roteiro do case), capítulo 8 (exercícios) e capítulo 9 (cases de negócio).
+Se tiver menos de 7 dias, priorize nesta ordem: capítulo 15 (roteiro do case), capítulo 9 (exercícios) e capítulo 10 (cases de negócio).
 
 ## 2. A vaga e o vocabulário da Stone
 
@@ -28,13 +28,13 @@ O que a descrição da vaga pede e como isso aparece no case:
 
 | Requisito da vaga | Como é testado | Onde estudar |
 | --- | --- | --- |
-| SQL avançado | Query ao vivo com JOIN, agregação e window function | Capítulos 6, 7 e 8 |
-| Looker Studio, Power BI ou Tableau | Pergunta sobre como montaria o painel | Capítulo 12 |
-| Diagnosticar funil de aquisição | Case: onde o funil vaza e por quê | Capítulos 5 e 9 |
-| Hipóteses e testes com ROI | Desenhar um teste A/B e um geo-test | Capítulo 10 |
-| Monitorar KPIs de marketing | Explicar variação de CAC e ROAS | Capítulos 5 e 9 |
-| Comunicação com negócio | Fechar o case com recomendação em reais | Capítulo 14 |
-| Diferencial: IA aplicada a dados | Contar como usa Claude Code ou similar na rotina | Capítulo 15 |
+| SQL avançado | Query ao vivo com JOIN, agregação e window function | Capítulos 6 a 9 |
+| Looker Studio, Power BI ou Tableau | Pergunta sobre como montaria o painel | Capítulo 13 |
+| Diagnosticar funil de aquisição | Case: onde o funil vaza e por quê | Capítulos 5 e 10 |
+| Hipóteses e testes com ROI | Desenhar um teste A/B e um geo-test | Capítulo 11 |
+| Monitorar KPIs de marketing | Explicar variação de CAC e ROAS | Capítulos 5 e 10 |
+| Comunicação com negócio | Fechar o case com recomendação em reais | Capítulo 15 |
+| Diferencial: IA aplicada a dados | Contar como usa Claude Code ou similar na rotina | Capítulo 16 |
 
 Vocabulário que precisa sair natural na conversa:
 
@@ -96,7 +96,7 @@ Passo a passo para o BigQuery Sandbox:
 
 1. Entre em console.cloud.google.com/bigquery com uma conta Google.
 2. Aceite os termos e crie um projeto (qualquer nome, por exemplo `treino-growth`).
-3. No editor de consultas, cole os scripts do capítulo 7 e clique em Executar.
+3. No editor de consultas, cole os scripts do capítulo 8 e clique em Executar.
 4. As tabelas aparecem no painel esquerdo dentro do dataset `treino`.
 5. O sandbox dá 1 TB de consulta por mês de graça; a base de treino usa menos de 1 GB.
 
@@ -105,7 +105,7 @@ Passo a passo para o Looker Studio:
 1. Entre em lookerstudio.google.com e clique em Criar, depois Fonte de dados.
 2. Escolha o conector BigQuery, selecione o projeto, o dataset `treino` e a tabela `leads`.
 3. Clique em Criar relatório. Adicione um gráfico de série temporal com `data_lead` e um cartão de resultado com contagem de `lead_id`.
-4. Monte o painel do capítulo 12.
+4. Monte o painel do capítulo 13.
 
 ## 5. Métricas de Growth: fórmulas e benchmarks
 
@@ -153,7 +153,95 @@ Regras que o sênior fala sem pensar:
 - Cohort recente ainda não maturou: não compare ativação de 30 dias de um mês que fechou há 10 dias.
 - Aprovação de crédito é política de risco, não marketing. Se ela caiu, pergunte ao time de risco antes de culpar o canal.
 
-## 6. SQL do básico às window functions
+## 6. SQL essencial em 4 passos
+
+Os 20 exercícios do capítulo 9 cobrem tudo o que pode cair. Num case de 30 minutos, quatro padrões resolvem 80% das perguntas. Domine estes antes de abrir os avançados.
+
+| Nível | Padrão | Para que serve no case | Prioridade |
+| --- | --- | --- | --- |
+| Básico | SELECT, WHERE, GROUP BY, COUNT, SUM | Contar leads e somar investimento por canal | Obrigatório |
+| Básico | COUNTIF | Contar quem ativou | Obrigatório |
+| Médio | WITH (CTE) + JOIN | Juntar investimento com leads | Obrigatório |
+| Médio | DATE\_TRUNC | Agrupar por mês | Importante |
+| Avançado | LAG, ROW\_NUMBER, QUALIFY | Comparar com mês anterior, atribuição | Bônus |
+
+Dois termos que aparecem o tempo todo:
+
+| Termo | O que é, em português |
+| --- | --- |
+| CTE | Uma tabela-rascunho com nome, criada dentro da própria query com `WITH` |
+| Window function | Conta que olha outras linhas sem juntar tudo numa só, como "valor do mês anterior" |
+
+**Passo 1. Contar.** Uma linha por canal com o total de leads.
+
+```sql
+SELECT canal, COUNT(*) AS leads
+FROM treino.leads
+GROUP BY canal;
+```
+
+**Passo 2. Contar com condição.** Só acrescenta uma coluna com `COUNTIF`.
+
+```sql
+SELECT canal,
+  COUNT(*) AS leads,
+  COUNTIF(ativou) AS ativos
+FROM treino.leads
+GROUP BY canal;
+```
+
+**Passo 3. Taxa.** Divide uma coluna pela outra.
+
+```sql
+SELECT canal,
+  COUNT(*) AS leads,
+  COUNTIF(ativou) AS ativos,
+  COUNTIF(ativou) / COUNT(*) AS taxa_ativacao
+FROM treino.leads
+GROUP BY canal;
+```
+
+**Passo 4. CAC: juntar duas tabelas.** É o único ponto realmente difícil.
+
+```sql
+WITH custo AS (
+  SELECT canal, SUM(investimento) AS invest
+  FROM treino.investimento
+  GROUP BY canal
+),
+clientes AS (
+  SELECT canal, COUNTIF(ativou) AS ativos
+  FROM treino.leads
+  GROUP BY canal
+)
+SELECT canal, invest, ativos,
+  invest / ativos AS cac
+FROM custo
+JOIN clientes USING (canal);
+```
+
+Leia como três blocos:
+
+| Bloco | O que faz | Resultado |
+| --- | --- | --- |
+| custo | Soma o gasto por canal | 4 linhas |
+| clientes | Conta ativos por canal | 4 linhas |
+| SELECT final | Cola os dois pelo canal e divide | 4 linhas com CAC |
+
+Nota de sênior: Some antes de juntar. O investimento tem uma linha por dia e os leads têm milhares de linhas; juntar direto repete o gasto em cada lead e multiplica o investimento (o fan-out do capítulo 7).
+
+Plano de treino de 4 dias:
+
+| Dia | Treino |
+| --- | --- |
+| 1 | Passos 1 a 3 digitando, trocando `canal` por `variante_lp` |
+| 2 | Passo 4 de memória, três vezes seguidas |
+| 3 | Passo 4 com `DATE_TRUNC(data_lead, MONTH)` para ver o CAC por mês |
+| 4 | Só então abrir o exercício 8 (LAG) |
+
+Frase pronta: "Vou somar o investimento por canal, contar os ativos por canal, juntar os dois e dividir." Se travar na sintaxe, escreva isso em português e fale em voz alta: lógica certa vale mais que vírgula no lugar.
+
+## 7. SQL do básico às window functions
 
 O case vai exigir cinco coisas: agregar, juntar tabelas sem duplicar, filtrar depois de agregar, comparar linhas vizinhas e rankear dentro de grupos. Tudo abaixo é dialeto BigQuery.
 
@@ -199,7 +287,7 @@ Diferenças de dialeto, caso o case use outro banco:
 | `DATE_TRUNC(d, MONTH)` | `DATE_TRUNC('month', d)` | `DATEFROMPARTS(YEAR(d), MONTH(d), 1)` |
 | `QUALIFY` | Subquery com WHERE | Subquery com WHERE |
 
-## 7. Base de treino
+## 8. Base de treino
 
 Quatro tabelas simulam a aquisição digital da Stone no primeiro semestre de 2026. Cole cada bloco no BigQuery e clique em Executar, na ordem.
 
@@ -274,7 +362,7 @@ UNION ALL SELECT 'clientes', COUNT(*) FROM treino.clientes;
 
 Esperado: 724 linhas de investimento, 40.000 leads, cerca de 80.000 touchpoints e cerca de 7.000 clientes. Os números variam porque a base usa RAND().
 
-## 8. Exercícios de SQL com gabarito
+## 9. Exercícios de SQL com gabarito
 
 Vinte exercícios na ordem em que um case real costuma pedir: validar, medir o funil, calcular custo, olhar tendência, retenção e atribuição. Tente cada um por 10 minutos antes de abrir o gabarito e leia a nota de sênior ao final de cada um.
 
@@ -566,11 +654,11 @@ Como se auto-avaliar:
 
 | Resultado | Leitura |
 | --- | --- |
-| Acertou 16 ou mais sem olhar o gabarito | SQL em nível sênior; foque nos capítulos 9 e 14 |
+| Acertou 16 ou mais sem olhar o gabarito | SQL em nível sênior; foque nos capítulos 10 e 15 |
 | Acertou 11 a 15 | Refaça os blocos C e E; window functions precisam ficar automáticas |
-| Acertou 10 ou menos | Volte ao capítulo 6 e refaça tudo digitando, um bloco por dia |
+| Acertou 10 ou menos | Volte ao capítulo 6 (4 passos) e refaça tudo digitando, um bloco por dia |
 
-## 9. Cases de negócio com resposta estruturada
+## 10. Cases de negócio com resposta estruturada
 
 Todo case de growth é uma destas oito perguntas disfarçadas. Responda sempre na mesma estrutura: validar o dado, decompor a métrica, achar a causa, recomendar com número, propor como medir.
 
@@ -624,7 +712,7 @@ Resposta: uma métrica norte, cinco de topo, funil por etapa e o restante em uma
 
 Last click é simples e todos entendem, mas dá crédito demais a quem fecha (busca de marca) e de menos a quem abre (social, vídeo). Data-driven redistribui com base em padrões de jornada, mas continua medindo correlação. Para decidir verba, o que vale é incrementalidade: geo-test ou holdout. Recomendar last click para operar o dia a dia e incrementalidade trimestral para decidir o mix.
 
-## 10. Testes A/B e experimentação
+## 11. Testes A/B e experimentação
 
 Um teste bem desenhado tem a decisão definida antes de começar. Se a gestora pedir "desenhe um teste", responda nesta ordem: hipótese, métrica, guardrails, amostra, duração, critério.
 
@@ -665,7 +753,7 @@ Quando não dá para fazer A/B no lead (branding, TV, influenciador), o teste mu
 | Diff-in-diff | Compara a variação do grupo tratado com a do controle | Quando os grupos já eram diferentes antes |
 | Marketing mix model | Regressão do resultado contra investimento de cada canal ao longo do tempo | Decidir o mix anual, não a campanha da semana |
 
-## 11. Atribuição e incrementalidade
+## 12. Atribuição e incrementalidade
 
 Atribuição responde "quem leva o crédito pelo lead". Incrementalidade responde "quantos leads não existiriam sem a campanha". São perguntas diferentes, e confundir as duas é o erro mais comum em marketing digital.
 
@@ -690,7 +778,7 @@ Exemplo numérico para o case: uma campanha mostra 1.000 leads por last click. N
 
 Frase pronta: "Atribuição distribui crédito; incrementalidade mede causa. Para alocar verba eu uso a segunda e para acompanhar a semana eu uso a primeira."
 
-## 12. Dashboard de aquisição no Looker Studio
+## 13. Dashboard de aquisição no Looker Studio
 
 Um bom painel de aquisição responde em 10 segundos se o mês está bom ou ruim e em 1 minuto por quê. A estrutura é sempre a mesma: topo com KPIs, meio com funil e tendência, base com abertura por canal.
 
@@ -730,7 +818,7 @@ No Looker Studio, CAC vira um campo calculado `SUM(investimento) / SUM(ativos)`,
 
 Se a gestora perguntar sobre Power BI ou Tableau, a resposta é a mesma estrutura. No Power BI o campo calculado é uma medida DAX: `CAC = DIVIDE(SUM(fato[investimento]), SUM(fato[ativos]))`.
 
-## 13. Excel e Google Sheets essencial
+## 14. Excel e Google Sheets essencial
 
 Se o case vier em CSV, planilha é mais rápida que SQL para as primeiras respostas. Google Sheets é grátis e usa as mesmas fórmulas do Excel; treine nele.
 
@@ -755,7 +843,7 @@ Sequência de 5 minutos para abrir um CSV e ter o funil:
 
 O que não fazer: digitar números à mão, fórmulas que apontam para células soltas sem nome, e gráfico de pizza para comparar canais.
 
-## 14. Roteiro do case ao vivo
+## 15. Roteiro do case ao vivo
 
 O case ao vivo avalia raciocínio, não velocidade de digitação. A gestora quer ver como você pensa, prioriza e se comunica sob pressão. Siga o roteiro e fale o tempo todo.
 
@@ -793,7 +881,7 @@ Pergunta quase garantida no fim: "O que você faria com mais tempo?" Tenha três
 
 O que não fazer: ficar em silêncio por mais de 30 segundos, abrir cinco frentes sem fechar nenhuma, apresentar gráfico sem dizer o que ele prova, e terminar sem recomendação.
 
-## 15. Banco de perguntas da entrevista técnica
+## 16. Banco de perguntas da entrevista técnica
 
 A entrevista com a gestora mistura perguntas de SQL, de métricas e de comportamento. Responda em até 1 minuto cada; profundidade vem quando ela pedir.
 
@@ -834,7 +922,7 @@ A entrevista com a gestora mistura perguntas de SQL, de métricas e de comportam
 
 Preparo para a pergunta sobre IA, que a vaga cita como diferencial: tenha um exemplo pronto de como usou Claude Code ou similar para escrever uma query complexa, revisar lógica, criar documentação ou montar um script de validação. Diga também o limite: a IA acelera, mas você valida cada número antes de apresentar.
 
-## 16. Checklist final e dia da entrevista
+## 17. Checklist final e dia da entrevista
 
 Marque cada item conforme completar. Chegar ao dia com tudo marcado é o que separa o candidato que "sabe" do candidato que "mostra".
 
@@ -845,7 +933,7 @@ Preparação técnica:
 - [ ] Fórmulas de CAC, ROAS, LTV, payback e amostra de A/B decoradas
 - [ ] Painel de 5 KPIs montado no Looker Studio sobre a base de treino
 - [ ] Tabela dinâmica de funil feita no Sheets a partir de um CSV
-- [ ] Os 8 cases do capítulo 9 respondidos em voz alta em até 3 minutos cada
+- [ ] Os 8 cases do capítulo 10 respondidos em voz alta em até 3 minutos cada
 
 Simulação:
 
